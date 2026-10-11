@@ -1,0 +1,4 @@
+interface:
+  display_name: "日语 PWA 开发"
+  short_description: "按项目需求实现日语学习 PWA 的 Vue/Fastify 功能、数据导入、复习与离线流程。用于本仓库的功能实现与修复。"
+  default_prompt: "使用 $jp-pwa-implement 处理本项目对应任务，并依据需求与设计核对结果。"

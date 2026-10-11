@@ -1,0 +1,42 @@
+{
+  "name": "jp-study-pwa",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.10.1",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @jp-study/shared build && pnpm --parallel --filter @jp-study/web --filter @jp-study/api dev",
+    "build": "pnpm --filter @jp-study/shared build && pnpm --filter @jp-study/api build && pnpm --filter @jp-study/web build",
+    "start": "pnpm --filter @jp-study/api start",
+    "typecheck": "pnpm --filter @jp-study/shared build && pnpm -r typecheck",
+    "test": "pnpm --filter @jp-study/shared build && vitest run",
+    "lint": "eslint apps packages",
+    "format:check": "prettier --check apps packages scripts package.json compose.yaml",
+    "format": "prettier --write apps packages scripts package.json compose.yaml",
+    "db:generate": "pnpm --filter @jp-study/api db:generate",
+    "db:deploy": "pnpm --filter @jp-study/api db:deploy",
+    "db:migrate": "pnpm --filter @jp-study/api db:migrate",
+    "lessons:import": "pnpm --filter @jp-study/shared build && pnpm --filter @jp-study/api lessons:import",
+    "backup": "node scripts/backup.mjs",
+    "test:integration": "pnpm --filter @jp-study/shared build && node scripts/test-db.mjs",
+    "env:init": "node scripts/init-env.mjs",
+    "backup:check": "node scripts/restore-check.mjs",
+    "test:browser": "node scripts/verify-browser.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vitest": "3.2.4",
+    "@types/node": "24.19.2",
+    "prettier": "3.6.2",
+    "eslint": "9.39.1",
+    "@eslint/js": "9.39.1",
+    "typescript-eslint": "8.46.0",
+    "eslint-plugin-vue": "10.5.0",
+    "globals": "16.5.0",
+    "@playwright/test": "1.56.1",
+    "fake-indexeddb": "6.2.4",
+    "eslint-config-prettier": "10.1.8"
+  }
+}

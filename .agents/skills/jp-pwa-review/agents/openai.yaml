@@ -1,0 +1,4 @@
+interface:
+  display_name: "日语 PWA 审查"
+  short_description: "审查本项目代码或设计是否符合课程数据、复习幂等、离线同步和手机交互约定。用于显式审查请求，不替代普通开发。"
+  default_prompt: "使用 $jp-pwa-review 处理本项目对应任务，并依据需求与设计核对结果。"

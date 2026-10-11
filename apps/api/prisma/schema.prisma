@@ -1,0 +1,127 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "postgresql"
+  url = env("DATABASE_URL")
+}
+model User {
+  id String @id @db.Uuid
+  limit Int @default(10)
+  favorites Favorite[]
+  states ReviewState[]
+  events ReviewEvent[]
+  allocations Allocation[]
+}
+model Lesson {
+  id String @id
+  title String
+  data Json
+  memo String
+  version String
+  importedAt DateTime @default(now()) @db.Timestamptz
+  expressions Expression[]
+  words LessonWord[]
+}
+model Expression {
+  id String @id
+  lessonId String
+  lesson Lesson @relation(fields:[lessonId],references:[id],onDelete:Restrict)
+  data Json
+  active Boolean @default(true)
+  links ExpressionWord[]
+  cards Card[]
+  favorites Favorite[]
+  @@index([lessonId,active])
+}
+model Vocabulary {
+  id String @id
+  japanese String
+  reading String
+  meaning String
+  sources LessonWord[]
+  links ExpressionWord[]
+  cards Card[]
+  favorites Favorite[]
+}
+model LessonWord {
+  lessonId String
+  vocabularyId String
+  lesson Lesson @relation(fields:[lessonId],references:[id],onDelete:Restrict)
+  vocabulary Vocabulary @relation(fields:[vocabularyId],references:[id],onDelete:Restrict)
+  data Json
+  active Boolean @default(true)
+  @@id([lessonId,vocabularyId])
+  @@index([vocabularyId,active])
+}
+model ExpressionWord {
+  expressionId String
+  vocabularyId String
+  expression Expression @relation(fields:[expressionId],references:[id],onDelete:Restrict)
+  vocabulary Vocabulary @relation(fields:[vocabularyId],references:[id],onDelete:Restrict)
+  @@id([expressionId,vocabularyId])
+}
+model Card {
+  id String @id @default(uuid()) @db.Uuid
+  itemType String
+  itemId String
+  cardType String
+  expressionId String?
+  expression Expression? @relation(fields:[expressionId],references:[id],onDelete:Restrict)
+  vocabularyId String?
+  vocabulary Vocabulary? @relation(fields:[vocabularyId],references:[id],onDelete:Restrict)
+  active Boolean @default(true)
+  states ReviewState[]
+  events ReviewEvent[]
+  allocations Allocation[]
+  @@unique([itemType,itemId,cardType])
+}
+model Favorite {
+  userId String @db.Uuid
+  user User @relation(fields:[userId],references:[id],onDelete:Restrict)
+  itemType String
+  itemId String
+  expressionId String?
+  expression Expression? @relation(fields:[expressionId],references:[id],onDelete:Restrict)
+  vocabularyId String?
+  vocabulary Vocabulary? @relation(fields:[vocabularyId],references:[id],onDelete:Restrict)
+  @@id([userId,itemType,itemId])
+}
+model ReviewState {
+  userId String @db.Uuid
+  user User @relation(fields:[userId],references:[id],onDelete:Restrict)
+  cardId String @db.Uuid
+  card Card @relation(fields:[cardId],references:[id],onDelete:Restrict)
+  stage Int @default(0)
+  lastRating String?
+  reviewedAt DateTime? @db.Timestamptz
+  dueAt DateTime? @db.Timestamptz
+  version Int @default(0)
+  @@id([userId,cardId])
+  @@index([userId,dueAt])
+}
+model ReviewEvent {
+  id String @id @db.Uuid
+  sequence BigInt @unique @default(autoincrement())
+  userId String @db.Uuid
+  user User @relation(fields:[userId],references:[id],onDelete:Restrict)
+  cardId String @db.Uuid
+  card Card @relation(fields:[cardId],references:[id],onDelete:Restrict)
+  rating String
+  answeredAt DateTime @db.Timestamptz
+  receivedAt DateTime @default(now()) @db.Timestamptz
+  deviceId String @db.Uuid
+  algorithmVersion Int
+  payloadHash String
+  result Json
+  @@index([userId,receivedAt])
+}
+model Allocation {
+  userId String @db.Uuid
+  user User @relation(fields:[userId],references:[id],onDelete:Restrict)
+  cardId String @db.Uuid
+  card Card @relation(fields:[cardId],references:[id],onDelete:Restrict)
+  day String
+  @@id([userId,cardId])
+  @@index([userId,day])
+}

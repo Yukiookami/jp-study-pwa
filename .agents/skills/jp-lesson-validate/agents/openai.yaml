@@ -1,0 +1,4 @@
+interface:
+  display_name: "课程数据校验"
+  short_description: "检查本项目 lessons 中的 JSON 格式、稳定 ID、引用与错误示例字段，报告导入前的数据问题。不会修改数据或数"
+  default_prompt: "使用 $jp-lesson-validate 处理本项目对应任务，并依据需求与设计核对结果。"

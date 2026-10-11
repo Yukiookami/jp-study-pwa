@@ -1,0 +1,4 @@
+interface:
+  display_name: "日语项目 Git 推送"
+  short_description: "核对日语项目改动范围，检查并精确暂存，以中文提交信息安全推送代码"
+  default_prompt: "使用 $jp-git-publish 检查当前日语项目改动，提交并推送到已配置的 Git 仓库。"

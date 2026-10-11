@@ -1,0 +1,3877 @@
+{
+  "schema_version": 1,
+  "lesson": {
+    "id": "lesson_1f808bcb-ae32-4c75-b8ae-c507949e2da7",
+    "title": "第一课｜日本生活与自然表达（前一段＋今日课程合并）",
+    "lesson_date": "2026-10-11",
+    "created_date": "2026-10-11",
+    "source_files": [
+      "33cce2cedb0220e34e9a514685ce9b36.mp4",
+      "a181707c2c3d45c832632e73856df482.mp4",
+      "日语课堂复习Memo_表达方式与单词.md"
+    ],
+    "tags": [
+      "第一课",
+      "日本生活",
+      "职场",
+      "语法",
+      "表达纠正"
+    ]
+  },
+  "expressions": [
+    {
+      "id": "expr_f5dba4d1-b3e4-44cd-9b00-e74acf6c2f87",
+      "japanese": "日本での暮らしについて",
+      "meaning_zh": "谈论在日本的生活",
+      "original_japanese": "日本で暮らしについて",
+      "explanation_zh": "「日本で暮らす」中，「で」后接动词；「日本での暮らし」中，「暮らし」是名词，用「での」修饰。\n\n| 说法 | 中文 |\n|---|---|\n| 日本で暮らす | 在日本生活 |\n| 日本での暮らし | 在日本的生活 |\n| 日本での暮らしについて話す | 谈论在日本的生活 |\n| 職場でのコミュニケーション | 工作中的沟通 |\n| 会議での提案 | 会议上的提案 |",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "日本での暮らしには、もう慣れましたか。",
+          "meaning_zh": "你已经习惯在日本生活了吗？",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_5ea622cd-3d61-4725-8374-88f535132982",
+        "vocab_677be315-7ab5-44a1-9034-5d2b4a1e5308",
+        "vocab_c9f8ecfd-75c0-46cf-87f9-102f75cb4216",
+        "vocab_0e6570f4-1f15-4048-95c0-13682830f223"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ],
+      "corrected_japanese": "日本での暮らしについて"
+    },
+    {
+      "id": "expr_576fb820-0190-40d7-acc7-f233bbc32fce",
+      "japanese": "～始める／～続ける",
+      "meaning_zh": "开始做／持续做",
+      "original_japanese": "勉強続く／勉強し続き",
+      "explanation_zh": "接续：**动词ます形去掉ます＋始める／続ける**。\n\n| 原动词 | 接续部分 | 组合后的表达 |\n|---|---|---|\n| 食べます | 食べ | 食べ始める：开始吃 |\n| 勉強します | 勉強し | 勉強し続ける：持续学习 |\n| 働きます | 働き | 働き続ける：持续工作 |\n\n「勉強」本身是名词，先变成「勉強する」，再取「勉強し」接续。\n\n**区分：**「勉強が続く」侧重学习这件事持续；「勉強を続ける」侧重人继续学习；「勉強し続ける」把“持续做这个动作”组合为一个动词。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "これからも日本語を勉強し続けたいです。",
+          "meaning_zh": "今后也想继续学日语。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ],
+      "corrected_japanese": "勉強し続ける"
+    },
+    {
+      "id": "expr_29a4f1ed-243d-44cf-a65b-15e51452feef",
+      "japanese": "～合う",
+      "meaning_zh": "相互做某事",
+      "original_japanese": null,
+      "explanation_zh": "接续：**动词ます形去掉ます＋合う**。表示互相做某个动作。\n\n| 表达 | 中文 |\n|---|---|\n| 話し合う | 交谈、讨论 |\n| 教え合う | 互相教、互相指导 |\n| 送り合う | 互相发送 |\n\n课堂练习包括「教え合う」「送り合う」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "分からないところは、お互いに教え合います。",
+          "meaning_zh": "不懂的地方互相教。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "チームで解決方法を話し合います。",
+          "meaning_zh": "团队一起讨论解决办法。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "友達とメッセージを送り合っています。",
+          "meaning_zh": "和朋友互发消息。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_2977dcb2-c26e-4f55-99c7-09dec57f4ef5"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_c0b8a104-39a5-40e2-ad27-aeaedccc7320",
+      "japanese": "～たばかりの頃",
+      "meaning_zh": "刚做某事的那段时期",
+      "original_japanese": "来日したばっかり頃",
+      "explanation_zh": "「ばかり」也可以口语化为「ばっかり」；修饰名词「頃」时要加「の」。\n\n- 来日したばかり：刚来日本。\n- 来日したばかりの頃：刚来日本的时候。\n\n「ばかり」的“刚”带有说话人的主观判断，不限于几分钟前。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "来日したばかりの頃は、少しホームシックでした。",
+          "meaning_zh": "刚来日本的时候，有点想家。",
+          "origin": "source"
+        },
+        {
+          "japanese": "入社したばかりの頃は、分からないことが多かったです。",
+          "meaning_zh": "刚入职时，有很多不懂的事。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_f5df7569-a8d5-4a94-803c-ec7cd4f3f059",
+        "vocab_8ada655b-e80e-4799-bb93-2dd0fe6da0c2"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ],
+      "corrected_japanese": "来日したばかりの頃"
+    },
+    {
+      "id": "expr_05a0ba59-d8da-4083-b382-768ff42eb1e6",
+      "japanese": "ホームシックになる",
+      "meaning_zh": "想家",
+      "original_japanese": null,
+      "explanation_zh": "「ホームシックになる」表示开始出现想家的情绪；「ホームシックでした」描述过去想家的状态。\n\n这里也可以记住 **「动词た形＋ことがある」＝有过某种经历**。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "日本に来てから、ホームシックになったことはありますか。",
+          "meaning_zh": "来日本以后，有过想家的经历吗？",
+          "origin": "source"
+        },
+        {
+          "japanese": "ときどきホームシックになりますが、家族と話すと落ち着きます。",
+          "meaning_zh": "有时会想家，不过和家人聊聊就安心了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_8ada655b-e80e-4799-bb93-2dd0fe6da0c2"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_a29c0a74-fd98-4d77-b02a-62a868f48974",
+      "japanese": "一か月に一回／何回か",
+      "meaning_zh": "表达频率",
+      "original_japanese": "一か月くらいビデオして",
+      "explanation_zh": "接续：**时间单位＋に＋次数＋动作**。\n\n| 说法 | 中文 |\n|---|---|\n| 一か月勉強しました。 | 学了一个月，表示时长。 |\n| 一か月に一回、話します。 | 每月聊一次，表示频率。 |\n| 一か月に何回か、話します。 | 每月聊几次。 |\n| 一週間に二回、授業を受けます。 | 每周上两次课。 |\n\n「ビデオコールをする」表示进行视频通话，也可以说「ビデオ通話をする」。\n\n「三年間日本語を勉強しています」表示三年来持续学习，不是每月几次，也不是每天二十四小时不间断地学。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "一か月に一回くらい、家族とビデオコールをしています。",
+          "meaning_zh": "每个月大概和家人视频通话一次。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_5d97cc48-89aa-421e-89da-692c224b09c9",
+        "vocab_d70bbb4c-abdc-45c2-8690-db73c3af2b96"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ],
+      "corrected_japanese": "一か月に何回か、ビデオ通話をします。"
+    },
+    {
+      "id": "expr_1352870f-c99e-4761-8771-111bbf3ec2ec",
+      "japanese": "本格的です／本格的ではないです",
+      "meaning_zh": "正宗／不太正宗",
+      "original_japanese": "あんまり本格ではないんですけど",
+      "explanation_zh": "描述料理正宗、地道时，用な形容词「本格的」。\n\n- 本格的な四川料理：正宗的四川料理。\n- 本格的です：很正宗。\n- あまり本格的ではないです：不太正宗。\n\n「あんまり」是「あまり」较口语的说法；这里主要修改的是「本格 → 本格的」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "おいしいですが、あまり本格的ではないです。",
+          "meaning_zh": "好吃，不过不太正宗。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_3e91ae02-07bc-49ea-8c7e-995435067792",
+        "vocab_158952f2-96c6-47d0-805f-833680f71558"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ],
+      "corrected_japanese": "あまり本格的ではないです。"
+    },
+    {
+      "id": "expr_5249a469-c3a1-447f-8c7a-37401c5281ab",
+      "japanese": "～巡りをする",
+      "meaning_zh": "游访不同的同类地点",
+      "original_japanese": null,
+      "explanation_zh": "通常接地点或地点的类别，表示去不同的同类地方逛逛、体验。\n\n- カフェ巡りをする：逛不同的咖啡店。\n- ラーメン屋巡りをする：到不同拉面店吃吃看。\n- お寺巡りをする：游访不同寺院。\n\n这里要记的是「カフェ巡り」，不是把所有“到处走走”都叫「巡り」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "休日はカフェ巡りをして気分転換しています。",
+          "meaning_zh": "休息日会逛不同的咖啡店，转换心情。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_251c485c-c851-49d9-9b18-bbb25f0cf771",
+        "vocab_4bc94b83-4035-4c46-a3f9-344e74e24393",
+        "vocab_940759b7-9a75-4827-99a3-d5cafa82e719",
+        "vocab_dc3f95be-5e9e-4dc5-af12-d1b760b39a6e"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_4a33850a-acb4-49a6-8d72-adc6527c86d6",
+      "japanese": "こういった趣味はちょっとないんですよね",
+      "meaning_zh": "我没有这类爱好呢",
+      "original_japanese": "あんまり巡りしない",
+      "explanation_zh": "「こういった」指“这类”；「ちょっと」缓和口气；「んですよね」带有向对方说明自己情况的语气。\n\n如果只是说最近没去逛咖啡店，也可以说「最近はカフェ巡りをしていません」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "こういった趣味はちょっとないんですよね。",
+          "meaning_zh": "我没有这类爱好呢。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "こういった趣味はちょっとないんですが、休日はゲームをしたり、プログラムを書いたりしています。",
+          "meaning_zh": "我没有这类爱好，不过休息日会玩游戏、写程序。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_251c485c-c851-49d9-9b18-bbb25f0cf771",
+        "vocab_13a0a596-31ef-4e76-99b4-734270e000d7",
+        "vocab_dc3f95be-5e9e-4dc5-af12-d1b760b39a6e"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ],
+      "corrected_japanese": "こういった趣味はちょっとないんですよね"
+    },
+    {
+      "id": "expr_63c49c7e-b958-4610-9cd0-3398c7751f94",
+      "japanese": "気分転換をする／気分転換になる",
+      "meaning_zh": "转换心情",
+      "original_japanese": null,
+      "explanation_zh": "- 気分転換をする：主动换换心情。\n- 気分転換になる：某件事起到转换心情的作用。\n\n今日继续区分：主动为了放松去做某事，可说「気分転換をする」；某项活动起到放松作用，可说「気分転換になる」。课堂用自动词／他动词帮助理解，但“是否出于本人意志”不能作为所有动词的唯一分类标准。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "散歩をすると、いい気分転換になります。",
+          "meaning_zh": "散散步能很好地换换心情。",
+          "origin": "source"
+        },
+        {
+          "japanese": "試験が終わった後で、カラオケで気分転換をします。",
+          "meaning_zh": "考试结束后，在卡拉OK放松一下。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_940759b7-9a75-4827-99a3-d5cafa82e719"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_6d239b57-e119-4451-ae41-157b98f13d3c",
+      "japanese": "質にこだわる",
+      "meaning_zh": "讲究质量",
+      "original_japanese": "質を注意しながら",
+      "explanation_zh": "这里想表达对质量有要求、愿意打磨细节，用「こだわる」更贴切。助词是「に」。\n\n| 表达 | 侧重点 |\n|---|---|\n| ～に注意する | 小心、留意、防范某事 |\n| ～にこだわる | 讲究、重视、坚持某种标准 |\n\n课堂推荐搭配：**質にこだわる／クオリティにこだわる**。\n\n「注意する」不限于危险事物，也能说「細かい点に注意する」。但“追求品质”在这里用「こだわる」更准确。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "趣味でコードを書くときは、質にこだわっています。",
+          "meaning_zh": "作为兴趣写代码时，我很讲究质量。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "読みやすさにもこだわっています。",
+          "meaning_zh": "我也很讲究可读性。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_13a0a596-31ef-4e76-99b4-734270e000d7",
+        "vocab_8006991d-026a-4c17-adce-f097ce4785b5",
+        "vocab_40eeb18f-89c0-4bd5-a730-c22a82d8b385",
+        "vocab_d44f03bf-10ee-4082-83b9-569f2966d219"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ],
+      "corrected_japanese": "質にこだわる"
+    },
+    {
+      "id": "expr_f686081e-b9b9-4615-b30d-8563e5a4ba56",
+      "japanese": "関わっているかもしれない",
+      "meaning_zh": "可能涉及／存在关联",
+      "original_japanese": "これはAIと関わるかもしれない",
+      "explanation_zh": "- 関わる：辞书形。\n- 関わっている：て形＋いる，在这里表示当前参与或关联的状态。\n- ～かもしれない／～かもしれません：可能、也许。\n\n课堂对比例子：\n\n| 例句 | 用法 |\n|---|---|\n| 明日、日本料理を食べる。 | 明天吃，未来的动作。 |\n| 毎日、日本料理を食べる。 | 每天吃，习惯。 |\n\n记忆时保留这个场景区别即可：辞书形不一定只表示未来或习惯，「ている」也不一定只表示正在做，要结合动词和语境理解。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "この問題には、AIが関わっているかもしれません。",
+          "meaning_zh": "这个问题中可能涉及 AI。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "今、新しいプロジェクトに関わっています。",
+          "meaning_zh": "现在正参与一个新项目。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "来月から、新しいプロジェクトに関わる予定です。",
+          "meaning_zh": "计划从下个月起参与一个新项目。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_111e7d35-e668-4878-bfff-8c25eb937db1"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ],
+      "corrected_japanese": "これはAIと関わっているかもしれない。"
+    },
+    {
+      "id": "expr_35b1c2c5-d467-4369-a4d2-19205ec26271",
+      "japanese": "ちょっとご相談なんですが",
+      "meaning_zh": "有件事想和您商量",
+      "original_japanese": null,
+      "explanation_zh": "适合开启有点难说出口的话题。\n\n「ちょっと」使语气柔和；「なんですが」给后续话题留出空间。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "ちょっとご相談なんですが、生活音が気になるんです。",
+          "meaning_zh": "有件事想和您商量一下，我有些在意生活噪音。",
+          "origin": "source"
+        },
+        {
+          "japanese": "ちょっとご相談なんですが、この実装方針を見直してもよろしいでしょうか。",
+          "meaning_zh": "想和您商量一下，是否可以重新考虑这个实现方案？",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_b9179e3a-6edb-4fc4-99a5-c74eae0029ad",
+        "vocab_7cec2e50-e021-4137-9d7d-36754a636e18"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_a28a2176-6fe7-4112-9da5-4f73cbd66083",
+      "japanese": "～がこちらまで響いている",
+      "meaning_zh": "声音传到我这边来了",
+      "original_japanese": null,
+      "explanation_zh": "先描述声音带来的影响，让对方知道具体情况。\n\n「こちらまで」表示“一直传到我这一侧”；「響いている」描述声音传来、回响的情况。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "夜遅い時間に、足音がこちらまで響いているんです。",
+          "meaning_zh": "深夜时，脚步声传到我这边来了。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_eccad7a7-5712-4511-9e1f-636ac1564fbf"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_14b949b2-444b-4e6e-baba-a9dda3c0bdff",
+      "japanese": "～だけ少し気にしてもらえると助かります",
+      "meaning_zh": "如果能稍微注意一下，就帮大忙了",
+      "original_japanese": null,
+      "explanation_zh": "适合委婉地请求对方调整某个行为。\n\n- 「だけ」限定请求的范围。\n- 「少し」缓和要求。\n- 「～てもらえると」表示“如果对方能为我做……” 。\n- 「助かります」表示“这样对我很有帮助”。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "夜11時以降だけ、少し気にしてもらえると助かります。",
+          "meaning_zh": "如果晚上十一点以后能稍微注意一下，就帮大忙了。",
+          "origin": "source"
+        },
+        {
+          "japanese": "この部分だけ、もう一度確認してもらえると助かります。",
+          "meaning_zh": "如果能再确认一下这一部分，就帮大忙了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_d32225b0-41d8-4e60-97cf-94f6376583c4",
+      "japanese": "直接言うのも角が立ちそうで",
+      "meaning_zh": "担心直接说会伤和气",
+      "original_japanese": null,
+      "explanation_zh": "「角が立つ」表示引起摩擦、伤和气；「角が立ちそう」表示估计会引起摩擦。\n\n也可以用「～そうなので」明确说明原因。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "直接言うのも角が立ちそうで、管理会社に相談しました。",
+          "meaning_zh": "担心直接说会伤和气，所以和物业管理公司商量了。",
+          "origin": "source"
+        },
+        {
+          "japanese": "直接指摘すると角が立ちそうなので、まずはリーダーに相談しようと思います。",
+          "meaning_zh": "担心直接指出会伤和气，所以想先和负责人商量。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_7cec2e50-e021-4137-9d7d-36754a636e18",
+        "vocab_8c0de680-9c92-4211-95a8-ec5b4f1b0e75",
+        "vocab_87b3ae7e-0d09-43e8-b626-a2bcecc4b045",
+        "vocab_cc60b0b4-2b83-4334-9519-41a1e1adfa5d",
+        "vocab_74920c2a-eaa7-491f-b79a-c904645f51a8"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_51a20fbd-c716-42a3-8fea-ead59cc97554",
+      "japanese": "～について",
+      "meaning_zh": "关于……",
+      "original_japanese": null,
+      "explanation_zh": "名词＋について，用来提出谈论的主题。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "日本での暮らしについて話します。",
+          "meaning_zh": "谈论在日本的生活。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_5ea622cd-3d61-4725-8374-88f535132982"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_f17df7a1-44b4-4f59-b52e-721ea125408e",
+      "japanese": "～であれば",
+      "meaning_zh": "如果是……",
+      "original_japanese": null,
+      "explanation_zh": "用于提出条件；相比「なら」语气较正式。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "普通の会話であれば、問題ありません。",
+          "meaning_zh": "如果是普通对话，就没问题。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_4abb3885-a4ec-4c75-9258-92354b32d057",
+      "japanese": "～ながら",
+      "meaning_zh": "一边……一边……",
+      "original_japanese": null,
+      "explanation_zh": "动词ます形去ます＋ながら，两个动作通常由同一主体完成。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "話を聞きながら、メモを取ります。",
+          "meaning_zh": "一边听，一边记笔记。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_090f8b7a-b7db-4823-a58c-cc05564e640f",
+      "japanese": "～たり、～たりする",
+      "meaning_zh": "列举活动",
+      "original_japanese": null,
+      "explanation_zh": "动词た形＋り，列举代表性活动，不表示一定按顺序做。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "ゲームをしたり、プログラムを書いたりします。",
+          "meaning_zh": "玩游戏、写程序等。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_7761d1c8-12b3-4b4c-a806-4f43997ad61b",
+      "japanese": "～てみたい",
+      "meaning_zh": "想尝试做……",
+      "original_japanese": null,
+      "explanation_zh": "动词て形＋みたい，表示想体验某件事。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "箱根の温泉に行ってみたいです。",
+          "meaning_zh": "想去箱根的温泉体验一下。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_7cb747d3-19bb-4661-b942-1f6af31712f7"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_88a340ba-e992-40eb-8b04-bb9f9abdc649",
+      "japanese": "自分に合っている",
+      "meaning_zh": "适合自己",
+      "original_japanese": null,
+      "explanation_zh": "表示某种事物、工作方式等适合自己；「肌に合う」是本课进一步练习的惯用表达。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "この働き方は自分に合っています。",
+          "meaning_zh": "这种工作方式适合我。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_48bc42f8-f9eb-4ef9-a458-6cb0b3d710ce"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_18e96806-fa8b-4006-94f2-f2dc110fd756",
+      "japanese": "機械に強い",
+      "meaning_zh": "擅长设备相关的事情",
+      "original_japanese": null,
+      "explanation_zh": "「～に強い」在这里表示擅长某领域，不是身体力量大。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "彼は機械に強いです。",
+          "meaning_zh": "他很擅长处理设备相关的事情。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_849d0799-6232-447e-ad2f-593eafb5d280",
+      "japanese": "口から出てこない",
+      "meaning_zh": "知道但说不出来",
+      "original_japanese": null,
+      "explanation_zh": "形容认识一个词或句型，但现场不能马上说出来。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "意味は分かるんですが、すぐには口から出てきません。",
+          "meaning_zh": "知道意思，但不能马上说出来。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "表达方式"
+      ]
+    },
+    {
+      "id": "expr_31a160ef-dfda-4a0c-99ea-3fbb0a01cfe7",
+      "japanese": "昨日勉強した表現",
+      "meaning_zh": "昨天学过的表达",
+      "original_japanese": "昨日で勉強した表現",
+      "explanation_zh": "「昨日」直接修饰后面的动作，这里不加「で」。类似「今日、東京に行きます」。昨天等时间词可以作状语；不要因某词后面没助词，就一律判定它在词典上是副词。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "昨日勉強した表現を復習します。",
+          "meaning_zh": "复习昨天学过的表达。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_87b3ae7e-0d09-43e8-b626-a2bcecc4b045",
+        "vocab_b697146b-1326-4fa6-825c-36f1ddefa4f6"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ],
+      "corrected_japanese": "昨日勉強した表現"
+    },
+    {
+      "id": "expr_87c79d3a-8c66-4fdc-99e8-1e61be1ad44e",
+      "japanese": "時間表現＋で",
+      "meaning_zh": "以某个时间为界、告一段落",
+      "original_japanese": null,
+      "explanation_zh": "本课用「明日で大学を卒業します」说明以时间为界、阶段结束的「で」。这和叙述“昨天做了什么”不同，不能说「昨日で勉強した」。时间词＋で也有其他语境，不要把所有用法都等同于期限。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "この仕事は今日で終わりです。",
+          "meaning_zh": "这项工作到今天就结束了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_b697146b-1326-4fa6-825c-36f1ddefa4f6",
+        "vocab_62d561a4-a823-4de0-8d9c-75caaaa8717f"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ]
+    },
+    {
+      "id": "expr_c2374683-d545-4981-97db-45a554edcc32",
+      "japanese": "よく日本料理を食べます",
+      "meaning_zh": "经常吃日本料理",
+      "original_japanese": null,
+      "explanation_zh": "「よく」表示频率，可以说「よく日本料理を食べます」或「日本料理をよく食べます」。课堂说明副词位置可以调整；你追问「よく私は……」是否自然后，老师说明日常通常省略已知的「私は」。语法可成立，不代表每种顺序同样常用；位置也会影响焦点。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "よく日本料理を食べます。",
+          "meaning_zh": "经常吃日本料理。",
+          "origin": "source"
+        },
+        {
+          "japanese": "日本料理をよく食べます。",
+          "meaning_zh": "经常吃日本料理。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_dd969658-fc8e-40f7-a117-ee9cc2dee67f"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ]
+    },
+    {
+      "id": "expr_1626f425-70e2-43f2-bea0-f123491191a8",
+      "japanese": "動詞辞書形＋だけであれば",
+      "meaning_zh": "如果只是做某事的话",
+      "original_japanese": "使うだけの程度であれば",
+      "explanation_zh": "「使うだけの程度であれば」可以简化为「使うだけであれば」。原动词后直接接「だけであれば」，不用额外加「の程度」。日常也可用「～だけなら」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "写真を撮るだけであれば、スマホだけで十分です。",
+          "meaning_zh": "如果只是拍照片，手机就够了。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_87b3ae7e-0d09-43e8-b626-a2bcecc4b045",
+        "vocab_f32fa207-a87d-4e83-88f0-71a8d86d9982"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ],
+      "corrected_japanese": "使うだけであれば"
+    },
+    {
+      "id": "expr_57f3f694-ea97-43b6-af5d-5b92798c0d0c",
+      "japanese": "～ていただけますか／～ていただくことは可能でしょうか",
+      "meaning_zh": "礼貌提出请求／询问是否可能",
+      "original_japanese": null,
+      "explanation_zh": "课堂比较了请求的力度：「～ていただけますか」直接请对方做某事；「～ていただくことは可能でしょうか」先问可行性，较正式、较绕。老师在所举场景中认为前者要求感更强。不要理解成下属绝不能对上司用「いただけますか」；语气、关系、内容都会影响感受。更委婉的补充说法是「～ていただけないでしょうか」。\n\n你在课堂提问时用的是名词请求「指摘をいただけますか」与「指摘をいただくことが可能でしょうか」。名词请求和「Vていただく」都可以比较直接请求与询问可行性的区别；「ことは／ことが可能でしょうか」要结合句子语境。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "内容を確認していただけますか。",
+          "meaning_zh": "能请您确认一下内容吗？",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "内容を確認していただくことは可能でしょうか。",
+          "meaning_zh": "是否可以请您确认一下内容？",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "指摘をいただけますか。",
+          "meaning_zh": "能请您指正一下吗？",
+          "origin": "source"
+        },
+        {
+          "japanese": "指摘をいただくことが可能でしょうか。",
+          "meaning_zh": "是否可以请您给予指正？",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_87b3ae7e-0d09-43e8-b626-a2bcecc4b045",
+        "vocab_74920c2a-eaa7-491f-b79a-c904645f51a8"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ]
+    },
+    {
+      "id": "expr_68433be4-cf5d-4e0c-95e6-a3f91fdf7829",
+      "japanese": "～てもらえたら助かります／嬉しいです",
+      "meaning_zh": "如果能帮我做……就帮大忙了／我会很高兴",
+      "original_japanese": null,
+      "explanation_zh": "老师在讨论请求语气时提到这两种表达。这里把“对我有帮助”或“我会高兴”作为说话人的感受，缓和要求。对更正式的对象可调整为「～ていただけると助かります」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "確認してもらえたら助かります。",
+          "meaning_zh": "如果能帮忙确认一下，就帮大忙了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ]
+    },
+    {
+      "id": "expr_f9c0a35e-b064-4fb9-b719-4344bbd68fb8",
+      "japanese": "～を参照する",
+      "meaning_zh": "参照某份资料",
+      "original_japanese": "テンプレートに参照しながら",
+      "explanation_zh": "「参照する」的对象用「を」：テンプレートを参照する。不要在此把中文“参照……”直接对应成「に参照する」。「～を参考にする」是另一种可用的结构。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "テンプレートを参照しながら、文章を作成します。",
+          "meaning_zh": "参照模板来写文章。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_87b3ae7e-0d09-43e8-b626-a2bcecc4b045",
+        "vocab_e881dd45-cc5f-46df-b367-23072d7e048d"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ],
+      "corrected_japanese": "テンプレートを参照しながら"
+    },
+    {
+      "id": "expr_409967ab-8c04-4b96-836c-91f7c0705194",
+      "japanese": "動詞のば形",
+      "meaning_zh": "如果……就……",
+      "original_japanese": "伝えば",
+      "explanation_zh": "课堂练习「座る→座れば」「飲む→飲めば」「行く→行けば」「伝える→伝えれば」。五段动词把词尾う段改え段＋ば；一段动词去る＋れば；する→すれば、来る→来れば（くれば）。老师的发音提示应结合动词类别记，不能不分类型机械替换。\n\n用户已确认原说法为「伝えば」，正确形式是「伝えれば」。「伝える」是一段动词，去掉る后加れば，不能只把る去掉后直接加ば。「伝えば」不是现代标准日语中「伝える」的正确ば形。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "要件をAIに伝えれば、作業を進めやすくなります。",
+          "meaning_zh": "把需求告诉AI，就更容易推进工作。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_87b3ae7e-0d09-43e8-b626-a2bcecc4b045",
+        "vocab_5bc22d45-7f51-4f4b-b7c8-bae72e01bd27",
+        "vocab_775718bc-836d-4e22-b6b9-a26ad814b697"
+      ],
+      "origin": "teacher_correction",
+      "verification": "user_confirmed",
+      "tags": [
+        "今日补充"
+      ],
+      "corrected_japanese": "伝えれば"
+    },
+    {
+      "id": "expr_bb0214bf-1031-4e87-83db-8915b77e3467",
+      "japanese": "場所＋で気分転換をする",
+      "meaning_zh": "在某地转换心情",
+      "original_japanese": "カラオケに気分転換をします",
+      "explanation_zh": "「気分転換をする」本身不是移动动词。在卡拉OK放松，用「カラオケで気分転換をする」。地点＋で表示动作发生在哪里。要表达“去卡拉OK”时，另用移动动词「行く」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "試験が終わった後で、カラオケで気分転換をします。",
+          "meaning_zh": "考试结束后，在卡拉OK放松一下。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_940759b7-9a75-4827-99a3-d5cafa82e719"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ],
+      "corrected_japanese": "カラオケで気分転換をします。"
+    },
+    {
+      "id": "expr_76b4ffb2-2233-49da-bf56-3462e7a7437a",
+      "japanese": "動詞ます形の語幹＋に行く",
+      "meaning_zh": "去做某事",
+      "original_japanese": null,
+      "explanation_zh": "「に」前放动词ます形去ます，表示移动的目的。例：飲みます→飲みに行く、カラオケをします→カラオケをしに行く。可把目的地也放进句子：「カラオケに気分転換をしに行く」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "お酒を飲みに行く。",
+          "meaning_zh": "去喝酒。",
+          "origin": "source"
+        },
+        {
+          "japanese": "カラオケをしに行く。",
+          "meaning_zh": "去唱卡拉OK。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_940759b7-9a75-4827-99a3-d5cafa82e719"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ]
+    },
+    {
+      "id": "expr_dd358b6f-2eb0-4446-8ecf-e89ae51b2497",
+      "japanese": "一年ぐらい会社に行っていません",
+      "meaning_zh": "大约一年没有去公司了",
+      "original_japanese": "一年ぐらい会社に行ったことがない",
+      "explanation_zh": "说明从过去延续至今的一段时间未发生某动作，用「～ていません」。「～たことがない」强调未有过某种经历。本课你想说最近约一年没去公司，所以老师推荐前者；「たことがない」也可限定经历范围，不必一律理解为整个人生。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "一年ぐらい会社に行っていません。",
+          "meaning_zh": "大约一年没有去公司了。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ],
+      "corrected_japanese": "一年ぐらい会社に行っていません"
+    },
+    {
+      "id": "expr_f09ef44c-46c9-4307-a775-b09eedfc0c6e",
+      "japanese": "ぶっちゃけ",
+      "meaning_zh": "说实话、坦白说",
+      "original_japanese": null,
+      "explanation_zh": "用于熟人之间直说真实感受，口语色彩强。正式会议、对客户或较严肃的工作沟通通常改用「率直に言うと」等表达。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "ぶっちゃけ、最初の一か月はかなりきつかったです。",
+          "meaning_zh": "说实话，最初一个月挺辛苦的。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_e8829d00-2d07-40a2-a086-5664cae25dd6",
+        "vocab_6d0b19f7-e70b-4d28-8138-90bf36b77e39"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ]
+    },
+    {
+      "id": "expr_c5e6e81c-1292-4bd4-94e7-4a5933be9532",
+      "japanese": "率直に言うと",
+      "meaning_zh": "坦率地说",
+      "original_japanese": null,
+      "explanation_zh": "比「ぶっちゃけ」更适合正式或职场场景。读音：そっちょくにいうと。课堂还练习了「きつかった」的读音；将词形记为「きつい→きつかった」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "率直に言うと、まだ電話は少し苦手です。",
+          "meaning_zh": "坦率地说，我现在还是有点不擅长打电话。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_e8829d00-2d07-40a2-a086-5664cae25dd6",
+        "vocab_6d0b19f7-e70b-4d28-8138-90bf36b77e39",
+        "vocab_7935e3b7-12fb-4a10-87de-8f686ebadfcd",
+        "vocab_39d01bcc-a592-4efb-8eb7-8819ed509347"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ]
+    },
+    {
+      "id": "expr_8a468174-63b3-440b-b4e8-e02c81afe3ec",
+      "japanese": "肌に合う／自分の肌に合う",
+      "meaning_zh": "适合皮肤；适合自己的性情和生活习惯",
+      "original_japanese": "生活スタイルが自分に肌に合います",
+      "explanation_zh": "「肌」读はだ。第一义用于护肤品对皮肤是否合适；也可比喻城市、环境、生活方式是否适合自己。「自分」と「肌」之间是名词关系，用「自分の肌」，不用「自分に肌」。状态用「合っています」也自然。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "この街は静かで、意外と自分の肌に合います。",
+          "meaning_zh": "这个城市很安静，意外地很适合我。",
+          "origin": "source"
+        },
+        {
+          "japanese": "このクリームは自分の肌に合っていません。",
+          "meaning_zh": "这款面霜不适合我的皮肤。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_11519c9d-9f60-4ef4-9444-a2ca091490ee",
+        "vocab_48bc42f8-f9eb-4ef9-a458-6cb0b3d710ce",
+        "vocab_719d6130-9183-4a82-b79b-0e4846de7924"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ],
+      "corrected_japanese": "生活スタイルが自分の肌に合っています。"
+    },
+    {
+      "id": "expr_1f3dc134-8c9a-4b53-a7ed-e59e28f6e5f5",
+      "japanese": "使わなくなりました",
+      "meaning_zh": "变得不再使用了",
+      "original_japanese": "もう使っていません（想突出不再使用的变化时）",
+      "explanation_zh": "否定形＋なる：动词ない形去い＋くなる。例：使わない→使わなくなる，動かない→動かなくなる。「使っていません」陈述现在没用；「使わなくなりました」突出从以前用到现在不再用的变化。不能看到中文“了”就一律翻成なる。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "このクリームが自分の肌に合っていないので、使わなくなりました。",
+          "meaning_zh": "因为这款面霜不适合我的皮肤，我就不再用了。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_719d6130-9183-4a82-b79b-0e4846de7924"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ],
+      "corrected_japanese": "使わなくなりました"
+    },
+    {
+      "id": "expr_51b1b0c3-c8aa-41c8-9b54-7f1df8a81567",
+      "japanese": "行きたくなくなりました",
+      "meaning_zh": "变得不想去了",
+      "original_japanese": null,
+      "explanation_zh": "愿望「～たい」变否定「～たくない」，再变状态变化「～たくなくなる」：行きたい→行きたくない→行きたくなくなりました。不要说「行きたくない風になりました」来表达本课意图。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "その映画を見た後で、そこに行きたくなくなりました。",
+          "meaning_zh": "看了那部电影后，就不想去那里了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ]
+    },
+    {
+      "id": "expr_616baf3d-02fe-4873-9c40-8d15bc1ed24f",
+      "japanese": "遊べなくなりました／動かなくなりました",
+      "meaning_zh": "变得不能玩了／不再运行了",
+      "original_japanese": null,
+      "explanation_zh": "能力或可能性发生变化时：遊ぶ→遊べる→遊べない→遊べなくなる。状态变化：動く→動かない→動かなくなる。两者都强调原先能做／能运行，现在不能。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "パソコンが壊れたので、ゲームで遊べなくなりました。",
+          "meaning_zh": "电脑坏了，所以不能玩游戏了。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "パソコンが動かなくなりました。",
+          "meaning_zh": "电脑不再运行了。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_b7681ed3-732e-4263-934a-d743b0a85db2",
+        "vocab_55d936dc-6e60-4e24-9f25-0854d72221c6"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ]
+    },
+    {
+      "id": "expr_7813003f-bee2-4012-803c-06a6614fbf74",
+      "japanese": "ゲームで遊ぶ",
+      "meaning_zh": "用游戏来玩、玩游戏",
+      "original_japanese": "ゲームを遊ぶ",
+      "explanation_zh": "本课老师推荐把「ゲームを遊ぶ」改为「ゲームで遊ぶ」，「で」表示手段。还可以直接说「ゲームをする」。不要因此把所有自动词前的「を」都判为错误：「道を歩く」等用法另有规则。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "休日はゲームで遊びます。",
+          "meaning_zh": "休息日玩游戏。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_dc3f95be-5e9e-4dc5-af12-d1b760b39a6e",
+        "vocab_87b3ae7e-0d09-43e8-b626-a2bcecc4b045",
+        "vocab_55d936dc-6e60-4e24-9f25-0854d72221c6"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ],
+      "corrected_japanese": "ゲームで遊ぶ"
+    },
+    {
+      "id": "expr_6a0b1d4a-b764-4d3e-9c60-e3a11da322f3",
+      "japanese": "パソコンが壊れた／動かなくなった／死んだ",
+      "meaning_zh": "电脑坏了／不运行了／挂了",
+      "original_japanese": null,
+      "explanation_zh": "「壊れた」「動かなくなった」是中性说法；「死んだ」是把设备失效说成“挂了”的较强口语。团队熟人聊天可能使用，对初次见面的人或正式报告优先用中性表达。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "パソコンが壊れました。",
+          "meaning_zh": "电脑坏了。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "ソフトが動かなくなりました。",
+          "meaning_zh": "软件不再运行了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ]
+    },
+    {
+      "id": "expr_4ae48991-ecb9-4881-bbf1-9a63ac22b1d5",
+      "japanese": "そういった表現をよく見ます",
+      "meaning_zh": "经常看到这类表达",
+      "original_japanese": "そういう言い方がよく見えます",
+      "explanation_zh": "表达在Teams等地方经常遇到某种写法，用「よく見ます」。本课的「見える」更适合问画面能否看清、是否可见。不要把「見る＝主动／見える＝被动」当成所有语境的机械划分，重点在此处“经常遇见”与“可见性”的区别。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "Teamsでそういった表現をよく見ます。",
+          "meaning_zh": "在Teams里经常看到这类表达。",
+          "origin": "source"
+        },
+        {
+          "japanese": "画面は見えますか。",
+          "meaning_zh": "能看见画面吗？",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_dd969658-fc8e-40f7-a117-ee9cc2dee67f",
+        "vocab_8d4c993d-884e-4a47-8954-fb9a65a14df6",
+        "vocab_787b9a98-d641-4ee8-84a1-57363d9ec1ff"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ],
+      "corrected_japanese": "そういった表現をよく見ます"
+    },
+    {
+      "id": "expr_de92ac54-aa17-45fd-81e3-7f7db482e08f",
+      "japanese": "頭が真っ白になる",
+      "meaning_zh": "脑子一片空白",
+      "original_japanese": null,
+      "explanation_zh": "因紧张等一时不知道该说什么。「なる」表示状态变化；过去说「頭が真っ白になりました」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "病院に電話した時、緊張して頭が真っ白になりました。",
+          "meaning_zh": "给医院打电话时，因为紧张，脑子一片空白。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_fb5ab8ce-062a-43c7-8eb7-0bcf338cfda3",
+        "vocab_72b58374-d59a-40dd-aaf1-6e354fd76ea9"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ]
+    },
+    {
+      "id": "expr_8d4ab363-e35b-47e9-bdc6-64007463399f",
+      "japanese": "その時は全然ダメでした",
+      "meaning_zh": "那时候完全不行",
+      "original_japanese": "その時は全然ダメです",
+      "explanation_zh": "回顾刚来日本时的过去情况，把「ダメです」改为「ダメでした」。现在与过去的评价要和叙述时间一致。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "来日したばかりの頃は、電話で話すのが全然ダメでした。",
+          "meaning_zh": "刚来日本时，完全不行的是用电话沟通。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_f5df7569-a8d5-4a94-803c-ec7cd4f3f059",
+        "vocab_d977cca0-b035-4e17-bfb9-bc521ff29d26"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ],
+      "corrected_japanese": "その時は全然ダメでした"
+    },
+    {
+      "id": "expr_00d74558-a4a3-4552-9791-391a1441958f",
+      "japanese": "留学していた時",
+      "meaning_zh": "留学期间",
+      "original_japanese": "留学の時",
+      "explanation_zh": "本课老师推荐把「留学の時」改为「留学していた時」，明确是在留学持续期间发生的事情。「留学の時」不必一律判为不成立；推荐形式更具体。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "留学していた時は、大阪に住んでいました。",
+          "meaning_zh": "留学期间住在大阪。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_65bb1388-ae6a-4f05-b578-c854d415e8b8"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ],
+      "corrected_japanese": "留学していた時"
+    },
+    {
+      "id": "expr_4f996d03-7b3d-4668-86ef-feef627bcac4",
+      "japanese": "～だから／～のため",
+      "meaning_zh": "因为……／由于……",
+      "original_japanese": "英語が全然ダメのため",
+      "explanation_zh": "本课「英語が全然ダメのため」改为日常表达「英語が全然ダメだから」。名词／な形容词接だから。「ため」较书面，在通知、解释、新闻中常见；不能说日常绝对不用。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "英語が苦手だから、日本語で説明します。",
+          "meaning_zh": "因为不擅长英语，我用日语说明。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "台風のため、電車が遅れています。",
+          "meaning_zh": "受台风影响，电车晚点。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_39d01bcc-a592-4efb-8eb7-8819ed509347",
+        "vocab_d977cca0-b035-4e17-bfb9-bc521ff29d26"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ],
+      "corrected_japanese": "英語が全然ダメだから"
+    },
+    {
+      "id": "expr_0254fd0d-07aa-4370-b6d8-45e73cadf8c5",
+      "japanese": "「は」的语调练习",
+      "meaning_zh": "练习主题部分与后续说明的语调",
+      "original_japanese": null,
+      "explanation_zh": "课堂以「この街は静かで……」练习主题助词は附近的音高走向。你追问是否总下降后，老师补充说明解释时也可能上扬、会因说话人和语境变化。因此不要背“は永远降调”。准确的个人发音问题需要音频回听，不从文字转写推测声调。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "この街は静かで、意外と自分の肌に合います。",
+          "meaning_zh": "这个城市很安静，意外地很适合我。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_11519c9d-9f60-4ef4-9444-a2ca091490ee"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ]
+    },
+    {
+      "id": "expr_62cfde00-9156-4214-b3c7-c22d9ba33f5b",
+      "japanese": "結構～／結構です",
+      "meaning_zh": "挺、相当；可以／不用了",
+      "original_japanese": null,
+      "explanation_zh": "作副词时表示程度：結構忙しい、結構自分の肌に合っている。回答别人是否需要某物时「結構です」可以表示谢绝；但也可表示认可或“这样即可”，例如「メールで結構です」。必须看上下文，不能把所有結構です都翻成不要。补充核对：[小学馆辞典「結構」](https://kotobank.jp/word/%E7%B5%90%E6%A7%8B-490460)。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "今日は結構忙しいです。",
+          "meaning_zh": "今天挺忙的。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "いいえ、結構です。",
+          "meaning_zh": "不用了，谢谢。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "メールで結構です。",
+          "meaning_zh": "用邮件就可以。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_c3805376-bab3-4710-98ac-9271878dd44a",
+        "vocab_e0f53a8d-85e6-44ee-adf5-ccbe6ef78900"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ]
+    },
+    {
+      "id": "expr_d6ad4c29-668b-4a33-a859-552c6c0602e4",
+      "japanese": "～が完成する／～を完成させる",
+      "meaning_zh": "某物完成／把某物完成",
+      "original_japanese": "残った部分を完成する",
+      "explanation_zh": "本课将「残った部分を完成する」改为「完成させる」。表达成果完成用「プログラムが完成する」；表达自己把它完成用「プログラムを完成させる」。课堂说“完成する只有自动词”的说明过于绝对：国立国语研究所也收录他动用例，但注明「完成させる」更常见。本课推荐形式适合优先掌握。补充核对：[国立国语研究所 IPAL「完成」](https://www2.ninjal.ac.jp/dictionaries/IPALBN/pdf_dir/%E3%81%8B%E3%82%93%E3%81%9B%E3%81%84.pdf)。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "この後は、プログラムを完成させるつもりです。",
+          "meaning_zh": "接下来打算把程序完成。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "プログラムが完成しました。",
+          "meaning_zh": "程序完成了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_8090a3ee-dcd7-4ea2-bde3-0887e06693b2",
+        "vocab_a9861a87-9d49-4118-ac37-f0e3373c1aa4"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "今日补充"
+      ],
+      "corrected_japanese": "残った部分を完成させる"
+    },
+    {
+      "id": "expr_ac26f692-47ce-40bf-93c4-07882270c027",
+      "japanese": "復習しやすくする",
+      "meaning_zh": "让复习更方便、更容易",
+      "original_japanese": null,
+      "explanation_zh": "这是根据开场“让复习更方便”的意图补充的自然表达，不是已确认的老师逐字纠正。「動詞ます形去ます＋やすい」表示容易做某事；「やすい→やすくする」表示让某事更容易。反推错误示例仅用于说明接续，不代表你的原话。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "復習しやすくするために、学習アプリを作っています。",
+          "meaning_zh": "为了让复习更方便，正在制作学习应用。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "assistant_supplement",
+      "verification": "source_supported",
+      "tags": [
+        "复习补充"
+      ],
+      "error_example_japanese": "復習を便利します",
+      "corrected_japanese": "復習しやすくする"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "vocab_5ea622cd-3d61-4725-8374-88f535132982",
+      "japanese": "暮らし",
+      "reading": "くらし",
+      "part_of_speech": "名词",
+      "meaning_zh": "生活、日常生活",
+      "collocations": [
+        "日本での暮らし"
+      ],
+      "examples": [
+        {
+          "japanese": "日本での暮らしに慣れました。",
+          "meaning_zh": "已经习惯在日本的生活。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_f5df7569-a8d5-4a94-803c-ec7cd4f3f059",
+      "japanese": "来日",
+      "reading": "らいにち",
+      "part_of_speech": "名词",
+      "meaning_zh": "来到日本",
+      "collocations": [
+        "来日する／来日したばかり"
+      ],
+      "examples": [
+        {
+          "japanese": "来日してから三年になります。",
+          "meaning_zh": "来日本已经三年了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_7bee9380-39fd-4caa-9e55-2f0d04ce1318",
+      "japanese": "頃",
+      "reading": "ころ",
+      "part_of_speech": "名词",
+      "meaning_zh": "时候、时期",
+      "collocations": [
+        "来日したばかりの頃"
+      ],
+      "examples": [
+        {
+          "japanese": "子どもの頃、よく外で遊びました。",
+          "meaning_zh": "小时候经常在外面玩。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_84a3d746-2bc0-48e1-8363-a6fc10b33f3f",
+      "japanese": "歓迎会",
+      "reading": "かんげいかい",
+      "part_of_speech": "名词",
+      "meaning_zh": "欢迎新成员的聚会",
+      "collocations": [
+        "歓迎会に参加する"
+      ],
+      "examples": [
+        {
+          "japanese": "歓迎会に参加しました。",
+          "meaning_zh": "参加了欢迎会。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_8ada655b-e80e-4799-bb93-2dd0fe6da0c2",
+      "japanese": "ホームシック",
+      "reading": "ホームシック",
+      "part_of_speech": "名词",
+      "meaning_zh": "思乡、想家",
+      "collocations": [
+        "ホームシックになる"
+      ],
+      "examples": [
+        {
+          "japanese": "ホームシックになりました。",
+          "meaning_zh": "开始想家了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_5d97cc48-89aa-421e-89da-692c224b09c9",
+      "japanese": "ビデオコール",
+      "reading": "ビデオコール",
+      "part_of_speech": "名词",
+      "meaning_zh": "视频通话",
+      "collocations": [
+        "家族とビデオコールをする"
+      ],
+      "examples": [
+        {
+          "japanese": "家族とビデオコールをします。",
+          "meaning_zh": "和家人视频通话。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_d70bbb4c-abdc-45c2-8690-db73c3af2b96",
+      "japanese": "ビデオ通話",
+      "reading": "ビデオつうわ",
+      "part_of_speech": "名词",
+      "meaning_zh": "视频通话",
+      "collocations": [
+        "与ビデオコール同类的说法"
+      ],
+      "examples": [
+        {
+          "japanese": "一週間に一回、ビデオ通話をします。",
+          "meaning_zh": "每周视频通话一次。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_251c485c-c851-49d9-9b18-bbb25f0cf771",
+      "japanese": "カフェ巡り",
+      "reading": "カフェめぐり",
+      "part_of_speech": "名词",
+      "meaning_zh": "咖啡店巡游、逛不同咖啡店",
+      "collocations": [
+        "カフェ巡りをする"
+      ],
+      "examples": [
+        {
+          "japanese": "休日はカフェ巡りをします。",
+          "meaning_zh": "休息日逛不同的咖啡店。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_4bc94b83-4035-4c46-a3f9-344e74e24393",
+      "japanese": "お寺巡り",
+      "reading": "おてらめぐり",
+      "part_of_speech": "名词",
+      "meaning_zh": "游访不同寺院",
+      "collocations": [
+        "お寺巡りをする"
+      ],
+      "examples": [
+        {
+          "japanese": "京都でお寺巡りをしました。",
+          "meaning_zh": "在京都游访了不同寺院。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_940759b7-9a75-4827-99a3-d5cafa82e719",
+      "japanese": "気分転換",
+      "reading": "きぶんてんかん",
+      "part_of_speech": "名词",
+      "meaning_zh": "转换心情、调整状态",
+      "collocations": [
+        "気分転換をする／になる"
+      ],
+      "examples": [
+        {
+          "japanese": "散歩はいい気分転換になります。",
+          "meaning_zh": "散步能很好地转换心情。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_13a0a596-31ef-4e76-99b4-734270e000d7",
+      "japanese": "趣味",
+      "reading": "しゅみ",
+      "part_of_speech": "名词",
+      "meaning_zh": "兴趣、爱好",
+      "collocations": [
+        "こういった趣味"
+      ],
+      "examples": [
+        {
+          "japanese": "趣味はゲームです。",
+          "meaning_zh": "爱好是游戏。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_dc3f95be-5e9e-4dc5-af12-d1b760b39a6e",
+      "japanese": "休日",
+      "reading": "きゅうじつ",
+      "part_of_speech": "名词",
+      "meaning_zh": "休息日、假日",
+      "collocations": [
+        "休日はゲームをする"
+      ],
+      "examples": [
+        {
+          "japanese": "休日は家で休みます。",
+          "meaning_zh": "休息日在家休息。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_168aa846-326b-4cd9-b573-47a0dd90ce56",
+      "japanese": "レジ袋",
+      "reading": "レジぶくろ",
+      "part_of_speech": "名词",
+      "meaning_zh": "结账时店里提供的购物袋",
+      "collocations": [
+        "レジ袋が有料"
+      ],
+      "examples": [
+        {
+          "japanese": "レジ袋は有料です。",
+          "meaning_zh": "购物袋要收费。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_378dc40f-027c-465d-a0ad-266132597403",
+      "japanese": "有料",
+      "reading": "ゆうりょう",
+      "part_of_speech": "名词",
+      "meaning_zh": "收费",
+      "collocations": [
+        "有料の袋"
+      ],
+      "examples": [
+        {
+          "japanese": "このサービスは有料です。",
+          "meaning_zh": "这项服务收费。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_7cb747d3-19bb-4661-b942-1f6af31712f7",
+      "japanese": "温泉",
+      "reading": "おんせん",
+      "part_of_speech": "名词",
+      "meaning_zh": "温泉",
+      "collocations": [
+        "温泉に行く"
+      ],
+      "examples": [
+        {
+          "japanese": "温泉に行ってみたいです。",
+          "meaning_zh": "想去温泉体验一下。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_3e91ae02-07bc-49ea-8c7e-995435067792",
+      "japanese": "本格的",
+      "reading": "ほんかくてき",
+      "part_of_speech": "な形容词",
+      "meaning_zh": "正宗、地道；正式、真正意义上的",
+      "collocations": [
+        "本格的な四川料理"
+      ],
+      "examples": [
+        {
+          "japanese": "本格的な四川料理を食べました。",
+          "meaning_zh": "吃了正宗的四川菜。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_158952f2-96c6-47d0-805f-833680f71558",
+      "japanese": "四川料理",
+      "reading": "しせんりょうり",
+      "part_of_speech": "名词",
+      "meaning_zh": "四川菜",
+      "collocations": [
+        "本格的な四川料理"
+      ],
+      "examples": [
+        {
+          "japanese": "四川料理が好きです。",
+          "meaning_zh": "喜欢四川菜。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "日本生活与兴趣"
+      ]
+    },
+    {
+      "id": "vocab_dbdeb748-8b0e-424c-8d03-a957b0a6e0cf",
+      "japanese": "同僚",
+      "reading": "どうりょう",
+      "part_of_speech": "名词",
+      "meaning_zh": "同事",
+      "collocations": [
+        "新しい同僚"
+      ],
+      "examples": [
+        {
+          "japanese": "同僚と話し合いました。",
+          "meaning_zh": "和同事讨论了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_c10c5695-79c5-4daa-91a9-e8acc023f3fa",
+      "japanese": "自社",
+      "reading": "じしゃ",
+      "part_of_speech": "名词",
+      "meaning_zh": "自己所属的公司",
+      "collocations": [
+        "派遣场景中指自己所属公司"
+      ],
+      "examples": [
+        {
+          "japanese": "自社のルールを確認します。",
+          "meaning_zh": "确认自己公司的规定。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_ccd8bebb-0260-4cd4-ad10-4ad2b4fdf3ff",
+      "japanese": "現場",
+      "reading": "げんば",
+      "part_of_speech": "名词",
+      "meaning_zh": "实际工作或项目现场",
+      "collocations": [
+        "与自社区分"
+      ],
+      "examples": [
+        {
+          "japanese": "現場で働いています。",
+          "meaning_zh": "在项目现场工作。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_677be315-7ab5-44a1-9034-5d2b4a1e5308",
+      "japanese": "職場",
+      "reading": "しょくば",
+      "part_of_speech": "名词",
+      "meaning_zh": "工作场所",
+      "collocations": [
+        "職場での会話"
+      ],
+      "examples": [
+        {
+          "japanese": "職場で日本語を使います。",
+          "meaning_zh": "在工作场所使用日语。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_d33a2a46-78ce-4313-b69b-e9b9028995d4",
+      "japanese": "派遣",
+      "reading": "はけん",
+      "part_of_speech": "名词",
+      "meaning_zh": "派遣",
+      "collocations": [
+        "派遣会社"
+      ],
+      "examples": [
+        {
+          "japanese": "派遣会社に勤めています。",
+          "meaning_zh": "在派遣公司工作。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_c9f8ecfd-75c0-46cf-87f9-102f75cb4216",
+      "japanese": "会議",
+      "reading": "かいぎ",
+      "part_of_speech": "名词",
+      "meaning_zh": "会议",
+      "collocations": [
+        "会議で提案する"
+      ],
+      "examples": [
+        {
+          "japanese": "会議で提案します。",
+          "meaning_zh": "在会议上提案。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_0e6570f4-1f15-4048-95c0-13682830f223",
+      "japanese": "提案",
+      "reading": "ていあん",
+      "part_of_speech": "名词",
+      "meaning_zh": "提案、建议",
+      "collocations": [
+        "提案する"
+      ],
+      "examples": [
+        {
+          "japanese": "新しい方法を提案しました。",
+          "meaning_zh": "提出了新的方法。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_8861bf84-edf7-42ff-8e29-6285586c7a93",
+      "japanese": "質",
+      "reading": "しつ",
+      "part_of_speech": "名词",
+      "meaning_zh": "质量、品质",
+      "collocations": [
+        "質にこだわる"
+      ],
+      "examples": [
+        {
+          "japanese": "質にこだわっています。",
+          "meaning_zh": "很讲究质量。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_8006991d-026a-4c17-adce-f097ce4785b5",
+      "japanese": "クオリティ",
+      "reading": "クオリティ",
+      "part_of_speech": "名词",
+      "meaning_zh": "质量、品质",
+      "collocations": [
+        "クオリティにこだわる"
+      ],
+      "examples": [
+        {
+          "japanese": "クオリティを重視します。",
+          "meaning_zh": "重视质量。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_40eeb18f-89c0-4bd5-a730-c22a82d8b385",
+      "japanese": "こだわる",
+      "reading": "こだわる",
+      "part_of_speech": "动词／固定搭配",
+      "meaning_zh": "讲究、执着、坚持标准",
+      "collocations": [
+        "～にこだわる"
+      ],
+      "examples": [
+        {
+          "japanese": "読みやすさにこだわっています。",
+          "meaning_zh": "很讲究可读性。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_d44f03bf-10ee-4082-83b9-569f2966d219",
+      "japanese": "注意する",
+      "reading": "ちゅういする",
+      "part_of_speech": "动词／固定搭配",
+      "meaning_zh": "留意、小心；提醒",
+      "collocations": [
+        "此处学习～に注意する"
+      ],
+      "examples": [
+        {
+          "japanese": "車に注意してください。",
+          "meaning_zh": "请小心车辆。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_111e7d35-e668-4878-bfff-8c25eb937db1",
+      "japanese": "関わる",
+      "reading": "かかわる",
+      "part_of_speech": "动词／固定搭配",
+      "meaning_zh": "参与、涉及、有关联",
+      "collocations": [
+        "プロジェクトに関わる"
+      ],
+      "examples": [
+        {
+          "japanese": "新しいプロジェクトに関わっています。",
+          "meaning_zh": "正参与新项目。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_de8085d7-f8ee-4ab2-842c-736719c7a408",
+      "japanese": "プログラミング",
+      "reading": "プログラミング",
+      "part_of_speech": "名词",
+      "meaning_zh": "编程",
+      "collocations": [
+        "プログラミングをする"
+      ],
+      "examples": [
+        {
+          "japanese": "プログラミングを勉強しています。",
+          "meaning_zh": "正在学习编程。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_c731d8e0-1182-45ba-b8ab-c6428ff1f576",
+      "japanese": "コーディング",
+      "reading": "コーディング",
+      "part_of_speech": "名词",
+      "meaning_zh": "写代码",
+      "collocations": [
+        "コーディングをする"
+      ],
+      "examples": [
+        {
+          "japanese": "趣味でコーディングをします。",
+          "meaning_zh": "作为兴趣写代码。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_a3dc3769-4f60-4aa4-b05e-1c7fe5b561dd",
+      "japanese": "サイバー攻撃",
+      "reading": "サイバーこうげき",
+      "part_of_speech": "名词",
+      "meaning_zh": "网络攻击",
+      "collocations": [
+        "サイバー攻撃を受ける"
+      ],
+      "examples": [
+        {
+          "japanese": "サイバー攻撃を防ぐ対策が必要です。",
+          "meaning_zh": "需要防范网络攻击的措施。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_d14c1b6b-3ebd-473c-aeb1-8aa98c446f67",
+      "japanese": "個人情報",
+      "reading": "こじんじょうほう",
+      "part_of_speech": "名词",
+      "meaning_zh": "个人信息",
+      "collocations": [
+        "個人情報が盗まれる"
+      ],
+      "examples": [
+        {
+          "japanese": "個人情報を守ることが大切です。",
+          "meaning_zh": "保护个人信息很重要。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_f3caf6ca-f802-48da-af14-c9c8f781903b",
+      "japanese": "ブラッシュアップ",
+      "reading": "ブラッシュアップ",
+      "part_of_speech": "名词",
+      "meaning_zh": "改进、打磨、提升",
+      "collocations": [
+        "日本語をブラッシュアップする"
+      ],
+      "examples": [
+        {
+          "japanese": "日本語をブラッシュアップしたいです。",
+          "meaning_zh": "想进一步打磨日语。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与技术"
+      ]
+    },
+    {
+      "id": "vocab_e4fec85d-fbb2-4ca8-8ab7-847b57e623cd",
+      "japanese": "郵便局",
+      "reading": "ゆうびんきょく",
+      "part_of_speech": "名词",
+      "meaning_zh": "邮局",
+      "collocations": [
+        "郵便局で荷物を送る"
+      ],
+      "examples": [
+        {
+          "japanese": "郵便局で荷物を送ります。",
+          "meaning_zh": "在邮局寄包裹。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邮局与寄送"
+      ]
+    },
+    {
+      "id": "vocab_82f24d4c-eb07-4e0b-8668-e3d3579168d5",
+      "japanese": "荷物",
+      "reading": "にもつ",
+      "part_of_speech": "名词",
+      "meaning_zh": "包裹、行李、物品",
+      "collocations": [
+        "荷物を送る"
+      ],
+      "examples": [
+        {
+          "japanese": "荷物を送りました。",
+          "meaning_zh": "寄了包裹。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邮局与寄送"
+      ]
+    },
+    {
+      "id": "vocab_7626a260-d569-47c1-bab7-4f862a68782f",
+      "japanese": "郵便物",
+      "reading": "ゆうびんぶつ",
+      "part_of_speech": "名词",
+      "meaning_zh": "邮件、邮寄物品",
+      "collocations": [
+        "郵便物を送る"
+      ],
+      "examples": [
+        {
+          "japanese": "郵便物が届きました。",
+          "meaning_zh": "邮件送到了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邮局与寄送"
+      ]
+    },
+    {
+      "id": "vocab_fbd58798-0520-4a37-990d-da33652b908d",
+      "japanese": "宛先",
+      "reading": "あてさき",
+      "part_of_speech": "名词",
+      "meaning_zh": "收件地址、寄往地址",
+      "collocations": [
+        "宛先を書く"
+      ],
+      "examples": [
+        {
+          "japanese": "宛先を書いてください。",
+          "meaning_zh": "请填写收件地址。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邮局与寄送"
+      ]
+    },
+    {
+      "id": "vocab_5a2cc00a-530a-4894-b647-21ab17cb4b7c",
+      "japanese": "EMS",
+      "reading": "イーエムエス",
+      "part_of_speech": "名词",
+      "meaning_zh": "国际特快专递",
+      "collocations": [
+        "EMSで送る"
+      ],
+      "examples": [
+        {
+          "japanese": "EMSで送ります。",
+          "meaning_zh": "用EMS寄送。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邮局与寄送"
+      ]
+    },
+    {
+      "id": "vocab_c73eae18-e198-4b40-858e-3dbe261c7993",
+      "japanese": "元払い",
+      "reading": "もとばらい",
+      "part_of_speech": "名词",
+      "meaning_zh": "寄件人支付运费",
+      "collocations": [
+        "元払いで送る"
+      ],
+      "examples": [
+        {
+          "japanese": "元払いで送ります。",
+          "meaning_zh": "由寄件人付运费寄送。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邮局与寄送"
+      ]
+    },
+    {
+      "id": "vocab_0fea1afd-afa8-4578-af7e-f56194f6e137",
+      "japanese": "着払い",
+      "reading": "ちゃくばらい",
+      "part_of_speech": "名词",
+      "meaning_zh": "收件人支付运费",
+      "collocations": [
+        "着払いで送る"
+      ],
+      "examples": [
+        {
+          "japanese": "着払いで送ります。",
+          "meaning_zh": "以到付运费方式寄送。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邮局与寄送"
+      ]
+    },
+    {
+      "id": "vocab_b15e51c2-4dc9-4a3f-8bdb-316c5f8d1fd5",
+      "japanese": "追跡番号",
+      "reading": "ついせきばんごう",
+      "part_of_speech": "名词",
+      "meaning_zh": "运单追踪号码",
+      "collocations": [
+        "追跡番号を確認する"
+      ],
+      "examples": [
+        {
+          "japanese": "追跡番号を確認します。",
+          "meaning_zh": "确认运单追踪号码。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邮局与寄送"
+      ]
+    },
+    {
+      "id": "vocab_159684eb-505b-4fa2-9cac-9865c9909e30",
+      "japanese": "補償",
+      "reading": "ほしょう",
+      "part_of_speech": "名词",
+      "meaning_zh": "补偿、赔偿保障",
+      "collocations": [
+        "補償がある"
+      ],
+      "examples": [
+        {
+          "japanese": "補償はありますか。",
+          "meaning_zh": "有赔偿保障吗？",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邮局与寄送"
+      ]
+    },
+    {
+      "id": "vocab_a8491c66-523c-49cf-b4d1-7f96b8e4799a",
+      "japanese": "こわれもの",
+      "reading": "こわれもの",
+      "part_of_speech": "名词",
+      "meaning_zh": "易碎物品",
+      "collocations": [
+        "こわれものとして送る"
+      ],
+      "examples": [
+        {
+          "japanese": "これはこわれものです。",
+          "meaning_zh": "这是易碎物品。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邮局与寄送"
+      ]
+    },
+    {
+      "id": "vocab_3dc759a6-0dde-4802-b199-7e10e87b45de",
+      "japanese": "隣人",
+      "reading": "りんじん",
+      "part_of_speech": "名词",
+      "meaning_zh": "邻居",
+      "collocations": [
+        "隣人トラブル"
+      ],
+      "examples": [
+        {
+          "japanese": "隣人にあいさつしました。",
+          "meaning_zh": "向邻居打了招呼。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邻里沟通与委婉表达"
+      ]
+    },
+    {
+      "id": "vocab_b9179e3a-6edb-4fc4-99a5-c74eae0029ad",
+      "japanese": "生活音",
+      "reading": "せいかつおん",
+      "part_of_speech": "名词",
+      "meaning_zh": "日常生活发出的声音",
+      "collocations": [
+        "生活音が気になる"
+      ],
+      "examples": [
+        {
+          "japanese": "生活音が気になります。",
+          "meaning_zh": "有些在意生活噪音。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邻里沟通与委婉表达"
+      ]
+    },
+    {
+      "id": "vocab_eccad7a7-5712-4511-9e1f-636ac1564fbf",
+      "japanese": "足音",
+      "reading": "あしおと",
+      "part_of_speech": "名词",
+      "meaning_zh": "脚步声",
+      "collocations": [
+        "足音が響く"
+      ],
+      "examples": [
+        {
+          "japanese": "足音がこちらまで響いています。",
+          "meaning_zh": "脚步声传到我这边来了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邻里沟通与委婉表达"
+      ]
+    },
+    {
+      "id": "vocab_114757d5-5c60-41ca-a274-c957df283f68",
+      "japanese": "響く",
+      "reading": "ひびく",
+      "part_of_speech": "动词／固定搭配",
+      "meaning_zh": "回响、声音传来；产生影响",
+      "collocations": [
+        "こちらまで響いている"
+      ],
+      "examples": [
+        {
+          "japanese": "廊下に声が響いています。",
+          "meaning_zh": "走廊里回响着声音。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邻里沟通与委婉表达"
+      ]
+    },
+    {
+      "id": "vocab_bf5067f9-f7b0-4af2-8ae8-376426ab7621",
+      "japanese": "ゴミ出し",
+      "reading": "ゴミだし",
+      "part_of_speech": "名词",
+      "meaning_zh": "按规定拿出垃圾",
+      "collocations": [
+        "ゴミ出しのルール"
+      ],
+      "examples": [
+        {
+          "japanese": "ゴミ出しのルールを確認します。",
+          "meaning_zh": "确认垃圾投放规则。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邻里沟通与委婉表达"
+      ]
+    },
+    {
+      "id": "vocab_7cec2e50-e021-4137-9d7d-36754a636e18",
+      "japanese": "相談",
+      "reading": "そうだん",
+      "part_of_speech": "名词",
+      "meaning_zh": "商量、咨询",
+      "collocations": [
+        "ご相談なんですが"
+      ],
+      "examples": [
+        {
+          "japanese": "管理会社に相談します。",
+          "meaning_zh": "和物业管理公司商量。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邻里沟通与委婉表达"
+      ]
+    },
+    {
+      "id": "vocab_8c0de680-9c92-4211-95a8-ec5b4f1b0e75",
+      "japanese": "管理会社",
+      "reading": "かんりがいしゃ",
+      "part_of_speech": "名词",
+      "meaning_zh": "物业管理公司",
+      "collocations": [
+        "管理会社に相談する"
+      ],
+      "examples": [
+        {
+          "japanese": "管理会社に電話しました。",
+          "meaning_zh": "给物业管理公司打了电话。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邻里沟通与委婉表达"
+      ]
+    },
+    {
+      "id": "vocab_87b3ae7e-0d09-43e8-b626-a2bcecc4b045",
+      "japanese": "直接",
+      "reading": "ちょくせつ",
+      "part_of_speech": "副词",
+      "meaning_zh": "直接",
+      "collocations": [
+        "直接言う"
+      ],
+      "examples": [
+        {
+          "japanese": "直接伝えるのは難しいです。",
+          "meaning_zh": "很难直接表达。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邻里沟通与委婉表达"
+      ]
+    },
+    {
+      "id": "vocab_cc60b0b4-2b83-4334-9519-41a1e1adfa5d",
+      "japanese": "角が立つ",
+      "reading": "かどがたつ",
+      "part_of_speech": "动词／固定搭配",
+      "meaning_zh": "引起摩擦、伤和气",
+      "collocations": [
+        "角が立ちそう"
+      ],
+      "examples": [
+        {
+          "japanese": "直接言うと角が立ちそうです。",
+          "meaning_zh": "直接说可能会伤和气。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邻里沟通与委婉表达"
+      ]
+    },
+    {
+      "id": "vocab_b5a4a29c-ee48-4cdd-884d-d58e91c3f83e",
+      "japanese": "気まずい",
+      "reading": "きまずい",
+      "part_of_speech": "い形容词",
+      "meaning_zh": "尴尬、相处不自在",
+      "collocations": [
+        "気まずくなる"
+      ],
+      "examples": [
+        {
+          "japanese": "少し気まずくなりました。",
+          "meaning_zh": "变得有些尴尬了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邻里沟通与委婉表达"
+      ]
+    },
+    {
+      "id": "vocab_aab4ba4b-8d1b-4aa0-92e0-b0644fa898f1",
+      "japanese": "気にする",
+      "reading": "きにする",
+      "part_of_speech": "动词／固定搭配",
+      "meaning_zh": "在意、留心",
+      "collocations": [
+        "少し気にしてもらえると"
+      ],
+      "examples": [
+        {
+          "japanese": "少し気にしてもらえると助かります。",
+          "meaning_zh": "如果能稍微注意一下，就帮大忙了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邻里沟通与委婉表达"
+      ]
+    },
+    {
+      "id": "vocab_5c2aa8cd-5788-40ac-9f81-027745dde900",
+      "japanese": "助かる",
+      "reading": "たすかる",
+      "part_of_speech": "动词／固定搭配",
+      "meaning_zh": "得到帮助；省去麻烦",
+      "collocations": [
+        "～てもらえると助かります"
+      ],
+      "examples": [
+        {
+          "japanese": "確認してもらえると助かります。",
+          "meaning_zh": "如果能帮忙确认一下，就帮大忙了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邻里沟通与委婉表达"
+      ]
+    },
+    {
+      "id": "vocab_7066a41d-244f-40f5-ad55-c1b1af3eb7b1",
+      "japanese": "言い回し",
+      "reading": "いいまわし",
+      "part_of_speech": "名词",
+      "meaning_zh": "措辞、表达方式",
+      "collocations": [
+        "自然な言い回し"
+      ],
+      "examples": [
+        {
+          "japanese": "自然な言い回しを覚えたいです。",
+          "meaning_zh": "想记住自然的表达方式。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "邻里沟通与委婉表达"
+      ]
+    },
+    {
+      "id": "vocab_11519c9d-9f60-4ef4-9444-a2ca091490ee",
+      "japanese": "意外と",
+      "reading": "いがいと",
+      "part_of_speech": "副词",
+      "meaning_zh": "意外地、没想到还挺……",
+      "collocations": [
+        "意外と自分に合っている"
+      ],
+      "examples": [
+        {
+          "japanese": "意外と自分に合っています。",
+          "meaning_zh": "意外地适合自己。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "对话中出现的其他实用词"
+      ]
+    },
+    {
+      "id": "vocab_2977dcb2-c26e-4f55-99c7-09dec57f4ef5",
+      "japanese": "お互いに",
+      "reading": "おたがいに",
+      "part_of_speech": "副词",
+      "meaning_zh": "互相",
+      "collocations": [
+        "お互いに教え合う"
+      ],
+      "examples": [
+        {
+          "japanese": "お互いに教え合います。",
+          "meaning_zh": "互相教。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "对话中出现的其他实用词"
+      ]
+    },
+    {
+      "id": "vocab_293906a6-bd9b-405d-947b-bd497403f408",
+      "japanese": "もともと",
+      "reading": "もともと",
+      "part_of_speech": "副词",
+      "meaning_zh": "原本、本来",
+      "collocations": [
+        "もともと趣味なので"
+      ],
+      "examples": [
+        {
+          "japanese": "もともと趣味でした。",
+          "meaning_zh": "原本就是兴趣。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "对话中出现的其他实用词"
+      ]
+    },
+    {
+      "id": "vocab_8f3985e2-cf84-43b4-8260-7b838ff5fb72",
+      "japanese": "なんとなく",
+      "reading": "なんとなく",
+      "part_of_speech": "副词",
+      "meaning_zh": "不知为何；隐约、大致",
+      "collocations": [
+        "なんとなく分かる"
+      ],
+      "examples": [
+        {
+          "japanese": "なんとなく意味は分かります。",
+          "meaning_zh": "大致明白意思。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "对话中出现的其他实用词"
+      ]
+    },
+    {
+      "id": "vocab_b77a3a61-fc5f-40a1-a07f-3b2f3fabc3d5",
+      "japanese": "実践的",
+      "reading": "じっせんてき",
+      "part_of_speech": "な形容词",
+      "meaning_zh": "实践性的、实用的",
+      "collocations": [
+        "実践的な練習"
+      ],
+      "examples": [
+        {
+          "japanese": "実践的な練習をしたいです。",
+          "meaning_zh": "想做实用的练习。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "对话中出现的其他实用词"
+      ]
+    },
+    {
+      "id": "vocab_ca7ccb15-c316-4504-8535-c1d3fa9323d2",
+      "japanese": "時間帯",
+      "reading": "じかんたい",
+      "part_of_speech": "名词",
+      "meaning_zh": "时间段",
+      "collocations": [
+        "都合のいい時間帯"
+      ],
+      "examples": [
+        {
+          "japanese": "都合のいい時間帯を教えてください。",
+          "meaning_zh": "请告诉我方便的时间段。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "对话中出现的其他实用词"
+      ]
+    },
+    {
+      "id": "vocab_c612f407-17df-406d-9a66-76edf47a20ab",
+      "japanese": "定期的",
+      "reading": "ていきてき",
+      "part_of_speech": "な形容词",
+      "meaning_zh": "定期的",
+      "collocations": [
+        "定期的に授業を受ける"
+      ],
+      "examples": [
+        {
+          "japanese": "定期的に授業を受けます。",
+          "meaning_zh": "定期上课。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "对话中出现的其他实用词"
+      ]
+    },
+    {
+      "id": "vocab_b697146b-1326-4fa6-825c-36f1ddefa4f6",
+      "japanese": "昨日",
+      "reading": "きのう",
+      "part_of_speech": "时间名词（可作状语）",
+      "meaning_zh": "昨天",
+      "collocations": [
+        "昨日勉強した表現"
+      ],
+      "examples": [
+        {
+          "japanese": "昨日、日本語を勉強しました。",
+          "meaning_zh": "昨天学了日语。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "时间与语法"
+      ]
+    },
+    {
+      "id": "vocab_62d561a4-a823-4de0-8d9c-75caaaa8717f",
+      "japanese": "期限",
+      "reading": "きげん",
+      "part_of_speech": "名词",
+      "meaning_zh": "期限",
+      "collocations": [
+        "有効期限"
+      ],
+      "examples": [
+        {
+          "japanese": "期限を確認します。",
+          "meaning_zh": "确认期限。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "时间与语法"
+      ]
+    },
+    {
+      "id": "vocab_760c2b90-0b60-4a74-83e6-2197b685c4cc",
+      "japanese": "副詞",
+      "reading": "ふくし",
+      "part_of_speech": "名词",
+      "meaning_zh": "副词",
+      "collocations": [
+        "副詞の位置"
+      ],
+      "examples": [
+        {
+          "japanese": "「よく」は副詞です。",
+          "meaning_zh": "よく是副词。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "时间与语法"
+      ]
+    },
+    {
+      "id": "vocab_2eac61f4-db5b-44e1-a740-294833980d33",
+      "japanese": "名詞",
+      "reading": "めいし",
+      "part_of_speech": "名词",
+      "meaning_zh": "名词",
+      "collocations": [
+        "名詞と名詞をつなぐ"
+      ],
+      "examples": [
+        {
+          "japanese": "「肌」は名詞です。",
+          "meaning_zh": "肌是名词。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "时间与语法"
+      ]
+    },
+    {
+      "id": "vocab_1b71f7e8-46dc-454c-a771-2a8cef22a4b3",
+      "japanese": "助詞",
+      "reading": "じょし",
+      "part_of_speech": "名词",
+      "meaning_zh": "助词",
+      "collocations": [
+        "助詞の使い方"
+      ],
+      "examples": [
+        {
+          "japanese": "助詞の使い方を練習します。",
+          "meaning_zh": "练习助词的用法。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "时间与语法"
+      ]
+    },
+    {
+      "id": "vocab_7da23ecc-ea7c-494f-8dd9-ac50363ea4ef",
+      "japanese": "自動詞",
+      "reading": "じどうし",
+      "part_of_speech": "名词",
+      "meaning_zh": "自动词",
+      "collocations": [
+        "自動詞と他動詞"
+      ],
+      "examples": [
+        {
+          "japanese": "「動く」は自動詞です。",
+          "meaning_zh": "動く是自动词。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "时间与语法"
+      ]
+    },
+    {
+      "id": "vocab_93fcf57d-936f-44e1-86ba-b5dbc72f674b",
+      "japanese": "他動詞",
+      "reading": "たどうし",
+      "part_of_speech": "名词",
+      "meaning_zh": "他动词",
+      "collocations": [
+        "他動詞の目的語"
+      ],
+      "examples": [
+        {
+          "japanese": "「壊す」は他動詞です。",
+          "meaning_zh": "壊す是他动词。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "时间与语法"
+      ]
+    },
+    {
+      "id": "vocab_dd969658-fc8e-40f7-a117-ee9cc2dee67f",
+      "japanese": "よく",
+      "reading": "よく",
+      "part_of_speech": "副词",
+      "meaning_zh": "经常；很好（本课侧重频率）",
+      "collocations": [
+        "よく見ます"
+      ],
+      "examples": [
+        {
+          "japanese": "日本料理をよく食べます。",
+          "meaning_zh": "经常吃日本料理。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "时间与语法"
+      ]
+    },
+    {
+      "id": "vocab_e881dd45-cc5f-46df-b367-23072d7e048d",
+      "japanese": "参照する",
+      "reading": "さんしょうする",
+      "part_of_speech": "サ变动词",
+      "meaning_zh": "参照、查阅",
+      "collocations": [
+        "テンプレートを参照する"
+      ],
+      "examples": [
+        {
+          "japanese": "資料を参照してください。",
+          "meaning_zh": "请参照资料。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与请求表达"
+      ]
+    },
+    {
+      "id": "vocab_5bc22d45-7f51-4f4b-b7c8-bae72e01bd27",
+      "japanese": "要件",
+      "reading": "ようけん",
+      "part_of_speech": "名词",
+      "meaning_zh": "需求、必要条件",
+      "collocations": [
+        "要件を伝える"
+      ],
+      "examples": [
+        {
+          "japanese": "要件をAIに伝えます。",
+          "meaning_zh": "把需求告诉AI。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与请求表达"
+      ]
+    },
+    {
+      "id": "vocab_74920c2a-eaa7-491f-b79a-c904645f51a8",
+      "japanese": "指摘",
+      "reading": "してき",
+      "part_of_speech": "名词／サ变动词",
+      "meaning_zh": "指出问题、指正",
+      "collocations": [
+        "指摘をいただく"
+      ],
+      "examples": [
+        {
+          "japanese": "問題点を指摘していただきました。",
+          "meaning_zh": "得到了对问题的指正。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与请求表达"
+      ]
+    },
+    {
+      "id": "vocab_775718bc-836d-4e22-b6b9-a26ad814b697",
+      "japanese": "伝える",
+      "reading": "つたえる",
+      "part_of_speech": "一段动词",
+      "meaning_zh": "传达、告诉",
+      "collocations": [
+        "伝えれば"
+      ],
+      "examples": [
+        {
+          "japanese": "要件を伝えれば、作業を進められます。",
+          "meaning_zh": "把需求说清，就能推进工作。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与请求表达"
+      ]
+    },
+    {
+      "id": "vocab_e5334c19-2ecb-4ed3-9665-61f268486797",
+      "japanese": "在宅勤務",
+      "reading": "ざいたくきんむ",
+      "part_of_speech": "名词",
+      "meaning_zh": "居家办公",
+      "collocations": [
+        "在宅勤務をする"
+      ],
+      "examples": [
+        {
+          "japanese": "今は在宅勤務をしています。",
+          "meaning_zh": "现在居家办公。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与请求表达"
+      ]
+    },
+    {
+      "id": "vocab_f32fa207-a87d-4e83-88f0-71a8d86d9982",
+      "japanese": "十分",
+      "reading": "じゅうぶん",
+      "part_of_speech": "な形容词／副词",
+      "meaning_zh": "足够、充分",
+      "collocations": [
+        "スマホだけで十分"
+      ],
+      "examples": [
+        {
+          "japanese": "スマホだけで十分です。",
+          "meaning_zh": "光用手机就足够了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与请求表达"
+      ]
+    },
+    {
+      "id": "vocab_e8829d00-2d07-40a2-a086-5664cae25dd6",
+      "japanese": "ぶっちゃけ",
+      "reading": "ぶっちゃけ",
+      "part_of_speech": "副词性口语表达",
+      "meaning_zh": "说实话、坦白说（口语）",
+      "collocations": [
+        "ぶっちゃけ、～"
+      ],
+      "examples": [
+        {
+          "japanese": "ぶっちゃけ、少しきつかったです。",
+          "meaning_zh": "说实话，有点辛苦。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_6d0b19f7-e70b-4d28-8138-90bf36b77e39",
+      "japanese": "率直",
+      "reading": "そっちょく",
+      "part_of_speech": "名词／な形容词",
+      "meaning_zh": "坦率、直率",
+      "collocations": [
+        "率直に言うと"
+      ],
+      "examples": [
+        {
+          "japanese": "率直に言うと、電話は苦手です。",
+          "meaning_zh": "坦率地说，不擅长打电话。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_7935e3b7-12fb-4a10-87de-8f686ebadfcd",
+      "japanese": "きつい",
+      "reading": "きつい",
+      "part_of_speech": "い形容词",
+      "meaning_zh": "辛苦、难熬；紧（本课为辛苦）",
+      "collocations": [
+        "かなりきつかった"
+      ],
+      "examples": [
+        {
+          "japanese": "最初の一か月はきつかったです。",
+          "meaning_zh": "最初一个月很辛苦。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_39d01bcc-a592-4efb-8eb7-8819ed509347",
+      "japanese": "苦手",
+      "reading": "にがて",
+      "part_of_speech": "名词／な形容词",
+      "meaning_zh": "不擅长、难以应付",
+      "collocations": [
+        "電話が苦手"
+      ],
+      "examples": [
+        {
+          "japanese": "電話で話すのは苦手です。",
+          "meaning_zh": "不擅长用电话沟通。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_8b2ca9c0-8167-4b11-ab96-9c4f05697873",
+      "japanese": "肌",
+      "reading": "はだ",
+      "part_of_speech": "名词",
+      "meaning_zh": "皮肤",
+      "collocations": [
+        "肌に合う"
+      ],
+      "examples": [
+        {
+          "japanese": "このクリームは肌に合いません。",
+          "meaning_zh": "这款面霜不适合我的皮肤。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_48bc42f8-f9eb-4ef9-a458-6cb0b3d710ce",
+      "japanese": "肌に合う",
+      "reading": "はだにあう",
+      "part_of_speech": "固定搭配",
+      "meaning_zh": "适合皮肤；适合性情和生活习惯",
+      "collocations": [
+        "自分の肌に合う"
+      ],
+      "examples": [
+        {
+          "japanese": "この街は自分の肌に合っています。",
+          "meaning_zh": "这个城市很适合我。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_cd5e08f5-2241-4172-9109-d06c58505ca5",
+      "japanese": "化粧品",
+      "reading": "けしょうひん",
+      "part_of_speech": "名词",
+      "meaning_zh": "化妆品",
+      "collocations": [
+        "肌に合う化粧品"
+      ],
+      "examples": [
+        {
+          "japanese": "肌に合う化粧品を選びます。",
+          "meaning_zh": "选择适合皮肤的化妆品。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_cdf65018-ae4a-478b-8533-45e1128523af",
+      "japanese": "スキンケア",
+      "reading": "スキンケア",
+      "part_of_speech": "名词",
+      "meaning_zh": "护肤",
+      "collocations": [
+        "スキンケア商品"
+      ],
+      "examples": [
+        {
+          "japanese": "毎日スキンケアをしています。",
+          "meaning_zh": "每天护肤。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_719d6130-9183-4a82-b79b-0e4846de7924",
+      "japanese": "クリーム",
+      "reading": "クリーム",
+      "part_of_speech": "名词",
+      "meaning_zh": "面霜、乳霜（本课语境）",
+      "collocations": [
+        "クリームを使う"
+      ],
+      "examples": [
+        {
+          "japanese": "このクリームを使っています。",
+          "meaning_zh": "正在用这款面霜。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_d396ba55-3ba0-416a-800f-6308377cad11",
+      "japanese": "敏感肌",
+      "reading": "びんかんはだ",
+      "part_of_speech": "名词",
+      "meaning_zh": "敏感肌肤",
+      "collocations": [
+        "敏感肌の人"
+      ],
+      "examples": [
+        {
+          "japanese": "敏感肌でも使えますか。",
+          "meaning_zh": "敏感肌也可以用吗？",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_caf10986-b79b-4925-84c7-5d8cca80d8fd",
+      "japanese": "雰囲気",
+      "reading": "ふんいき",
+      "part_of_speech": "名词",
+      "meaning_zh": "氛围、气氛",
+      "collocations": [
+        "場所の雰囲気"
+      ],
+      "examples": [
+        {
+          "japanese": "この店の雰囲気が好きです。",
+          "meaning_zh": "喜欢这家店的氛围。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_63900fab-a40c-4118-9bf4-a3d776609155",
+      "japanese": "環境",
+      "reading": "かんきょう",
+      "part_of_speech": "名词",
+      "meaning_zh": "环境",
+      "collocations": [
+        "生活環境"
+      ],
+      "examples": [
+        {
+          "japanese": "今の環境が自分に合っています。",
+          "meaning_zh": "现在的环境适合自己。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_c7af4675-0ace-4ded-9878-4c2547a8143a",
+      "japanese": "生活スタイル",
+      "reading": "せいかつスタイル",
+      "part_of_speech": "名词",
+      "meaning_zh": "生活方式",
+      "collocations": [
+        "自分の肌に合う生活スタイル"
+      ],
+      "examples": [
+        {
+          "japanese": "この生活スタイルが自分に合っています。",
+          "meaning_zh": "这种生活方式适合我。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_c3805376-bab3-4710-98ac-9271878dd44a",
+      "japanese": "結構",
+      "reading": "けっこう",
+      "part_of_speech": "副词",
+      "meaning_zh": "挺、相当（程度用法）",
+      "collocations": [
+        "結構忙しい"
+      ],
+      "examples": [
+        {
+          "japanese": "今日は結構忙しいです。",
+          "meaning_zh": "今天挺忙的。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_e0f53a8d-85e6-44ee-adf5-ccbe6ef78900",
+      "japanese": "結構です",
+      "reading": "けっこうです",
+      "part_of_speech": "固定表达",
+      "meaning_zh": "不用了；可以、这样即可（依语境）",
+      "collocations": [
+        "メールで結構です"
+      ],
+      "examples": [
+        {
+          "japanese": "メールで結構です。",
+          "meaning_zh": "用邮件就可以。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "感受与生活方式"
+      ]
+    },
+    {
+      "id": "vocab_fb5ab8ce-062a-43c7-8eb7-0bcf338cfda3",
+      "japanese": "緊張",
+      "reading": "きんちょう",
+      "part_of_speech": "名词／サ变动词",
+      "meaning_zh": "紧张",
+      "collocations": [
+        "緊張する"
+      ],
+      "examples": [
+        {
+          "japanese": "電話する時は緊張します。",
+          "meaning_zh": "打电话时紧张。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "电话与日常动作"
+      ]
+    },
+    {
+      "id": "vocab_72b58374-d59a-40dd-aaf1-6e354fd76ea9",
+      "japanese": "真っ白",
+      "reading": "まっしろ",
+      "part_of_speech": "な形容词",
+      "meaning_zh": "雪白、一片空白",
+      "collocations": [
+        "頭が真っ白になる"
+      ],
+      "examples": [
+        {
+          "japanese": "緊張して頭が真っ白になりました。",
+          "meaning_zh": "因紧张而脑子一片空白。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "电话与日常动作"
+      ]
+    },
+    {
+      "id": "vocab_8be9f3b2-0267-4fb0-900b-e942f225ce7c",
+      "japanese": "予約",
+      "reading": "よやく",
+      "part_of_speech": "名词／サ变动词",
+      "meaning_zh": "预约、预订",
+      "collocations": [
+        "予約する"
+      ],
+      "examples": [
+        {
+          "japanese": "ホテルを予約します。",
+          "meaning_zh": "预订酒店。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "电话与日常动作"
+      ]
+    },
+    {
+      "id": "vocab_fd8f92aa-9b05-466f-9f47-f1267fe0490c",
+      "japanese": "キャンセル",
+      "reading": "キャンセル",
+      "part_of_speech": "名词／サ变动词",
+      "meaning_zh": "取消",
+      "collocations": [
+        "予約をキャンセルする"
+      ],
+      "examples": [
+        {
+          "japanese": "予約をキャンセルしました。",
+          "meaning_zh": "取消了预约。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "电话与日常动作"
+      ]
+    },
+    {
+      "id": "vocab_99b1d29f-fc09-4ea2-80da-8c6374ab7ca2",
+      "japanese": "壊れる",
+      "reading": "こわれる",
+      "part_of_speech": "一段自动词",
+      "meaning_zh": "坏掉",
+      "collocations": [
+        "パソコンが壊れる"
+      ],
+      "examples": [
+        {
+          "japanese": "パソコンが壊れました。",
+          "meaning_zh": "电脑坏了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "电话与日常动作"
+      ]
+    },
+    {
+      "id": "vocab_b7681ed3-732e-4263-934a-d743b0a85db2",
+      "japanese": "動く",
+      "reading": "うごく",
+      "part_of_speech": "五段自动词",
+      "meaning_zh": "活动、移动、运行",
+      "collocations": [
+        "動かなくなる"
+      ],
+      "examples": [
+        {
+          "japanese": "パソコンが動かなくなりました。",
+          "meaning_zh": "电脑不再运行了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "电话与日常动作"
+      ]
+    },
+    {
+      "id": "vocab_55d936dc-6e60-4e24-9f25-0854d72221c6",
+      "japanese": "遊ぶ",
+      "reading": "あそぶ",
+      "part_of_speech": "五段自动词",
+      "meaning_zh": "玩、玩耍",
+      "collocations": [
+        "ゲームで遊ぶ"
+      ],
+      "examples": [
+        {
+          "japanese": "ゲームで遊びます。",
+          "meaning_zh": "玩游戏。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "电话与日常动作"
+      ]
+    },
+    {
+      "id": "vocab_8d4c993d-884e-4a47-8954-fb9a65a14df6",
+      "japanese": "見る",
+      "reading": "みる",
+      "part_of_speech": "一段他动词",
+      "meaning_zh": "看；遇见某种表达",
+      "collocations": [
+        "そういった表現をよく見る"
+      ],
+      "examples": [
+        {
+          "japanese": "そういった表現をよく見ます。",
+          "meaning_zh": "经常看到那类表达。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "电话与日常动作"
+      ]
+    },
+    {
+      "id": "vocab_787b9a98-d641-4ee8-84a1-57363d9ec1ff",
+      "japanese": "見える",
+      "reading": "みえる",
+      "part_of_speech": "一段自动词",
+      "meaning_zh": "看得见、可见",
+      "collocations": [
+        "画面が見える"
+      ],
+      "examples": [
+        {
+          "japanese": "画面は見えますか。",
+          "meaning_zh": "能看见画面吗？",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "电话与日常动作"
+      ]
+    },
+    {
+      "id": "vocab_d977cca0-b035-4e17-bfb9-bc521ff29d26",
+      "japanese": "ダメ",
+      "reading": "ダメ",
+      "part_of_speech": "名词／な形容词",
+      "meaning_zh": "不行、不可以；不擅长（本课）",
+      "collocations": [
+        "全然ダメでした"
+      ],
+      "examples": [
+        {
+          "japanese": "その時は全然ダメでした。",
+          "meaning_zh": "那时候完全不行。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "电话与日常动作"
+      ]
+    },
+    {
+      "id": "vocab_65bb1388-ae6a-4f05-b578-c854d415e8b8",
+      "japanese": "留学",
+      "reading": "りゅうがく",
+      "part_of_speech": "名词／サ变动词",
+      "meaning_zh": "留学",
+      "collocations": [
+        "留学していた時"
+      ],
+      "examples": [
+        {
+          "japanese": "留学していた時、大阪に住んでいました。",
+          "meaning_zh": "留学时住在大阪。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "电话与日常动作"
+      ]
+    },
+    {
+      "id": "vocab_8090a3ee-dcd7-4ea2-bde3-0887e06693b2",
+      "japanese": "完成する",
+      "reading": "かんせいする",
+      "part_of_speech": "サ变动词（本课优先练自动用法）",
+      "meaning_zh": "完成、完全做成",
+      "collocations": [
+        "プログラムが完成する"
+      ],
+      "examples": [
+        {
+          "japanese": "プログラムが完成しました。",
+          "meaning_zh": "程序完成了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与请求表达"
+      ]
+    },
+    {
+      "id": "vocab_a9861a87-9d49-4118-ac37-f0e3373c1aa4",
+      "japanese": "完成させる",
+      "reading": "かんせいさせる",
+      "part_of_speech": "使役形",
+      "meaning_zh": "把某物完成",
+      "collocations": [
+        "プログラムを完成させる"
+      ],
+      "examples": [
+        {
+          "japanese": "プログラムを完成させました。",
+          "meaning_zh": "把程序完成了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "工作与请求表达"
+      ]
+    }
+  ],
+  "unresolved": []
+}

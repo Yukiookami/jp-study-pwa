@@ -1,0 +1,5 @@
+ALTER TABLE "User" ADD CONSTRAINT "User_limit_check" CHECK ("limit" BETWEEN 0 AND 100);
+ALTER TABLE "ReviewState" ADD CONSTRAINT "ReviewState_stage_check" CHECK ("stage" BETWEEN 0 AND 4), ADD CONSTRAINT "ReviewState_rating_check" CHECK ("lastRating" IS NULL OR "lastRating" IN ('forgot','partial','remembered'));
+ALTER TABLE "ReviewEvent" ADD CONSTRAINT "ReviewEvent_rating_check" CHECK ("rating" IN ('forgot','partial','remembered')), ADD CONSTRAINT "ReviewEvent_algorithm_check" CHECK ("algorithmVersion"=1);
+ALTER TABLE "Card" ADD CONSTRAINT "Card_item_check" CHECK (("itemType"='expression' AND "expressionId"="itemId" AND "expressionId" IS NOT NULL AND "vocabularyId" IS NULL AND "cardType" IN ('expression','correction')) OR ("itemType"='vocabulary' AND "vocabularyId"="itemId" AND "vocabularyId" IS NOT NULL AND "expressionId" IS NULL AND "cardType"='word'));
+ALTER TABLE "Favorite" ADD CONSTRAINT "Favorite_item_check" CHECK (("itemType"='expression' AND "expressionId"="itemId" AND "expressionId" IS NOT NULL AND "vocabularyId" IS NULL) OR ("itemType"='vocabulary' AND "vocabularyId"="itemId" AND "vocabularyId" IS NOT NULL AND "expressionId" IS NULL));
