@@ -7,6 +7,7 @@
 - `$jp-pwa-implement`：按需求和设计实现本项目功能。
 - `$jp-pwa-review`：显式要求审查代码／设计时使用。
 - `$jp-lesson-validate`：只读校验课程 JSON。
+- `$jp-life-memo`：在聊天中把日常遇到的日语加入生活摘录，并核对应用导入。
 - `$jp-git-publish`：检查范围、精确暂存、中文提交与安全推送。
 
 例：“使用 $jp-pwa-implement 完成 S01 工程初始化。”
@@ -26,3 +27,7 @@
 按官方文档使用项目 Skill 和自定义 Agent 格式，已做文件格式校验；当前会话没有实际启动这些自定义角色，不能据格式检查声称已经在本机运行验证。新项目会话中发现后再使用，配置仍受安装版本和项目信任设置约束。
 
 官方参考：[Skill](https://learn.chatgpt.com/docs/build-skills)、[自定义子 Agent](https://learn.chatgpt.com/docs/agent-configuration/subagents)。
+
+聊天生活摘录流程与手机入口见 [LIFE_CAPTURE](LIFE_CAPTURE.md)。
+
+引入的 `$tdd`、`$diagnosing-bugs`、`$codebase-design` 用于测试、故障诊断和模块设计，详见 [工程 Skills](ENGINEERING_SKILLS.md)。

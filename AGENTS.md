@@ -40,6 +40,12 @@
 
 ## 项目 Skill 与角色
 
-仓库 `.agents/skills/` 提供 jp-pwa-implement、jp-pwa-review、jp-lesson-validate、jp-git-publish。自定义角色位于 `.codex/agents/`，按用户明确要求协作时使用；普通任务不强制分工。详细用法见 [Codex 指南](docs/development/CODEX_GUIDE.md)。
+仓库 `.agents/skills/` 提供 jp-pwa-implement、jp-pwa-review、jp-lesson-validate、jp-git-publish、jp-life-memo。自定义角色位于 `.codex/agents/`，按用户明确要求协作时使用；普通任务不强制分工。详细用法见 [Codex 指南](docs/development/CODEX_GUIDE.md)。
 
 实现页面、API、数据库前读对应 [页面](docs/design/SCREENS.md)、[API](docs/design/API.md)、[数据库](docs/design/DATABASE.md) 与 [视觉](docs/design/VISUAL_SYSTEM.md)。这些是设计稿，不代表已实现。
+
+用户说“加入生活摘录”时使用 jp-life-memo，生活记录按日期归档并含“生活摘录”标签，不占课堂编号。学习内容写入 lessons，服务事件监听自动导入；不要把本机项目误认为会直接显示在手机普通 ChatGPT 项目列表。
+
+## 引入的工程 Skills
+
+项目内另有 Matt Pocock 的 tdd、diagnosing-bugs、codebase-design，按任务需要使用。复习规则、导入与离线同步可用 tdd；复杂故障用 diagnosing-bugs；接口设计与局部重构用 codebase-design。普通文案不强制测试，不重复询问已确定的测试范围，不自动启动多 agent 或提交 Git。来源与用法见 [工程 Skills](docs/development/ENGINEERING_SKILLS.md)。
