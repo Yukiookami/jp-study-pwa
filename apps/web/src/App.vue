@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { connectContent, refreshDownloaded } from './content-sync';
+import type { ContentStatus } from '@jp-study/shared';
 import { newEventId } from './uuid';
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
@@ -39,6 +41,13 @@ import {
   deviceId,
 } from './storage';
 const route = useRoute();
+const contentState = ref<ContentStatus>();
+const contentError = ref('');
+const group = ref<'all' | 'lesson' | 'life'>('all');
+let contentConnection: ReturnType<typeof connectContent> | undefined;
+const visibleLessons = computed(() =>
+  lessons.value.filter((l) => group.value === 'all' || (l.kind ?? 'lesson') === group.value),
+);
 const secureContext = window.isSecureContext;
 const view = computed(() => route.path.split('/')[1] || 'today');
 const lessonId = computed(() => decodeURIComponent(route.path.split('/')[2] ?? ''));
@@ -281,14 +290,40 @@ async function refreshConnection() {
   await synchronize();
   if (view.value === 'today') await loadHome().catch(() => {});
 }
+async function changedContent() {
+  await synchronize();
+  await refreshDownloaded();
+  await updatePending();
+  contentError.value = '';
+  if (view.value === 'today') await loadHome();
+  else if (view.value === 'lessons' || view.value === 'library') {
+    lessons.value = await get('/lessons?page_size=100');
+    if (view.value === 'library') await loadSearch();
+  } else if (view.value === 'lesson') {
+    const id = lessonId.value;
+    const latest = await http.get('/lessons/' + id);
+    if (view.value === 'lesson' && lessonId.value === id) detail.value = latest.data.data;
+  }
+  // Keep the active review queue fixed; content refresh never replaces unsent answers.
+}
 onMounted(async () => {
   await updatePending();
   await load();
   void synchronize();
+  contentConnection = connectContent({
+    onChange: changedContent,
+    onStatus: (value) => {
+      contentState.value = value;
+    },
+    onError: (value) => {
+      contentError.value = value;
+    },
+  });
   window.addEventListener('online', refreshConnection);
   window.addEventListener('offline', refreshConnection);
 });
 onUnmounted(() => {
+  contentConnection?.stop();
   clearTimeout(searchTimer);
   window.removeEventListener('online', refreshConnection);
   window.removeEventListener('offline', refreshConnection);
@@ -306,6 +341,10 @@ onUnmounted(() => {
     <div v-if="!online" class="connection">
       <WifiOff :size="15" /> 离线模式 · 已下载内容仍可查看
     </div>
+    <div v-if="contentState?.error_count" class="alert" role="status">
+      {{ contentState.message }}
+    </div>
+    <div v-if="contentError" class="alert" role="status">{{ contentError }}</div>
     <div v-if="pendingCount" class="connection">
       <RefreshCw :size="15" /> {{ pendingCount }} 条答题已保存，等待同步
       <button @click="task(synchronize)">同步</button>
@@ -387,22 +426,28 @@ onUnmounted(() => {
       <template v-else-if="view === 'lessons'">
         <div class="section-title">
           <span class="eyebrow">LESSONS</span>
-          <h1>我的课堂</h1>
-          <p>每一堂课，都是一页新的手帖。</p>
+          <h1>课堂与生活</h1>
+          <p>课堂和日常遇到的日语，都收进手帖。</p>
         </div>
         <div class="toolbar">
-          <span>{{ lessons.length }} 堂课</span
+          <span>{{ visibleLessons.length }} 份记录</span
           ><button class="subtle" :disabled="busy || !online" @click="importLessons">
             <RefreshCw :size="16" /> 更新课程
           </button>
         </div>
+        <div class="segments">
+          <button :class="{ active: group === 'all' }" @click="group = 'all'">全部</button
+          ><button :class="{ active: group === 'lesson' }" @click="group = 'lesson'">课堂</button
+          ><button :class="{ active: group === 'life' }" @click="group = 'life'">生活摘录</button>
+        </div>
         <RouterLink
-          v-for="(l, index) in lessons"
+          v-for="(l, index) in visibleLessons"
           :key="l.id"
           :to="'/lesson/' + l.id"
           class="course-card"
           ><span class="eyebrow"
-            >LESSON {{ String(index + 1).padStart(2, '0') }} · {{ l.lesson_date }}</span
+            >{{ l.kind === 'life' ? '生活摘录' : 'LESSON ' + String(index + 1).padStart(2, '0') }} ·
+            {{ l.lesson_date }}</span
           >
           <h2>{{ l.title }}</h2>
           <div>
@@ -413,8 +458,8 @@ onUnmounted(() => {
             ><Check :size="13" /> 已离线保存</span
           ></RouterLink
         >
-        <p v-if="!lessons.length" class="empty">
-          还没有课程。把 lesson.json 放入 lessons 后，点击更新课程。
+        <p v-if="!visibleLessons.length" class="empty">
+          这里还没有记录。在聊天里说“加入生活摘录”，整理保存后会自动更新。
         </p>
       </template>
       <template v-else-if="view === 'lesson'">
@@ -428,7 +473,7 @@ onUnmounted(() => {
             {{ savedIds.includes(detail.lesson.id) ? '更新离线内容' : '下载这一课' }}
           </button>
           <p v-if="savedIds.includes(detail.lesson.id)" class="small">
-            已保存，可离线查看；课程更新后请重新下载。
+            已保存，可离线查看；联网时自动检查并更新下载内容。
           </p>
         </div>
         <RouterLink v-if="detail" class="subtle" :to="'/review?lesson=' + detail.lesson.id"
@@ -646,6 +691,20 @@ onUnmounted(() => {
           >
             查看下载列表
           </button>
+        </section>
+        <section class="settings-card">
+          <h2>内容自动更新</h2>
+          <p>
+            {{
+              contentState?.watching ? 'Mac 文件事件监听已启用' : '文件监听未启用，可手动更新内容'
+            }}
+          </p>
+          <p v-if="contentState?.last_checked_at" class="small">
+            上次检查：{{ new Date(contentState.last_checked_at).toLocaleString('zh-CN') }}
+          </p>
+          <p>
+            文件保存后自动校验导入。已下载内容在打开、回到前台和恢复连接时检查；未下载记录不会自动下载。
+          </p>
         </section>
         <section class="settings-card">
           <h2>同步与安装</h2>

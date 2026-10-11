@@ -232,6 +232,7 @@ export async function content() {
     expression_count: expressions.filter((e) => e.lessonId === l.id).length,
     vocabulary_count: words.filter((w) => w.sources.some((s) => s.lessonId === l.id)).length,
     content_version: l.version,
+    kind: (l.data as any).tags?.includes('生活摘录') ? 'life' : 'lesson',
   }));
   const favoriteIds = new Set(favorites.map((f) => `${f.itemType}:${f.itemId}`));
   const items: Item[] = [

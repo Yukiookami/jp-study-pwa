@@ -71,3 +71,7 @@ queue接口有分配副作用，故用POST。每日上限指“当天新分配�
 ## 缓存与测试
 
 课程DTO以content_version更新IndexedDB；收藏和review响应不进行盲目的长期HTTP缓存。测试输入校验、稳定ID导入、部分失败隔离、事务回滚、event重复与payload冲突、并发评分、新卡额度并发和原错误区分。
+
+## 内容自动更新
+
+GET /content/status 返回 watching、revision、last_checked_at、last_imported_at、error_count、message，不暴露目录路径。GET /content/events 为同源 SSE：ready 初始状态、content 内容版本变化、status 导入状态；25秒注释心跳只维持连接，不触发目录扫描。页面隐藏时断开、回到前台重连；重连检查版本，不依赖收齐每一条事件。手动 POST /lessons/import 与监听共用串行导入入口。LessonSummary 可选 kind=lesson/life，生活标签归类；不改数据库模型。

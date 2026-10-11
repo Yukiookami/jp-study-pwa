@@ -125,6 +125,7 @@ export type LessonSummary = {
   expression_count: number;
   vocabulary_count: number;
   content_version: string;
+  kind?: 'lesson' | 'life';
 };
 export type Item = (Expression | Vocabulary) & {
   item_type: ItemType;
@@ -187,3 +188,12 @@ export function nextReview(stage: number, rating: Rating, now: Date) {
     next_due_at: new Date(now.getTime() + delay),
   };
 }
+
+export type ContentStatus = {
+  revision: string;
+  watching: boolean;
+  last_checked_at: string | null;
+  last_imported_at: string | null;
+  error_count: number;
+  message: string;
+};

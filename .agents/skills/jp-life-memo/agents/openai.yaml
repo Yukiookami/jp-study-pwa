@@ -1,0 +1,4 @@
+interface:
+  display_name: "日语生活摘录"
+  short_description: "把聊天中遇到的日语表达与单词整理成生活摘录，保存到应用并核对同步状态"
+  default_prompt: "使用 $jp-life-memo 把我提供的日语表达和场景加入生活摘录。"

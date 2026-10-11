@@ -1,6 +1,8 @@
 import { chromium } from '@playwright/test';
 import { spawn } from 'node:child_process';
-import { mkdir } from 'node:fs/promises';
+import { mkdir, mkdtemp, cp, rm, readFile, writeFile, readdir } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
 process.loadEnvFile('.env');
@@ -14,6 +16,9 @@ if (new URL(process.env.DATABASE_URL).pathname !== '/jp_study_test')
 const { db } = await import('../apps/api/dist/db.js');
 await db.$executeRawUnsafe('TRUNCATE TABLE "User", "Lesson", "Vocabulary" CASCADE');
 await db.$disconnect();
+const fixtureRoot = await mkdtemp(join(tmpdir(), 'jp-browser-lessons-'));
+await cp('lessons', fixtureRoot, { recursive: true });
+process.env.LESSONS_ROOT = fixtureRoot;
 const server = spawn(process.execPath, ['apps/api/dist/server.js'], {
   env: process.env,
   stdio: 'ignore',
@@ -53,7 +58,7 @@ try {
   const base = 'http://127.0.0.1:3002';
   const output = resolve('work/verification');
   await mkdir(output, { recursive: true });
-  await page.goto(base + '/#/today');
+  await page.goto(base + '/today');
   await page.getByRole('heading', { name: /把今天的日语/ }).waitFor();
   await page.screenshot({ path: resolve(output, 'today.png'), fullPage: true });
   await page.getByRole('link', { name: '查表达' }).click();
@@ -80,6 +85,46 @@ try {
   await page.getByRole('button', { name: '下载这一课' }).click();
   await page.getByRole('status').getByText('这一课已下载，可以离线查看。').waitFor();
   await page.screenshot({ path: resolve(output, 'lesson.png'), fullPage: true });
+  const sourceFolder = (await readdir(fixtureRoot)).find((n) => !n.startsWith('.'));
+  const sourcePath = join(fixtureRoot, sourceFolder, 'lesson.json');
+  const content = JSON.parse(await readFile(sourcePath, 'utf8'));
+  await writeFile(sourcePath, '{"schema_version":');
+  await page
+    .getByText('1 份学习内容未导入，已有内容保留；请检查源文件。', { exact: true })
+    .waitFor();
+  const unchanged = await (await fetch(base + '/api/v1/lessons')).json();
+  assert.equal(unchanged.data[0].title, content.lesson.title);
+  content.lesson.title += ' · 自动更新验收';
+  await writeFile(sourcePath, JSON.stringify(content));
+  await page.getByRole('heading', { name: content.lesson.title, exact: true }).waitFor();
+  const downloadedTitle = await page.evaluate(
+    () =>
+      new Promise((resolve, reject) => {
+        const request = indexedDB.open('jp-study');
+        request.onerror = () => reject(request.error);
+        request.onsuccess = () => {
+          const get = request.result.transaction('lessons').objectStore('lessons').getAll();
+          get.onsuccess = () => resolve(get.result[0]?.lesson.title);
+          get.onerror = () => reject(get.error);
+        };
+      }),
+  );
+  assert.equal(downloadedTitle, content.lesson.title, '保存后应自动刷新已下载的副本');
+  await page
+    .getByText('1 份学习内容未导入，已有内容保留；请检查源文件。', { exact: true })
+    .waitFor({ state: 'hidden' });
+  console.log(
+    '文件监听与推送检查通过：半份 JSON 保留旧课、保存完成自动导入、无需刷新页面且下载副本自动更新。',
+  );
+
+  assert(page.url().includes('/lesson/'), '课程路由不应带 Hash');
+  const refreshed = await page.reload();
+  assert.equal(refreshed.status(), 200);
+  await page.locator('.item-heading').first().waitFor();
+  const missing = await fetch(base + '/api/v1/not-a-real-endpoint');
+  assert.equal(missing.status, 404);
+  assert((missing.headers.get('content-type') ?? '').includes('application/json'));
+
   await page.getByRole('link', { name: '今日', exact: true }).click();
   await page.getByRole('link', { name: '开始复习' }).click();
   await page.getByRole('button', { name: '领取今日卡片' }).click();
@@ -126,7 +171,7 @@ try {
   });
   const httpPage = await httpContext.newPage();
   httpPage.on('pageerror', (e) => failures.push(e.message));
-  await httpPage.goto('http://shiro-mac-home:3002/#/review');
+  await httpPage.goto('http://shiro-mac-home:3002/review');
   assert.equal(
     await httpPage.evaluate(() => window.isSecureContext),
     false,
@@ -144,9 +189,38 @@ try {
   }
   assert.equal(count, 2, '普通 HTTP 也应成功保存并同步一次答题');
   assert.deepEqual(failures, []);
+  await httpPage.goto('http://shiro-mac-home:3002/#/lessons');
+  await httpPage.getByRole('heading', { name: '课堂与生活', exact: true }).waitFor();
+  assert.equal(new URL(httpPage.url()).pathname, '/lessons');
+  assert.equal(new URL(httpPage.url()).hash, '');
+  const life = structuredClone(content);
+  life.lesson.id = 'lesson_' + crypto.randomUUID();
+  life.lesson.title = '生活摘录 · 分类验收';
+  life.lesson.tags = ['生活摘录'];
+  life.lesson.lesson_date = null;
+  life.expressions = [
+    { ...life.expressions[0], id: 'expr_' + crypto.randomUUID(), origin: 'assistant_supplement' },
+  ];
+  life.vocabulary = life.vocabulary.filter((w) =>
+    life.expressions[0].vocabulary_ids.includes(w.id),
+  );
+  const lifeFolder = join(fixtureRoot, '2026-10-11_生活摘录');
+  await mkdir(lifeFolder);
+  await writeFile(join(lifeFolder, 'lesson.json'), JSON.stringify(life));
+  await httpPage.getByRole('heading', { name: life.lesson.title, exact: true }).waitFor();
+  await httpPage.getByRole('button', { name: '生活摘录', exact: true }).click();
+  assert.equal(await httpPage.locator('.course-card').count(), 1);
+  await httpPage.getByRole('heading', { name: life.lesson.title, exact: true }).waitFor();
+  console.log('聊天生活摘录导入与独立分类检查通过。');
   await httpContext.close();
   console.log('普通 HTTP 主机名浏览器检查通过：无 randomUUID、无 Service Worker 时在线复习可用。');
 } finally {
   await browser?.close();
   server.kill('SIGTERM');
+  if (server.exitCode === null)
+    await new Promise((r) => {
+      server.once('exit', r);
+      setTimeout(r, 3000);
+    });
+  await rm(fixtureRoot, { recursive: true, force: true });
 }

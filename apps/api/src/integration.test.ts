@@ -156,6 +156,7 @@ describe.skipIf(!enabled)('真实 PostgreSQL 导入、进度与 API', () => {
     const second = structuredClone(fixture);
     second.lesson.id = 'lesson_' + randomUUID();
     second.lesson.title = '测试第二课';
+    second.lesson.tags = ['生活摘录'];
     second.expressions[0]!.id = 'expr_' + randomUUID();
     second.expressions[0]!.verification = 'needs_review';
     second.vocabulary[0]!.examples.push({
@@ -172,6 +173,7 @@ describe.skipIf(!enabled)('真实 PostgreSQL 导入、进度与 API', () => {
     expect(await db.card.count()).toBe(3);
     const item = (await services.content()).items.find((i) => i.id === wordId)!;
     expect(item.lesson_sources).toHaveLength(2);
+    expect(item.lesson_sources.find((l) => l.id === second.lesson.id)?.kind).toBe('life');
     expect(item.examples).toHaveLength(2);
     const removed = structuredClone(fixture);
     removed.expressions = [];

@@ -25,4 +25,4 @@ pnpm start
 - [课程 JSON](docs/data/LESSON_FORMAT.md)、[数据与复习规则](docs/data/DATA_RULES.md)
 - [开发命令](docs/development/SETUP.md)、[阶段状态](docs/development/IMPLEMENTATION_PLAN.md)、[验证记录](docs/development/VERIFICATION.md)
 
-课程源在 lessons，每课 memo.md + lesson.json；稳定 ID 保留收藏与进度。课堂视频和转写工具留在 AI-output。凭据、数据库备份与构建文件不提交。真机主屏幕安装和 Tailscale HTTPS 访问待设备试用。
+课程源在 lessons，每份 memo.md + lesson.json；服务事件监听自动校验导入，已下载内容联网自动检查版本。稳定 ID 保留收藏与进度。生活内容在聊天中说“加入生活摘录”，按 [固定流程](docs/development/LIFE_CAPTURE.md) 收录。课堂视频和转写工具留在 AI-output。凭据、数据库备份与构建文件不提交。真机主屏幕安装和 Tailscale HTTPS 访问待设备试用。

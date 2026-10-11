@@ -1,17 +1,17 @@
 # 页面设计与交互
 
-状态：已实现，采用 Hash 路由及列表内展开详情；设备安装待真机试用。需求映射 R01–R08；示意数字不是实际学习进度。[视觉](VISUAL_SYSTEM.md)、[API](API.md)。
+状态：已实现，采用 History 路由及列表内展开详情；设备安装待真机试用。需求映射 R01–R08；示意数字不是实际学习进度。[视觉](VISUAL_SYSTEM.md)、[API](API.md)。
 
 ## 页面与路由
 
 | ID | 路由 | 页面 | 主要接口 |
 |---|---|---|---|
-| S01 | /#/today | 今日复习（默认首页） | GET /api/v1/home |
+| S01 | /today | 今日复习（默认首页） | GET /api/v1/home |
 | S02 | /lessons | 课程列表 | GET /api/v1/lessons |
-| S03 | /#/lesson/:lessonId | 课程详情 | GET /api/v1/lessons/:id |
+| S03 | /lesson/:lessonId | 课程详情 | GET /api/v1/lessons/:id |
 | S04 | /library | 词库与表达库 | GET /api/v1/items |
 | S05 | 列表内展开 | 条目详情 | GET /api/v1/items/:type/:id |
-| S06 | /#/review | 背诵会话 | POST /api/v1/review/queue；POST /api/v1/review/events |
+| S06 | /review | 背诵会话 | POST /api/v1/review/queue；POST /api/v1/review/events |
 | S07 | /settings | 设置与同步状态 | GET/PUT /api/v1/settings |
 
 ## S01 今日复习
@@ -61,3 +61,7 @@
 ## 统一状态
 
 API错误转中文可理解信息；长内容可滚动但评分按钮不遮挡正文，适配安全区域。空数据、加载、失败、离线、待确认、缓存过期分别展示。保留键盘焦点和减少动态效果支持。
+
+## History 路由返回规则
+
+开发时由 Vite 提供页面入口回退；生产时由 Fastify 返回 apps/web/dist 中的文件，非 API 页面路径回退 index.html，API 不存在仍返回 JSON 404。旧的 /#/ 链接在前端启动时转换为对应的 History 地址。

@@ -1,3 +1,4 @@
+import { contentStatus, subscribeContent, closeContentStreams, runImport } from './content-sync.js';
 import Fastify from 'fastify';
 import fastifyStatic from '@fastify/static';
 import { existsSync } from 'node:fs';
@@ -13,7 +14,7 @@ import {
   matches,
 } from '@jp-study/shared';
 import { db, userId } from './db.js';
-import { AppError, content, lessonDetail, importLessons } from './content.js';
+import { AppError, content, lessonDetail } from './content.js';
 import { queue, acceptEvent, home } from './review.js';
 import { root } from './config.js';
 export function buildApp(log = true) {
@@ -54,6 +55,32 @@ export function buildApp(log = true) {
     await db.$queryRaw`SELECT 1`;
     return { data: { status: 'ok' } };
   });
+  app.addHook('preClose', async () => {
+    closeContentStreams();
+  });
+  app.get('/api/v1/content/status', async () => ({ data: contentStatus() }));
+  app.get('/api/v1/content/events', async (req, reply) => {
+    reply.hijack();
+    reply.raw.writeHead(200, {
+      'Content-Type': 'text/event-stream',
+      'Cache-Control': 'no-store',
+      Connection: 'keep-alive',
+      'X-Accel-Buffering': 'no',
+    });
+    const send = (event: string, value: unknown) => {
+      if (!reply.raw.destroyed)
+        reply.raw.write(`event: ${event}\ndata: ${JSON.stringify(value)}\n\n`);
+    };
+    const unsubscribe = subscribeContent(send, () => reply.raw.end());
+    const heartbeat = setInterval(() => {
+      if (!reply.raw.destroyed) reply.raw.write(': keepalive\n\n');
+    }, 25000);
+    reply.raw.on('close', () => {
+      clearInterval(heartbeat);
+      unsubscribe();
+    });
+    send('ready', contentStatus());
+  });
   app.get('/api/v1/home', async () => ({ data: await home() }));
   app.get('/api/v1/lessons', async (req) => {
     const s = SearchSchema.parse(req.query);
@@ -67,7 +94,7 @@ export function buildApp(log = true) {
   app.get<{ Params: { id: string } }>('/api/v1/lessons/:id', async (req) => ({
     data: await lessonDetail(req.params.id),
   }));
-  app.post('/api/v1/lessons/import', async () => ({ data: await importLessons() }));
+  app.post('/api/v1/lessons/import', async () => ({ data: await runImport() }));
   app.get('/api/v1/items', async (req) => {
     const s = SearchSchema.parse(req.query);
     const all = await content();
