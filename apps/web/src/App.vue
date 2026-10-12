@@ -31,6 +31,7 @@ import {
 } from '@jp-study/shared';
 import ItemCard from './components/ItemCard.vue';
 import RelatedExpressions from './components/RelatedExpressions.vue';
+import PortraitGuard from './components/PortraitGuard.vue';
 import { get, http, message, sync } from './api';
 import {
   cache,
@@ -1026,6 +1027,7 @@ onUnmounted(() => {
       @topic="showTopic"
       @favorite="favorite"
     />
+    <PortraitGuard />
     <nav v-if="view !== 'review'" class="bottom-nav" aria-label="主导航">
       <RouterLink to="/today" :class="{ active: view === 'today' }"
         ><Home :size="21" /><span>整两句</span></RouterLink

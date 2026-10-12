@@ -1388,3 +1388,41 @@ body {
 .cancel-review {
   color: #636778;
 }
+
+.portrait-guard {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  padding: 24px;
+  background: #fff8e9;
+  color: #30354b;
+}
+.portrait-guard[open] {
+  display: grid;
+  place-items: center;
+}
+.portrait-guard::backdrop {
+  background: #fff8e9;
+}
+.portrait-message {
+  text-align: center;
+}
+.portrait-message svg {
+  color: #345bc4;
+  margin-bottom: 16px;
+}
+.portrait-message h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.portrait-message p {
+  color: var(--muted);
+}
+html:has(.portrait-guard[open]) {
+  overflow: hidden;
+}
