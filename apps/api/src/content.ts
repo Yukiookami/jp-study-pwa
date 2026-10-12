@@ -3,6 +3,7 @@ import { readdir, readFile, realpath } from 'node:fs/promises';
 import { join, relative, isAbsolute } from 'node:path';
 import {
   LessonSchema,
+  groupLearningItems,
   type LessonData,
   type Item,
   type LessonSummary,
@@ -90,13 +91,21 @@ export async function importLessons(directory = lessonsRoot) {
             create: {
               id: data.lesson.id,
               title: data.lesson.title,
-              data: asJson({ ...data.lesson, unresolved: data.unresolved }),
+              data: asJson({
+                ...data.lesson,
+                unresolved: data.unresolved,
+                expression_order: data.expressions.map((e) => e.id),
+              }),
               memo,
               version,
             },
             update: {
               title: data.lesson.title,
-              data: asJson({ ...data.lesson, unresolved: data.unresolved }),
+              data: asJson({
+                ...data.lesson,
+                unresolved: data.unresolved,
+                expression_order: data.expressions.map((e) => e.id),
+              }),
               memo,
               version,
               importedAt: new Date(),
@@ -250,6 +259,8 @@ export async function content() {
       ];
       return {
         ...primary,
+        pitch_accent:
+          primary.pitch_accent ?? sources.find((source) => source.pitch_accent)?.pitch_accent,
         collocations: [...new Set(sources.flatMap((s) => s.collocations))],
         tags: [...new Set(sources.flatMap((s) => s.tags))],
         examples,
@@ -259,7 +270,14 @@ export async function content() {
       };
     }),
   ];
-  return { lessons, summaries, items };
+  const expressionOrder = lessons.flatMap((l) => (l.data as any).expression_order ?? []);
+  const ranks = new Map(expressionOrder.map((id: string, index: number) => [id, index]));
+  items.sort(
+    (a, b) =>
+      ((ranks.get(a.id) as number | undefined) ?? Number.MAX_SAFE_INTEGER) -
+      ((ranks.get(b.id) as number | undefined) ?? Number.MAX_SAFE_INTEGER),
+  );
+  return { lessons, summaries, items: groupLearningItems(items) };
 }
 export async function lessonDetail(id: string): Promise<LessonDetail> {
   const all = await content();

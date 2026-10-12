@@ -41,10 +41,21 @@ def validate(d):
         item(w,'vocab');require(w['id'] not in ids,'duplicate ID');ids.add(w['id']);vocab.add(w['id'])
         require(all(isinstance(w.get(k),str) and w[k].strip() for k in ['reading','part_of_speech']),'reading or part_of_speech missing')
         strings(w.get('collocations'),'collocations')
+        accent=w.get('pitch_accent')
+        if accent is not None:
+            require(isinstance(accent,dict) and accent.get('dialect')=='东京式','pitch accent dialect invalid')
+            patterns=accent.get('patterns');mora=sum(1 for c in w['reading'] if ('ぁ'<=c<='ゖ' or 'ァ'<=c<='ヺ' or c=='ー') and c not in 'ぁぃぅぇぉゃゅょゎァィゥェォャュョヮ')
+            require(isinstance(patterns,list) and bool(patterns) and all(type(n) is int and 0<=n<=mora for n in patterns),'pitch accent exceeds reading mora count')
+            require(len(patterns)==len(set(patterns)),'duplicate pitch accent')
+            source=accent.get('source')
+            require(isinstance(source,dict) and isinstance(source.get('title'),str) and bool(source['title']) and isinstance(source.get('url'),str) and re.match(r'^https?://[^/\s]+',source['url']),'pitch accent source missing')
+            if 'note' in accent:require(isinstance(accent['note'],str) and bool(accent['note']),'pitch accent note invalid')
+
     for e in d['expressions']:
         item(e,'expr');require(e['id'] not in ids,'duplicate ID');ids.add(e['id'])
         require(isinstance(e.get('explanation_zh'),str),'explanation missing')
         require('original_japanese' in e,'original_japanese missing')
+        if 'original_context_zh' in e: require(isinstance(e['original_context_zh'],str) and bool(e['original_context_zh'].strip()),'original_context_zh must be nonempty string')
         for k in ['original_japanese','error_example_japanese','corrected_japanese']:
             require(e.get(k) is None or isinstance(e[k],str),k+' must be string or null')
         strings(e.get('contexts'),'contexts');strings(e.get('vocabulary_ids'),'vocabulary_ids')

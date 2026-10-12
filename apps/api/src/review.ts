@@ -93,6 +93,25 @@ export async function queue(
   });
   return { queue_id: randomUUID(), cards, allocated_date: dayInTokyo(now) };
 }
+export async function cancelQueue(cardIds: string[]) {
+  return db.$transaction(
+    async (tx) => {
+      await lock(tx);
+      const released = await tx.allocation.deleteMany({
+        where: {
+          userId,
+          cardId: { in: cardIds },
+          card: {
+            events: { none: { userId } },
+            states: { none: { userId, reviewedAt: { not: null } } },
+          },
+        },
+      });
+      return { released_new_cards: released.count };
+    },
+    { timeout: 30000, maxWait: 30000 },
+  );
+}
 export async function acceptEvent(event: ReviewInput, now = new Date()): Promise<EventResult> {
   return db.$transaction(
     async (tx) => {

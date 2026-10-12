@@ -26,19 +26,46 @@ export const ExpressionSchema = z.object({
   ...common,
   id: id('expr'),
   original_japanese: z.string().nullable(),
+  original_context_zh: z.string().min(1).optional(),
   error_example_japanese: z.string().nullable().optional(),
   corrected_japanese: z.string().nullable().optional(),
   explanation_zh: z.string(),
   contexts: z.array(z.string()),
   vocabulary_ids: z.array(id('vocab')),
 });
-export const VocabularySchema = z.object({
-  ...common,
-  id: id('vocab'),
-  reading: z.string().min(1),
-  part_of_speech: z.string().min(1),
-  collocations: z.array(z.string()),
+export function moraCount(reading: string) {
+  return [...reading].filter(
+    (char) => /[ぁ-ゖァ-ヺー]/u.test(char) && !/[ぁぃぅぇぉゃゅょゎァィゥェォャュョヮ]/u.test(char),
+  ).length;
+}
+export const PitchAccentSchema = z.object({
+  dialect: z.literal('东京式'),
+  patterns: z
+    .array(z.number().int().nonnegative())
+    .min(1)
+    .refine((values) => new Set(values).size === values.length, '音调编号不能重复'),
+  source: z.object({ title: z.string().min(1), url: z.url().regex(/^https?:\/\//) }),
+  note: z.string().min(1).optional(),
 });
+export function pitchAccentLabel(pattern: number) {
+  return pattern <= 20
+    ? String.fromCodePoint(pattern === 0 ? 0x24ea : 0x2460 + pattern - 1)
+    : `[${pattern}]`;
+}
+export const VocabularySchema = z
+  .object({
+    ...common,
+    id: id('vocab'),
+    reading: z.string().min(1),
+    part_of_speech: z.string().min(1),
+    collocations: z.array(z.string()),
+    pitch_accent: PitchAccentSchema.nullable().optional(),
+  })
+  .refine(
+    (word) =>
+      !word.pitch_accent || word.pitch_accent.patterns.every((p) => p <= moraCount(word.reading)),
+    '音调编号不能超过读音拍数',
+  );
 export const LessonSchema = z
   .object({
     schema_version: z.literal(1),
@@ -99,6 +126,7 @@ export const QueueSchema = z
     limit: z.number().int().min(1).max(100).default(20),
   })
   .strict();
+export const CancelQueueSchema = z.object({ card_ids: z.array(z.uuid()).min(1).max(100) }).strict();
 export const SettingsSchema = z
   .object({ daily_new_limit: z.number().int().min(0).max(100) })
   .strict();
@@ -151,7 +179,12 @@ export type Card = {
   source_lesson_ids: string[];
   verification: z.infer<typeof Verification>;
 };
-export type Queue = { queue_id: string; cards: Card[]; allocated_date: string };
+export type Queue = {
+  queue_id: string;
+  cards: Card[];
+  allocated_date: string;
+  initial_count?: number;
+};
 export type State = {
   card_id: string;
   stage: number;
@@ -197,3 +230,11 @@ export type ContentStatus = {
   error_count: number;
   message: string;
 };
+
+export function learningTopic(item: { tags: string[] }) {
+  return item.tags.find((tag) => tag.startsWith('主题：')) ?? '主题：其他';
+}
+export function groupLearningItems<T extends { tags: string[] }>(items: T[]): T[] {
+  // Stable sort keeps each source's deliberate order within a topic.
+  return [...items].sort((a, b) => learningTopic(a).localeCompare(learningTopic(b), 'zh'));
+}

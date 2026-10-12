@@ -40,6 +40,8 @@
 
 `id`、`japanese`、`reading`、`part_of_speech`、`meaning_zh` 均为字符串；`collocations`、`tags` 为字符串数组；`examples` 为例句对象数组；`origin`、`verification` 使用与表达方式相同的枚举。
 
+单词可选字段 `pitch_accent`（缺省或 null 表示未核实）：`{dialect: "东京式", patterns: [0], source: {title: "东京大学 OJAD", url: "https://..."}, note?: "多种读法说明"}`。编号必须为不重复的非负整数且不超过 reading 的拍数；0 表示平板，其余数字表示下降前的拍位。允许同一读音多个来源支持的编号，必须保留可追溯来源。按当前词形查证，不把动词原形编号用于全部活用。存放在来源词条 JSON，schema_version 仍为 1，原文件可继续导入，不需要数据库迁移。
+
 例句对象：`japanese`、`meaning_zh` 为字符串，`origin` 为 `source` 或 `assistant_supplement`。例句中不加入自动识别错误、乱码或未经确认的个人事实。
 
 ## 确认状态与背诵卡片
@@ -121,3 +123,5 @@
 ## 纠错卡适配
 
 现有第一课部分 japanese 字段为句型标题，如「動詞のば形」，不是「伝えば」对应的完整正确形式。S02导入实施前按已核对Memo补可选 corrected_japanese，保持所有ID；这是待做的数据适配，本次不改原课程。不能在运行时猜答案。纠错卡若无 corrected_japanese，只有 japanese 本身明确为实际正确形式时才可生成；标题为总称或模板且无明确正确形式时跳过该纠错卡。
+
+original_context_zh：表达条目的可选中文字符串，保存原句的谈话场景和表达意图。新整理及修订含实际 original_japanese 的条目应填写，旧文件兼容省略。主题标签使用 `主题：名称`；应用按主题聚合，跨课堂和生活来源。

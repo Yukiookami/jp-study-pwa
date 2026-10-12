@@ -9,13 +9,14 @@ import {
   HistorySchema,
   ItemTypeSchema,
   QueueSchema,
+  CancelQueueSchema,
   EventsSchema,
   SettingsSchema,
   matches,
 } from '@jp-study/shared';
 import { db, userId } from './db.js';
 import { AppError, content, lessonDetail } from './content.js';
-import { queue, acceptEvent, home } from './review.js';
+import { queue, cancelQueue, acceptEvent, home } from './review.js';
 import { root } from './config.js';
 export function buildApp(log = true) {
   const app = Fastify({ logger: log, bodyLimit: 524288 });
@@ -108,7 +109,12 @@ export function buildApp(log = true) {
     );
     return {
       data: items.slice((s.page - 1) * s.page_size, s.page * s.page_size),
-      meta: { page: s.page, page_size: s.page_size, total: items.length },
+      meta: {
+        page: s.page,
+        page_size: s.page_size,
+        total: items.length,
+        available_tags: [...new Set(all.items.flatMap((i) => i.tags))].sort(),
+      },
     };
   });
   app.get<{ Params: { type: string; id: string } }>('/api/v1/items/:type/:id', async (req) => {
@@ -161,6 +167,9 @@ export function buildApp(log = true) {
         return { data: { favorited: method === 'PUT' } };
       },
     });
+  app.post('/api/v1/review/cancel', async (req) => ({
+    data: await cancelQueue(CancelQueueSchema.parse(req.body).card_ids),
+  }));
   app.post('/api/v1/review/queue', async (req) => ({
     data: await queue(QueueSchema.parse(req.body)),
   }));

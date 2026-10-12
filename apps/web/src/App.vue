@@ -2,7 +2,7 @@
 import { connectContent, refreshDownloaded } from './content-sync';
 import type { ContentStatus } from '@jp-study/shared';
 import { newEventId } from './uuid';
-import { ref, computed, onMounted, onUnmounted, watch } from 'vue';
+import { ref, computed, onMounted, onUnmounted, watch, nextTick } from 'vue';
 import { useRoute } from 'vue-router';
 import {
   BookOpen,
@@ -21,6 +21,8 @@ import {
 import { useRegisterSW } from 'virtual:pwa-register/vue';
 import {
   matches,
+  learningTopic,
+  groupLearningItems,
   type Item,
   type LessonSummary,
   type LessonDetail,
@@ -28,6 +30,7 @@ import {
   type Rating,
 } from '@jp-study/shared';
 import ItemCard from './components/ItemCard.vue';
+import RelatedExpressions from './components/RelatedExpressions.vue';
 import { get, http, message, sync } from './api';
 import {
   cache,
@@ -41,6 +44,16 @@ import {
   deviceId,
 } from './storage';
 const route = useRoute();
+const relatedTopics = ref<string[]>([]);
+const appToast = ref('');
+let toastTimer: ReturnType<typeof setTimeout> | undefined;
+function showToast(text: string) {
+  appToast.value = text;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    appToast.value = '';
+  }, 2400);
+}
 const contentState = ref<ContentStatus>();
 const contentError = ref('');
 const group = ref<'all' | 'lesson' | 'life'>('all');
@@ -50,6 +63,12 @@ const visibleLessons = computed(() =>
 );
 const secureContext = window.isSecureContext;
 const view = computed(() => route.path.split('/')[1] || 'today');
+watch(view, () => {
+  relatedTopics.value = [];
+  void nextTick(() => {
+    document.body.style.overflow = '';
+  });
+});
 const lessonId = computed(() => decodeURIComponent(route.path.split('/')[2] ?? ''));
 const online = ref(navigator.onLine),
   busy = ref(false),
@@ -83,25 +102,108 @@ const quota = ref(10),
   reviewStarted = ref(false),
   reviewFinished = ref(false),
   reviewFilter = ref('all');
-const courseFilter = ref(''),
-  reviewLesson = ref('');
+const reviewLesson = ref('');
+const queueNotice = ref('');
+const otherCardsAvailable = ref(false);
+watch([reviewFilter, reviewLesson], () => {
+  queueNotice.value = '';
+  otherCardsAvailable.value = false;
+});
 const card = computed(() => queue.value?.cards[0]);
-const list = computed(() =>
-  detail.value
-    ? (type.value === 'expression' ? detail.value.expressions : detail.value.vocabulary).filter(
-        (i) => matches(i, lessonQuery.value),
-      )
-    : items.value,
+const reviewTotal = computed(() => queue.value?.initial_count ?? queue.value?.cards.length ?? 0);
+const reviewDone = computed(() =>
+  Math.max(0, reviewTotal.value - (queue.value?.cards.length ?? 0)),
 );
+const homeRemaining = computed(() =>
+  online.value
+    ? (home.value?.pending_count ?? 0)
+    : (queue.value?.cards.length ?? home.value?.pending_count ?? 0),
+);
+const mascotMood = computed(() => {
+  if (view.value === 'review')
+    return queueNotice.value
+      ? 'ready'
+      : reviewFinished.value
+        ? 'happy'
+        : card.value
+          ? 'thinking'
+          : 'ready';
+  if (!home.value) return 'ready';
+  if (homeRemaining.value > 0) return 'thinking';
+  if (home.value.completed_today > 0 && home.value.due_count + home.value.new_available === 0)
+    return 'happy';
+  return home.value.completed_today > 0 ? 'thinking' : 'ready';
+});
+const mascotSrc = computed(() =>
+  mascotMood.value === 'happy' ? '/icons/mark.svg' : `/icons/mark-${mascotMood.value}.svg`,
+);
+
+const list = computed(() =>
+  groupLearningItems(
+    detail.value
+      ? (type.value === 'expression' ? detail.value.expressions : detail.value.vocabulary).filter(
+          (i) => matches(i, lessonQuery.value),
+        )
+      : items.value,
+  ),
+);
+const catalogTags = ref<string[]>([]);
 const availableTags = computed(() => [
-  ...new Set(
-    (detail.value
+  ...new Set([
+    ...catalogTags.value,
+    ...(tags.value ? [tags.value] : []),
+    ...(detail.value
       ? [...detail.value.expressions, ...detail.value.vocabulary]
       : items.value
     ).flatMap((i) => i.tags),
-  ),
+  ]),
 ]);
 const { needRefresh, updateServiceWorker } = useRegisterSW();
+const searchLoading = ref(false);
+const loadMoreFailed = ref(false);
+const loadTarget = ref<HTMLElement>();
+const hasMore = computed(() => items.value.length < total.value && page.value * 20 < total.value);
+let listObserver: IntersectionObserver | undefined;
+watch(
+  loadTarget,
+  (target) => {
+    listObserver?.disconnect();
+    if (!target) return;
+    listObserver = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) void loadMore();
+      },
+      { rootMargin: '240px' },
+    );
+    listObserver.observe(target);
+  },
+  { flush: 'post' },
+);
+function receiveItems(batch: Item[], requestedPage: number) {
+  items.value =
+    requestedPage === 1
+      ? batch
+      : [
+          ...new Map(
+            [...items.value, ...batch].map((item) => [item.item_type + ':' + item.id, item]),
+          ).values(),
+        ];
+}
+async function loadMore() {
+  if (view.value !== 'library' || searchLoading.value || loadMoreFailed.value || !hasMore.value)
+    return;
+  const requestedPage = page.value + 1;
+  page.value = requestedPage;
+  try {
+    await loadSearch();
+  } catch (error) {
+    if (page.value === requestedPage) {
+      page.value--;
+      loadMoreFailed.value = true;
+      notice.value = message(error);
+    }
+  }
+}
 let searchGeneration = 0;
 let searchTimer: ReturnType<typeof setTimeout> | undefined;
 async function task(action: () => Promise<void>) {
@@ -132,9 +234,13 @@ async function synchronize() {
 }
 async function loadHome() {
   home.value = await get('/home');
+  queue.value = await session();
 }
 async function loadSearch() {
   const generation = ++searchGeneration;
+  const requestedPage = page.value;
+  searchLoading.value = true;
+  let success = false;
   const params = new URLSearchParams({
     q: query.value,
     type: type.value,
@@ -142,28 +248,43 @@ async function loadSearch() {
     page_size: '20',
     ...(favorites.value ? { favorite: 'true' } : {}),
     ...(tags.value ? { tag: tags.value } : {}),
-    ...(courseFilter.value ? { lesson_id: courseFilter.value } : {}),
   });
   try {
     const { data } = await http.get('/items?' + params);
     if (generation !== searchGeneration) return;
-    items.value = data.data;
+    receiveItems(data.data, requestedPage);
+    success = true;
+    // Older servers may omit the catalog: keep known options through list resets.
+    catalogTags.value = data.meta.available_tags ?? [
+      ...new Set([...catalogTags.value, ...data.data.flatMap((item: Item) => item.tags)]),
+    ];
     total.value = data.meta.total;
     offlineSearch.value = false;
   } catch (e) {
-    const cached = (await cachedItems()).filter(
+    if (!savedIds.value.length) throw e;
+    const allCached = groupLearningItems(await cachedItems());
+    catalogTags.value = [...new Set(allCached.flatMap((i) => i.tags))];
+    const cached = allCached.filter(
       (i) =>
         i.item_type === type.value &&
-        (!courseFilter.value || i.lesson_sources.some((l) => l.id === courseFilter.value)) &&
         matches(i, query.value) &&
         (!favorites.value || i.favorited) &&
         (!tags.value || i.tags.includes(tags.value)),
     );
     if (generation !== searchGeneration) return;
-    items.value = cached.slice((page.value - 1) * 20, page.value * 20);
+    receiveItems(cached.slice((requestedPage - 1) * 20, requestedPage * 20), requestedPage);
+    success = true;
     total.value = cached.length;
     offlineSearch.value = true;
-    if (!savedIds.value.length) throw e;
+  } finally {
+    if (generation === searchGeneration) {
+      searchLoading.value = false;
+      if (success)
+        void nextTick(() => {
+          if (loadTarget.value && loadTarget.value.getBoundingClientRect().top < innerHeight + 240)
+            void loadMore();
+        });
+    }
   }
 }
 async function load() {
@@ -182,6 +303,9 @@ async function load() {
         if (!detail.value) throw e;
       }
     } else if (view.value === 'library') {
+      searchLoading.value = true;
+      page.value = 1;
+      loadMoreFailed.value = false;
       lessons.value = await get('/lessons?page_size=100');
       await loadSearch();
     } else if (view.value === 'settings')
@@ -192,22 +316,36 @@ async function load() {
       );
       reviewLesson.value = typeof route.query.lesson === 'string' ? route.query.lesson : '';
       queue.value = await session();
+      if (queue.value && queue.value.initial_count === undefined) {
+        queue.value.initial_count = queue.value.cards.length;
+        await session(queue.value);
+      }
       reviewStarted.value = !!queue.value?.cards.length;
       reviewFinished.value = false;
       flipped.value = false;
     }
   } catch (e) {
     notice.value = message(e);
+    if (view.value === 'library') searchLoading.value = false;
   }
 }
-watch(() => route.path, load);
-watch([query, type, favorites, tags, courseFilter], () => {
+watch(() => route.fullPath, load);
+watch([query, type, favorites, tags], () => {
   page.value = 1;
   if (view.value === 'library') {
+    searchGeneration++;
+    searchLoading.value = true;
+    loadMoreFailed.value = false;
+    items.value = [];
+    total.value = 0;
     clearTimeout(searchTimer);
     searchTimer = setTimeout(() => loadSearch().catch((e) => (notice.value = message(e))), 250);
   }
 });
+function showTopic(tag: string) {
+  relatedTopics.value.push(tag);
+}
+
 async function favorite(item: Item) {
   await task(async () => {
     await http.request({
@@ -224,7 +362,10 @@ async function favorite(item: Item) {
       await cache('/lessons/' + l.lesson.id, l);
     }
     if (detail.value) await cache('/lessons/' + detail.value.lesson.id, detail.value);
-    if (view.value === 'library' && favorites.value) await loadSearch();
+    if (view.value === 'library' && favorites.value) {
+      page.value = 1;
+      await loadSearch();
+    }
     notice.value = item.favorited ? '已加入收藏' : '已取消收藏';
   });
 }
@@ -249,18 +390,80 @@ async function importLessons() {
 }
 async function start() {
   await task(async () => {
-    await synchronize();
-    if (pendingCount.value > 0) throw new Error('请先同步已保存的答题；现有队列仍可继续。');
-    const { data } = await http.post('/review/queue', {
-      limit: 20,
-      ...(reviewFilter.value === 'all' ? {} : { card_types: [reviewFilter.value] }),
-      ...(reviewLesson.value ? { lesson_id: reviewLesson.value } : {}),
-    });
-    await session(data.data);
-    queue.value = data.data;
-    reviewStarted.value = true;
-    reviewFinished.value = !queue.value!.cards.length;
-    flipped.value = false;
+    queueNotice.value = '';
+    otherCardsAvailable.value = false;
+    try {
+      await synchronize();
+      if (pendingCount.value > 0) throw new Error('请先同步已保存的答题，再领取下一组。');
+      const { data } = await http.post('/review/queue', {
+        limit: 20,
+        ...(reviewFilter.value === 'all' ? {} : { card_types: [reviewFilter.value] }),
+        ...(reviewLesson.value ? { lesson_id: reviewLesson.value } : {}),
+      });
+      queue.value = { ...data.data, initial_count: data.data.cards.length };
+      await session(queue.value!);
+      reviewStarted.value = true;
+      reviewFinished.value = !queue.value!.cards.length;
+      flipped.value = false;
+      if (!queue.value!.cards.length) {
+        const status = await get<NonNullable<typeof home.value>>('/home').catch(() => undefined);
+        otherCardsAvailable.value =
+          !!status && status.due_count + status.new_available + status.pending_count > 0;
+        queueNotice.value = otherCardsAvailable.value
+          ? `当前筛选范围没有可领的卡片。${status?.pending_count ? `还有 ${status.pending_count} 张已领取卡片待完成，` : ''}可以切换到混合复习看看。`
+          : status
+            ? '目前没有到期卡片，也没有可领的新卡。可以稍后再来，或在设置里调整每天的新卡数量。'
+            : '这次没有领到卡片，可能是当前筛选没有内容或今日新卡额度已用完。';
+      }
+    } catch (cause) {
+      queueNotice.value = message(cause);
+    }
+  });
+}
+async function startMixed() {
+  reviewFilter.value = 'all';
+  reviewLesson.value = '';
+  await nextTick();
+  await start();
+}
+
+async function saveSettings() {
+  await task(async () => {
+    try {
+      const { data } = await http.put('/settings', { daily_new_limit: quota.value });
+      quota.value = data.data.daily_new_limit;
+      await cache('/settings', data.data);
+      showToast(`记好了，每天 ${quota.value} 张新卡！`);
+    } catch (cause) {
+      showToast(message(cause));
+    }
+  });
+}
+async function cancelReview() {
+  if (!queue.value?.cards.length) return;
+  await task(async () => {
+    try {
+      await synchronize();
+      if (pendingCount.value > 0) throw new Error('还有答题没同步，请先联网同步后再取消。');
+      const { data } = await http.post('/review/cancel', {
+        card_ids: queue.value!.cards.map((card) => card.id),
+      });
+      const empty = { ...queue.value!, cards: [], initial_count: 0 };
+      await session(empty);
+      queue.value = empty;
+      flipped.value = false;
+      reviewStarted.value = false;
+      reviewFinished.value = false;
+      queueNotice.value = '';
+      relatedTopics.value = [];
+      showToast(
+        data.data.released_new_cards
+          ? `本组已取消，退回 ${data.data.released_new_cards} 张未作答新卡。`
+          : '本组已取消，已作答的进度照常保留。',
+      );
+    } catch (cause) {
+      showToast(message(cause));
+    }
   });
 }
 async function rate(rating: Rating) {
@@ -298,7 +501,10 @@ async function changedContent() {
   if (view.value === 'today') await loadHome();
   else if (view.value === 'lessons' || view.value === 'library') {
     lessons.value = await get('/lessons?page_size=100');
-    if (view.value === 'library') await loadSearch();
+    if (view.value === 'library') {
+      page.value = 1;
+      await loadSearch();
+    }
   } else if (view.value === 'lesson') {
     const id = lessonId.value;
     const latest = await http.get('/lessons/' + id);
@@ -323,7 +529,10 @@ onMounted(async () => {
   window.addEventListener('offline', refreshConnection);
 });
 onUnmounted(() => {
+  clearTimeout(toastTimer);
   contentConnection?.stop();
+  listObserver?.disconnect();
+  searchGeneration++;
   clearTimeout(searchTimer);
   window.removeEventListener('online', refreshConnection);
   window.removeEventListener('offline', refreshConnection);
@@ -333,7 +542,9 @@ onUnmounted(() => {
   <div class="app-shell">
     <header class="brand">
       <RouterLink to="/today"
-        ><span class="brand-mark">語</span><span>日语手帖<small>JP STUDY</small></span></RouterLink
+        ><img class="brand-mark" :src="mascotSrc" :data-mood="mascotMood" alt="" /><span
+          >学什么语<small>今天也整两句日语。</small></span
+        ></RouterLink
       ><RouterLink to="/settings" class="icon" aria-label="设置"
         ><Settings :size="21"
       /></RouterLink>
@@ -358,33 +569,42 @@ onUnmounted(() => {
       <template v-if="view === 'today'">
         <div class="section-title">
           <span class="eyebrow"
-            >{{ home?.today?.replaceAll('-', ' / ') || '今日' }} · 学一点，记久一点</span
+            >{{ home?.today?.replaceAll('-', ' / ') || '今日' }} · 不赶进度，整两句就行</span
           >
-          <h1>把今天的日语，<br />变成自己的话。</h1>
-          <p>从课堂里学到的表达开始。</p>
+          <h1>今天也整两句，<br />说不定就记住了。</h1>
+          <p>课堂学的、路上听的，都来这儿碰个头。</p>
         </div>
         <section class="hero">
           <div>
-            <span class="eyebrow">今日复习</span>
+            <span class="eyebrow">记忆热个身</span>
             <h2>
               {{
-                home && home.due_count + home.new_available + home.pending_count === 0
-                  ? '今天的复习已完成'
-                  : '温故，而知新。'
+                homeRemaining
+                  ? `还剩 ${homeRemaining} 张`
+                  : home && home.due_count + home.new_available + home.pending_count === 0
+                    ? '今天这份，搞定啦！'
+                    : '看看还记得不？'
               }}
             </h2>
-            <p>每一次回想，都是一次进步。</p>
+            <p>
+              {{
+                homeRemaining
+                  ? '刚才那组还在，接着来就好。'
+                  : mascotMood === 'happy'
+                    ? '今天也记住了几句，歇一会儿吧。'
+                    : '忘了也没事，见多几次就熟了。'
+              }}
+            </p>
             <RouterLink class="button cream" to="/review"
-              >开始复习 <ArrowRight :size="17"
+              >{{ homeRemaining ? '继续复习' : '整两句' }} <ArrowRight :size="17"
             /></RouterLink>
           </div>
           <div class="hero-flower">
-            <Flower2 :size="100" :stroke-width="0.8" /><span>日々</span>
+            <img :src="mascotSrc" :data-mood="mascotMood" alt="" /><span>{{
+              mascotMood === 'happy' ? 'やった！' : mascotMood === 'thinking' ? 'うーん…' : 'あれ？'
+            }}</span>
           </div>
         </section>
-        <p v-if="home?.pending_count" class="small">
-          还有 {{ home.pending_count }} 张已领取卡片待完成，可继续复习。
-        </p>
         <p v-if="!online && home" class="small">
           缓存状态 · {{ new Date(home.server_time).toLocaleString('zh-CN') }} 更新
         </p>
@@ -399,11 +619,11 @@ onUnmounted(() => {
           </div>
           <div>
             <strong>{{ home?.completed_today ?? '—' }}</strong
-            ><span>已完成</span>
+            ><span>今日已完成</span>
           </div>
         </div>
         <div class="list-title">
-          <h2>最近的课堂</h2>
+          <h2>最近捡到的日语</h2>
           <RouterLink to="/lessons">全部课程 <ArrowRight :size="15" /></RouterLink>
         </div>
         <RouterLink
@@ -419,15 +639,15 @@ onUnmounted(() => {
           <ArrowRight :size="19"
         /></RouterLink>
         <div class="daily-note">
-          <span>ことばの積み重ね</span>
-          <p>不必一次记住全部，<br />只要每天多会说一点。</p>
+          <span>会一句，算一句 ✦</span>
+          <p>今天脑袋装不下？<br />没事，明天再来碰个面。</p>
         </div>
       </template>
       <template v-else-if="view === 'lessons'">
         <div class="section-title">
-          <span class="eyebrow">LESSONS</span>
-          <h1>课堂与生活</h1>
-          <p>课堂和日常遇到的日语，都收进手帖。</p>
+          <span class="eyebrow">日语收集站</span>
+          <h1>都是在哪学的？</h1>
+          <p>老师讲的、生活捡的，统统收好。</p>
         </div>
         <div class="toolbar">
           <span>{{ visibleLessons.length }} 份记录</span
@@ -496,14 +716,22 @@ onUnmounted(() => {
           <strong>待确认内容</strong>
           <p v-for="(u, index) in detail.unresolved" :key="index">{{ u.description_zh }}</p>
         </section>
-        <ItemCard v-for="item in list" :key="item.id" :item="item" @favorite="favorite" />
+        <template v-for="(item, index) in list" :key="item.id">
+          <h2
+            v-if="index === 0 || learningTopic(item) !== learningTopic(list[index - 1]!)"
+            class="topic-heading"
+          >
+            {{ learningTopic(item).replace('主题：', '') }}
+          </h2>
+          <ItemCard :item="item" @favorite="favorite" @topic="showTopic" />
+        </template>
         <p v-if="!list.length" class="empty">没有找到相关内容。</p>
       </template>
       <template v-else-if="view === 'library'">
         <div class="section-title">
-          <span class="eyebrow">COLLECTION</span>
-          <h1>表达与单词</h1>
-          <p>想说的话，从这里找。</p>
+          <span class="eyebrow">想说就来找</span>
+          <h1>这句咋说？</h1>
+          <p>脑子里有中文？来找找日语怎么说。</p>
         </div>
         <label class="search"
           ><Search :size="18" /><input
@@ -518,62 +746,102 @@ onUnmounted(() => {
             单词
           </button>
         </div>
-        <div class="toolbar">
+        <div class="toolbar library-filters">
           <button class="subtle" :class="{ selected: favorites }" @click="favorites = !favorites">
             <Bookmark :size="15" /> {{ favorites ? '只看收藏' : '全部内容' }}</button
-          ><select v-model="tags" aria-label="标签筛选">
-            <option value="">全部标签</option>
+          ><select v-model="tags" aria-label="主题与标签筛选">
+            <option value="">全部主题</option>
             <option v-for="tag in availableTags" :key="tag">{{ tag }}</option>
           </select>
         </div>
-        <select v-model="courseFilter" aria-label="课程筛选">
-          <option value="">全部课程</option>
-          <option v-for="l in lessons" :key="l.id" :value="l.id">{{ l.title }}</option>
-        </select>
         <p class="small">
-          {{ total }} 个条目 <span v-if="offlineSearch"> · 当前仅搜索已下载课程</span>
+          {{ searchLoading && !list.length ? '找找看…' : total + ' 个条目' }}
+          <span v-if="offlineSearch"> · 当前仅搜索已下载课程</span>
         </p>
-        <ItemCard v-for="item in list" :key="item.id" :item="item" @favorite="favorite" />
-        <p v-if="!list.length" class="empty">没有找到相关内容。试试中文意思或日语原说法。</p>
-        <div v-if="total > 20" class="pagination">
-          <button
-            :disabled="page === 1"
-            @click="
-              page--;
-              task(loadSearch);
-            "
-          >
-            上一页</button
-          ><span>{{ page }} / {{ Math.ceil(total / 20) }}</span
-          ><button
-            :disabled="page * 20 >= total"
-            @click="
-              page++;
-              task(loadSearch);
-            "
-          >
-            下一页
-          </button>
+        <div class="library-results" :aria-busy="searchLoading">
+          <template v-if="searchLoading && !list.length">
+            <span class="sr-only" role="status">正在加载学习内容</span>
+            <div class="list-skeleton" aria-hidden="true">
+              <div class="skeleton-line skeleton-topic"></div>
+              <div v-for="placeholder in 3" :key="placeholder" class="item-card skeleton-card">
+                <div class="skeleton-line skeleton-label"></div>
+                <div class="skeleton-line skeleton-title"></div>
+                <div class="skeleton-line skeleton-meaning"></div>
+              </div>
+            </div>
+          </template>
+          <template v-else>
+            <template v-for="(item, index) in list" :key="item.id">
+              <h2
+                v-if="index === 0 || learningTopic(item) !== learningTopic(list[index - 1]!)"
+                class="topic-heading"
+              >
+                {{ learningTopic(item).replace('主题：', '') }}
+              </h2>
+              <ItemCard :item="item" @favorite="favorite" @topic="showTopic" />
+            </template>
+            <p v-if="!list.length && !searchLoading" class="empty">
+              还没找到，换个中文意思或日语说法试试？
+            </p>
+            <div v-if="hasMore" ref="loadTarget" class="load-more" aria-live="polite">
+              <span v-if="searchLoading">再捞几句，马上来…</span>
+              <button
+                v-else-if="loadMoreFailed"
+                class="subtle"
+                @click="
+                  loadMoreFailed = false;
+                  loadMore();
+                "
+              >
+                没加载出来，再试一次
+              </button>
+              <span v-else>往下滑，还有呢</span>
+            </div>
+            <p v-else-if="searchLoading" class="small" role="status">找找看…</p>
+            <p v-else-if="list.length" class="list-end">这一批都在这儿了 ✦</p>
+          </template>
         </div>
       </template>
       <template v-else-if="view === 'review'">
         <RouterLink to="/today" class="back"><ArrowLeft :size="16" /> 今日</RouterLink>
         <div class="section-title">
-          <span class="eyebrow">REVIEW</span>
-          <h1>{{ reviewFinished ? '今天又进步了一点。' : '让日语留在记忆里。' }}</h1>
-          <p>先试着回想，再翻开答案。</p>
+          <span class="eyebrow">记忆碰碰车</span>
+          <h1>
+            {{
+              queueNotice
+                ? '这次没领到卡片'
+                : reviewFinished
+                  ? '这组拿下，歇会儿！'
+                  : '来，跟日语碰个面。'
+            }}
+          </h1>
+          <p>先猜猜，再看答案。忘了也不扣分。</p>
         </div>
         <template v-if="card"
-          ><div class="toolbar">
+          ><div class="review-progress" role="status">
+            <div class="review-progress-top">
+              <strong>还剩 {{ queue?.cards.length }} 张</strong
+              ><span>本次已完成 {{ reviewDone }} / {{ reviewTotal }}</span>
+            </div>
+            <progress
+              :value="reviewDone"
+              :max="Math.max(1, reviewTotal)"
+              aria-label="本次复习进度"
+            ></progress>
+          </div>
+          <div class="toolbar">
             <span>{{
               card.card_type === 'correction'
                 ? '纠错练习'
                 : card.card_type === 'word'
                   ? '单词回想'
                   : '表达回想'
-            }}</span
-            ><span>剩余 {{ queue?.cards.length }} 张</span>
+            }}</span>
+            <button class="subtle cancel-review" :disabled="busy || !online" @click="cancelReview">
+              取消本组
+            </button>
           </div>
+          <p v-if="!online" class="small">取消本组需要联网，已作答记录会继续保留。</p>
           <section class="review-card">
             <span class="eyebrow">{{
               card.card_type === 'correction'
@@ -585,14 +853,20 @@ onUnmounted(() => {
                   : '用日语怎么说？'
             }}</span>
             <h2 :lang="card.card_type === 'expression' ? 'zh' : 'ja'">{{ card.prompt }}</h2>
-            <p v-if="!flipped" class="small">给自己一点时间，想一想。</p>
+            <p v-if="!flipped" class="small">别急，让脑袋转一会儿。</p>
             <button v-if="!flipped" class="button" @click="flipped = true">查看答案</button>
             <div v-else class="answer">
               <span class="label">推荐答案</span>
               <h3 lang="ja">{{ card.answer.japanese }}</h3>
               <p v-if="'reading' in card.answer" class="reading">{{ card.answer.reading }}</p>
               <p>{{ card.answer.meaning_zh }}</p>
-              <ItemCard :key="card.id" :item="card.answer" expanded @favorite="favorite" />
+              <ItemCard
+                :key="card.id"
+                :item="card.answer"
+                expanded
+                @favorite="favorite"
+                @topic="showTopic"
+              />
             </div>
           </section>
           <div v-if="flipped" class="ratings">
@@ -609,30 +883,59 @@ onUnmounted(() => {
           <p class="empty">
             {{
               reviewFinished
-                ? '这一组已完成；答题已保存在设备上。'
-                : '每天回想一点，比一次背完更轻松。'
+                ? '这组搞定啦！答题已经记在这台设备上。'
+                : '不用一口气背完，今天先认识几张。'
             }}
           </p>
-          <select v-model="reviewFilter" aria-label="复习类型">
-            <option value="all">混合复习</option>
-            <option value="word">单词</option>
-            <option value="expression">表达方式</option>
-            <option value="correction">纠错</option></select
-          ><select v-model="reviewLesson" aria-label="复习课程">
-            <option value="">全部课程</option>
-            <option v-for="l in lessons" :key="l.id" :value="l.id">{{ l.title }}</option>
-          </select>
+          <div class="review-filters">
+            <label class="field-label"
+              >练点什么
+              <select v-model="reviewFilter" aria-label="复习类型">
+                <option value="all">混合复习</option>
+                <option value="word">单词</option>
+                <option value="expression">表达方式</option>
+                <option value="correction">纠错</option>
+              </select>
+            </label>
+            <label class="field-label"
+              >从哪儿挑
+              <select v-model="reviewLesson" aria-label="复习课程">
+                <option value="">全部课程</option>
+                <option v-for="l in lessons" :key="l.id" :value="l.id">{{ l.title }}</option>
+              </select>
+            </label>
+          </div>
           <button class="button wide" :disabled="busy || !online" @click="start">
-            {{ reviewFinished ? '再取一组' : '领取今日卡片' }} <ArrowRight :size="17" />
+            {{
+              busy
+                ? '正在领卡片…'
+                : queueNotice
+                  ? '再试一次'
+                  : reviewFinished
+                    ? '再取一组'
+                    : '领取今日卡片'
+            }}
+            <ArrowRight :size="17" />
           </button>
+          <div v-if="queueNotice" class="queue-notice" role="status">
+            <p>{{ queueNotice }}</p>
+            <button
+              v-if="otherCardsAvailable"
+              class="subtle"
+              :disabled="busy || !online"
+              @click="startMixed"
+            >
+              切换到混合复习
+            </button>
+          </div>
           <p class="small">新卡需要在线领取；领取后可以离线继续。</p></template
         >
       </template>
       <template v-else-if="view === 'settings'">
         <div class="section-title">
-          <span class="eyebrow">SETTINGS</span>
-          <h1>按自己的节奏。</h1>
-          <p>把学习变成一件轻松的日常。</p>
+          <span class="eyebrow">按你的来</span>
+          <h1>怎么舒服怎么学。</h1>
+          <p>一天学几张，你说了算。</p>
         </div>
         <section class="settings-card">
           <h2>每天的新卡</h2>
@@ -647,18 +950,8 @@ onUnmounted(() => {
               aria-label="每日新卡数量"
             />
             张</label
-          ><button
-            class="button"
-            :disabled="busy || !online"
-            @click="
-              task(async () => {
-                await http.put('/settings', { daily_new_limit: quota });
-                await cache('/settings', { daily_new_limit: quota });
-                notice = '设置已保存';
-              })
-            "
-          >
-            保存设置
+          ><button class="button" :disabled="busy || !online" @click="saveSettings">
+            就这么定了
           </button>
         </section>
         <section class="settings-card">
@@ -693,17 +986,19 @@ onUnmounted(() => {
           </button>
         </section>
         <section class="settings-card">
-          <h2>内容自动更新</h2>
+          <h2>新日语，自己来报到</h2>
           <p>
             {{
-              contentState?.watching ? 'Mac 文件事件监听已启用' : '文件监听未启用，可手动更新内容'
+              contentState?.watching
+                ? '自动更新开着呢，保存后新内容就会来。'
+                : '自动更新暂时没开，可以先手动更新课程。'
             }}
           </p>
           <p v-if="contentState?.last_checked_at" class="small">
             上次检查：{{ new Date(contentState.last_checked_at).toLocaleString('zh-CN') }}
           </p>
           <p>
-            文件保存后自动校验导入。已下载内容在打开、回到前台和恢复连接时检查；未下载记录不会自动下载。
+            新内容保存好就会来报到。打开应用、回到前台或重新联网时，也会更新已经下载的内容。想随身带的记录，先点下载。
           </p>
         </section>
         <section class="settings-card">
@@ -722,11 +1017,20 @@ onUnmounted(() => {
         </section>
       </template>
     </main>
+    <p v-if="appToast" class="app-toast" role="status">{{ appToast }}</p>
+    <RelatedExpressions
+      v-for="(topic, index) in relatedTopics"
+      :key="index"
+      :topic="topic"
+      @close="relatedTopics.pop()"
+      @topic="showTopic"
+      @favorite="favorite"
+    />
     <nav v-if="view !== 'review'" class="bottom-nav" aria-label="主导航">
       <RouterLink to="/today" :class="{ active: view === 'today' }"
-        ><Home :size="21" /><span>今日</span></RouterLink
+        ><Home :size="21" /><span>整两句</span></RouterLink
       ><RouterLink to="/lessons" :class="{ active: ['lessons', 'lesson'].includes(view) }"
-        ><BookOpen :size="21" /><span>课堂</span></RouterLink
+        ><BookOpen :size="21" /><span>收集站</span></RouterLink
       ><RouterLink to="/library" :class="{ active: view === 'library' }"
         ><Search :size="21" /><span>查表达</span></RouterLink
       >

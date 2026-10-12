@@ -226,4 +226,41 @@ describe.skipIf(!enabled)('真实 PostgreSQL 导入、进度与 API', () => {
     expect(history.statusCode).toBe(200);
     expect(history.body).not.toContain('payloadHash');
   });
+  it('取消本组退回未作答新卡，保留已作答历史，重试幂等且可重新领取', async () => {
+    const extra = structuredClone(fixture);
+    extra.lesson.id = 'lesson_' + randomUUID();
+    extra.lesson.title = '取消领取验收';
+    extra.expressions = [];
+    extra.vocabulary[0]!.id = 'vocab_' + randomUUID();
+    const freshWord = extra.vocabulary[0]!.id;
+    await write(extra, 'cancel-case');
+    await services.importLessons(dir);
+    const future = new Date('2026-10-20T09:00:00Z');
+    const assigned = await review.queue({ limit: 20 }, future);
+    const newCard = assigned.cards.find((card) => card.item_id === freshWord)!;
+    expect(newCard).toBeDefined();
+    const historyBefore = (await app.inject('/api/v1/review/history')).body;
+    const res = await app.inject({
+      method: 'POST',
+      url: '/api/v1/review/cancel',
+      payload: { card_ids: assigned.cards.map((card) => card.id) },
+    });
+    expect(res.statusCode).toBe(200);
+    expect(res.json().data.released_new_cards).toBe(1);
+    expect((await app.inject('/api/v1/review/history')).body).toBe(historyBefore);
+    const retry = await app.inject({
+      method: 'POST',
+      url: '/api/v1/review/cancel',
+      payload: { card_ids: assigned.cards.map((card) => card.id) },
+    });
+    expect(retry.json().data.released_new_cards).toBe(0);
+    const again = await review.queue({ limit: 20 }, future);
+    expect(again.cards.some((card) => card.id === newCard.id)).toBe(true);
+    const invalid = await app.inject({
+      method: 'POST',
+      url: '/api/v1/review/cancel',
+      payload: { card_ids: ['wrong'] },
+    });
+    expect(invalid.statusCode).toBe(400);
+  });
 });

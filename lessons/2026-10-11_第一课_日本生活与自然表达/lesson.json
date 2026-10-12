@@ -20,351 +20,11 @@
   },
   "expressions": [
     {
-      "id": "expr_f5dba4d1-b3e4-44cd-9b00-e74acf6c2f87",
-      "japanese": "日本での暮らしについて",
-      "meaning_zh": "谈论在日本的生活",
-      "original_japanese": "日本で暮らしについて",
-      "explanation_zh": "「日本で暮らす」中，「で」后接动词；「日本での暮らし」中，「暮らし」是名词，用「での」修饰。\n\n| 说法 | 中文 |\n|---|---|\n| 日本で暮らす | 在日本生活 |\n| 日本での暮らし | 在日本的生活 |\n| 日本での暮らしについて話す | 谈论在日本的生活 |\n| 職場でのコミュニケーション | 工作中的沟通 |\n| 会議での提案 | 会议上的提案 |",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "日本での暮らしには、もう慣れましたか。",
-          "meaning_zh": "你已经习惯在日本生活了吗？",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_5ea622cd-3d61-4725-8374-88f535132982",
-        "vocab_677be315-7ab5-44a1-9034-5d2b4a1e5308",
-        "vocab_c9f8ecfd-75c0-46cf-87f9-102f75cb4216",
-        "vocab_0e6570f4-1f15-4048-95c0-13682830f223"
-      ],
-      "origin": "teacher_correction",
-      "verification": "source_supported",
-      "tags": [
-        "表达方式"
-      ],
-      "corrected_japanese": "日本での暮らしについて"
-    },
-    {
-      "id": "expr_576fb820-0190-40d7-acc7-f233bbc32fce",
-      "japanese": "～始める／～続ける",
-      "meaning_zh": "开始做／持续做",
-      "original_japanese": "勉強続く／勉強し続き",
-      "explanation_zh": "接续：**动词ます形去掉ます＋始める／続ける**。\n\n| 原动词 | 接续部分 | 组合后的表达 |\n|---|---|---|\n| 食べます | 食べ | 食べ始める：开始吃 |\n| 勉強します | 勉強し | 勉強し続ける：持续学习 |\n| 働きます | 働き | 働き続ける：持续工作 |\n\n「勉強」本身是名词，先变成「勉強する」，再取「勉強し」接续。\n\n**区分：**「勉強が続く」侧重学习这件事持续；「勉強を続ける」侧重人继续学习；「勉強し続ける」把“持续做这个动作”组合为一个动词。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "これからも日本語を勉強し続けたいです。",
-          "meaning_zh": "今后也想继续学日语。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [],
-      "origin": "teacher_correction",
-      "verification": "source_supported",
-      "tags": [
-        "表达方式"
-      ],
-      "corrected_japanese": "勉強し続ける"
-    },
-    {
-      "id": "expr_29a4f1ed-243d-44cf-a65b-15e51452feef",
-      "japanese": "～合う",
-      "meaning_zh": "相互做某事",
-      "original_japanese": null,
-      "explanation_zh": "接续：**动词ます形去掉ます＋合う**。表示互相做某个动作。\n\n| 表达 | 中文 |\n|---|---|\n| 話し合う | 交谈、讨论 |\n| 教え合う | 互相教、互相指导 |\n| 送り合う | 互相发送 |\n\n课堂练习包括「教え合う」「送り合う」。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "分からないところは、お互いに教え合います。",
-          "meaning_zh": "不懂的地方互相教。",
-          "origin": "assistant_supplement"
-        },
-        {
-          "japanese": "チームで解決方法を話し合います。",
-          "meaning_zh": "团队一起讨论解决办法。",
-          "origin": "assistant_supplement"
-        },
-        {
-          "japanese": "友達とメッセージを送り合っています。",
-          "meaning_zh": "和朋友互发消息。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_2977dcb2-c26e-4f55-99c7-09dec57f4ef5"
-      ],
-      "origin": "lesson_material",
-      "verification": "source_supported",
-      "tags": [
-        "表达方式"
-      ]
-    },
-    {
-      "id": "expr_c0b8a104-39a5-40e2-ad27-aeaedccc7320",
-      "japanese": "～たばかりの頃",
-      "meaning_zh": "刚做某事的那段时期",
-      "original_japanese": "来日したばっかり頃",
-      "explanation_zh": "「ばかり」也可以口语化为「ばっかり」；修饰名词「頃」时要加「の」。\n\n- 来日したばかり：刚来日本。\n- 来日したばかりの頃：刚来日本的时候。\n\n「ばかり」的“刚”带有说话人的主观判断，不限于几分钟前。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "来日したばかりの頃は、少しホームシックでした。",
-          "meaning_zh": "刚来日本的时候，有点想家。",
-          "origin": "source"
-        },
-        {
-          "japanese": "入社したばかりの頃は、分からないことが多かったです。",
-          "meaning_zh": "刚入职时，有很多不懂的事。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_f5df7569-a8d5-4a94-803c-ec7cd4f3f059",
-        "vocab_8ada655b-e80e-4799-bb93-2dd0fe6da0c2"
-      ],
-      "origin": "teacher_correction",
-      "verification": "source_supported",
-      "tags": [
-        "表达方式"
-      ],
-      "corrected_japanese": "来日したばかりの頃"
-    },
-    {
-      "id": "expr_05a0ba59-d8da-4083-b382-768ff42eb1e6",
-      "japanese": "ホームシックになる",
-      "meaning_zh": "想家",
-      "original_japanese": null,
-      "explanation_zh": "「ホームシックになる」表示开始出现想家的情绪；「ホームシックでした」描述过去想家的状态。\n\n这里也可以记住 **「动词た形＋ことがある」＝有过某种经历**。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "日本に来てから、ホームシックになったことはありますか。",
-          "meaning_zh": "来日本以后，有过想家的经历吗？",
-          "origin": "source"
-        },
-        {
-          "japanese": "ときどきホームシックになりますが、家族と話すと落ち着きます。",
-          "meaning_zh": "有时会想家，不过和家人聊聊就安心了。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_8ada655b-e80e-4799-bb93-2dd0fe6da0c2"
-      ],
-      "origin": "lesson_material",
-      "verification": "source_supported",
-      "tags": [
-        "表达方式"
-      ]
-    },
-    {
-      "id": "expr_a29c0a74-fd98-4d77-b02a-62a868f48974",
-      "japanese": "一か月に一回／何回か",
-      "meaning_zh": "表达频率",
-      "original_japanese": "一か月くらいビデオして",
-      "explanation_zh": "接续：**时间单位＋に＋次数＋动作**。\n\n| 说法 | 中文 |\n|---|---|\n| 一か月勉強しました。 | 学了一个月，表示时长。 |\n| 一か月に一回、話します。 | 每月聊一次，表示频率。 |\n| 一か月に何回か、話します。 | 每月聊几次。 |\n| 一週間に二回、授業を受けます。 | 每周上两次课。 |\n\n「ビデオコールをする」表示进行视频通话，也可以说「ビデオ通話をする」。\n\n「三年間日本語を勉強しています」表示三年来持续学习，不是每月几次，也不是每天二十四小时不间断地学。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "一か月に一回くらい、家族とビデオコールをしています。",
-          "meaning_zh": "每个月大概和家人视频通话一次。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_5d97cc48-89aa-421e-89da-692c224b09c9",
-        "vocab_d70bbb4c-abdc-45c2-8690-db73c3af2b96"
-      ],
-      "origin": "teacher_correction",
-      "verification": "source_supported",
-      "tags": [
-        "表达方式"
-      ],
-      "corrected_japanese": "一か月に何回か、ビデオ通話をします。"
-    },
-    {
-      "id": "expr_1352870f-c99e-4761-8771-111bbf3ec2ec",
-      "japanese": "本格的です／本格的ではないです",
-      "meaning_zh": "正宗／不太正宗",
-      "original_japanese": "あんまり本格ではないんですけど",
-      "explanation_zh": "描述料理正宗、地道时，用な形容词「本格的」。\n\n- 本格的な四川料理：正宗的四川料理。\n- 本格的です：很正宗。\n- あまり本格的ではないです：不太正宗。\n\n「あんまり」是「あまり」较口语的说法；这里主要修改的是「本格 → 本格的」。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "おいしいですが、あまり本格的ではないです。",
-          "meaning_zh": "好吃，不过不太正宗。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_3e91ae02-07bc-49ea-8c7e-995435067792",
-        "vocab_158952f2-96c6-47d0-805f-833680f71558"
-      ],
-      "origin": "teacher_correction",
-      "verification": "source_supported",
-      "tags": [
-        "表达方式"
-      ],
-      "corrected_japanese": "あまり本格的ではないです。"
-    },
-    {
-      "id": "expr_5249a469-c3a1-447f-8c7a-37401c5281ab",
-      "japanese": "～巡りをする",
-      "meaning_zh": "游访不同的同类地点",
-      "original_japanese": null,
-      "explanation_zh": "通常接地点或地点的类别，表示去不同的同类地方逛逛、体验。\n\n- カフェ巡りをする：逛不同的咖啡店。\n- ラーメン屋巡りをする：到不同拉面店吃吃看。\n- お寺巡りをする：游访不同寺院。\n\n这里要记的是「カフェ巡り」，不是把所有“到处走走”都叫「巡り」。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "休日はカフェ巡りをして気分転換しています。",
-          "meaning_zh": "休息日会逛不同的咖啡店，转换心情。",
-          "origin": "source"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_251c485c-c851-49d9-9b18-bbb25f0cf771",
-        "vocab_4bc94b83-4035-4c46-a3f9-344e74e24393",
-        "vocab_940759b7-9a75-4827-99a3-d5cafa82e719",
-        "vocab_dc3f95be-5e9e-4dc5-af12-d1b760b39a6e"
-      ],
-      "origin": "lesson_material",
-      "verification": "source_supported",
-      "tags": [
-        "表达方式"
-      ]
-    },
-    {
-      "id": "expr_4a33850a-acb4-49a6-8d72-adc6527c86d6",
-      "japanese": "こういった趣味はちょっとないんですよね",
-      "meaning_zh": "我没有这类爱好呢",
-      "original_japanese": "あんまり巡りしない",
-      "explanation_zh": "「こういった」指“这类”；「ちょっと」缓和口气；「んですよね」带有向对方说明自己情况的语气。\n\n如果只是说最近没去逛咖啡店，也可以说「最近はカフェ巡りをしていません」。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "こういった趣味はちょっとないんですよね。",
-          "meaning_zh": "我没有这类爱好呢。",
-          "origin": "assistant_supplement"
-        },
-        {
-          "japanese": "こういった趣味はちょっとないんですが、休日はゲームをしたり、プログラムを書いたりしています。",
-          "meaning_zh": "我没有这类爱好，不过休息日会玩游戏、写程序。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_251c485c-c851-49d9-9b18-bbb25f0cf771",
-        "vocab_13a0a596-31ef-4e76-99b4-734270e000d7",
-        "vocab_dc3f95be-5e9e-4dc5-af12-d1b760b39a6e"
-      ],
-      "origin": "teacher_correction",
-      "verification": "source_supported",
-      "tags": [
-        "表达方式"
-      ],
-      "corrected_japanese": "こういった趣味はちょっとないんですよね"
-    },
-    {
-      "id": "expr_63c49c7e-b958-4610-9cd0-3398c7751f94",
-      "japanese": "気分転換をする／気分転換になる",
-      "meaning_zh": "转换心情",
-      "original_japanese": null,
-      "explanation_zh": "- 気分転換をする：主动换换心情。\n- 気分転換になる：某件事起到转换心情的作用。\n\n今日继续区分：主动为了放松去做某事，可说「気分転換をする」；某项活动起到放松作用，可说「気分転換になる」。课堂用自动词／他动词帮助理解，但“是否出于本人意志”不能作为所有动词的唯一分类标准。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "散歩をすると、いい気分転換になります。",
-          "meaning_zh": "散散步能很好地换换心情。",
-          "origin": "source"
-        },
-        {
-          "japanese": "試験が終わった後で、カラオケで気分転換をします。",
-          "meaning_zh": "考试结束后，在卡拉OK放松一下。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_940759b7-9a75-4827-99a3-d5cafa82e719"
-      ],
-      "origin": "lesson_material",
-      "verification": "source_supported",
-      "tags": [
-        "表达方式"
-      ]
-    },
-    {
-      "id": "expr_6d239b57-e119-4451-ae41-157b98f13d3c",
-      "japanese": "質にこだわる",
-      "meaning_zh": "讲究质量",
-      "original_japanese": "質を注意しながら",
-      "explanation_zh": "这里想表达对质量有要求、愿意打磨细节，用「こだわる」更贴切。助词是「に」。\n\n| 表达 | 侧重点 |\n|---|---|\n| ～に注意する | 小心、留意、防范某事 |\n| ～にこだわる | 讲究、重视、坚持某种标准 |\n\n课堂推荐搭配：**質にこだわる／クオリティにこだわる**。\n\n「注意する」不限于危险事物，也能说「細かい点に注意する」。但“追求品质”在这里用「こだわる」更准确。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "趣味でコードを書くときは、質にこだわっています。",
-          "meaning_zh": "作为兴趣写代码时，我很讲究质量。",
-          "origin": "assistant_supplement"
-        },
-        {
-          "japanese": "読みやすさにもこだわっています。",
-          "meaning_zh": "我也很讲究可读性。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_13a0a596-31ef-4e76-99b4-734270e000d7",
-        "vocab_8006991d-026a-4c17-adce-f097ce4785b5",
-        "vocab_40eeb18f-89c0-4bd5-a730-c22a82d8b385",
-        "vocab_d44f03bf-10ee-4082-83b9-569f2966d219"
-      ],
-      "origin": "teacher_correction",
-      "verification": "source_supported",
-      "tags": [
-        "表达方式"
-      ],
-      "corrected_japanese": "質にこだわる"
-    },
-    {
       "id": "expr_f686081e-b9b9-4615-b30d-8563e5a4ba56",
       "japanese": "関わっているかもしれない",
       "meaning_zh": "可能涉及／存在关联",
       "original_japanese": "これはAIと関わるかもしれない",
-      "explanation_zh": "- 関わる：辞书形。\n- 関わっている：て形＋いる，在这里表示当前参与或关联的状态。\n- ～かもしれない／～かもしれません：可能、也许。\n\n课堂对比例子：\n\n| 例句 | 用法 |\n|---|---|\n| 明日、日本料理を食べる。 | 明天吃，未来的动作。 |\n| 毎日、日本料理を食べる。 | 每天吃，习惯。 |\n\n记忆时保留这个场景区别即可：辞书形不一定只表示未来或习惯，「ている」也不一定只表示正在做，要结合动词和语境理解。",
+      "explanation_zh": "**表达现在已经存在的关联或正在参与的状态，用「関わっている」。**\n「これはAIと関わっているかもしれない」：这件事可能与 AI 存在关联。\n\n**动作动词辞书形：习惯或未来。**\n- 毎日、日本料理を食べる。每天吃日本料理，表示习惯。\n- 明日、日本料理を食べる。明天吃日本料理，表示未来动作。\n\n**て形＋いる：当前进行或当前持续的状态。**\n- 今、日本料理を食べている。现在正在吃日本料理。\n- 今、新しいプロジェクトに関わっている。现在正参与新项目。\n\n「関わっている」在本条表示当前参与／关联的状态。\n\n**～かもしれない／～かもしれません：可能、也许。**\n\n补充：持续的习惯也可用「ている」，如「毎朝、走っています」表示晨跑这个习惯一直保持着。\n\n参考：[国際交流基金：～ている・～ていた](https://www.jpf.go.jp/j/project/japanese/teach/tsushin/grammar/201312.html)。",
       "contexts": [
         "日常",
         "职场"
@@ -392,9 +52,466 @@
       "origin": "teacher_correction",
       "verification": "source_supported",
       "tags": [
-        "表达方式"
+        "主题：关联与推测"
       ],
-      "corrected_japanese": "これはAIと関わっているかもしれない。"
+      "corrected_japanese": "これはAIと関わっているかもしれない。",
+      "original_context_zh": "谈某件事与 AI 的关系，想说现在可能已经存在关联。"
+    },
+    {
+      "id": "expr_5249a469-c3a1-447f-8c7a-37401c5281ab",
+      "japanese": "～巡りをする",
+      "meaning_zh": "游访不同的同类地点",
+      "original_japanese": null,
+      "explanation_zh": "**地点类别＋巡り（めぐり）をする：游访多个同类地点。**\n关键是去不同地点，但这些地点属于同一个类别。\n- カフェ巡り：去各种咖啡店。\n- ラーメン屋巡り：去各种拉面店。\n- お寺巡り：游访不同寺院。\n\n想说“逛不同的咖啡店”用「カフェ巡りをする」。只说漫无目的地到处走走，用「散歩する」「ぶらぶら歩く」等。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "休日はカフェ巡りをして気分転換しています。",
+          "meaning_zh": "休息日会逛不同的咖啡店，转换心情。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_251c485c-c851-49d9-9b18-bbb25f0cf771",
+        "vocab_4bc94b83-4035-4c46-a3f9-344e74e24393",
+        "vocab_940759b7-9a75-4827-99a3-d5cafa82e719",
+        "vocab_dc3f95be-5e9e-4dc5-af12-d1b760b39a6e"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "主题：～巡り的用法"
+      ]
+    },
+    {
+      "id": "expr_4a33850a-acb4-49a6-8d72-adc6527c86d6",
+      "japanese": "こういった趣味はちょっとないんですよね",
+      "meaning_zh": "我没有这类爱好呢",
+      "original_japanese": "あんまり巡りしない",
+      "explanation_zh": "**使用场景：说明自己没有逛各种咖啡店这类爱好。**\n这个场景中，“基本不巡游”的重点是没有这种兴趣，推荐说「こういった趣味はちょっとないんですよね」。\n\n「こういった」：这类，指前面谈到的咖啡店巡游等爱好。\n\n「ちょっと」：缓和语气。\n\n「んですよね」：向对方说明自己的情况，语气自然。\n\n如果重点只是“最近没去”，用「最近はカフェ巡りをしていません」。这描述近期行为，不是有没有这类爱好。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "こういった趣味はちょっとないんですよね。",
+          "meaning_zh": "我没有这类爱好呢。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "こういった趣味はちょっとないんですが、休日はゲームをしたり、プログラムを書いたりしています。",
+          "meaning_zh": "我没有这类爱好，不过休息日会玩游戏、写程序。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_251c485c-c851-49d9-9b18-bbb25f0cf771",
+        "vocab_13a0a596-31ef-4e76-99b4-734270e000d7",
+        "vocab_dc3f95be-5e9e-4dc5-af12-d1b760b39a6e"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "主题：表达兴趣与爱好"
+      ],
+      "corrected_japanese": "こういった趣味はちょっとないんですよね",
+      "original_context_zh": "谈到逛不同咖啡店这类爱好，想说明自己基本不做这类活动、没有这种兴趣。"
+    },
+    {
+      "id": "expr_576fb820-0190-40d7-acc7-f233bbc32fce",
+      "japanese": "～始める／～続ける",
+      "meaning_zh": "开始做／持续做",
+      "original_japanese": "勉強続く／勉強し続き",
+      "explanation_zh": "**接续：动词ます形去掉ます＋始める／続ける。**\n\n**～始める：开始做。** 表示动作开始的时间点。\n- 勉強します → 勉強し → 勉強し始める：开始学习。\n- 食べます → 食べ → 食べ始める：开始吃。\n- 去年、日本語を勉強し始めました。去年开始学日语。\n\n**～続ける：持续做。** 表示动作继续进行。\n- 勉強し続ける：持续学习。\n- 働き続ける：持续工作。\n- これからも日本語を勉強し続けたいです。今后也想继续学日语。\n\n「勉強」是名词，先组成「勉強する」，再取「勉強し」接续。\n\n「勉強が続く」：学习这件事持续。\n\n「勉強を続ける」：继续学习。\n\n「勉強し続ける」：把持续学习组合成一个动词。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "これからも日本語を勉強し続けたいです。",
+          "meaning_zh": "今后也想继续学日语。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "去年、日本語を勉強し始めました。",
+          "meaning_zh": "去年开始学日语。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "主题：动作开始与持续"
+      ],
+      "corrected_japanese": "勉強し続ける",
+      "original_context_zh": "想表达继续学习日语，把名词「勉強」接成持续学习的动词。"
+    },
+    {
+      "id": "expr_4f996d03-7b3d-4668-86ef-feef627bcac4",
+      "japanese": "～だから／～のため",
+      "meaning_zh": "因为……／由于……",
+      "original_japanese": "英語が全然ダメのため",
+      "explanation_zh": "**日常口语说明原因，使用「だから／から」。**\n英語が全然ダメだから、日本語で説明します。因为英语完全不行，所以用日语说明。\n\n名词／な形容词＋だから：学生だから、苦手だから。\n\n动词／い形容词普通形＋から：分からないから、忙しいから。\n\n**～のため：正式、书面场景的原因表达。**\n日常会话中不采用本条原说法「英語が全然ダメのため」，改用「英語が全然ダメだから」。\n\n名词＋のため：台風のため。\n\n台風のため、電車が遅れています。受台风影响，电车晚点。适合通知、新闻等正式说明。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "英語が苦手だから、日本語で説明します。",
+          "meaning_zh": "因为不擅长英语，我用日语说明。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "台風のため、電車が遅れています。",
+          "meaning_zh": "受台风影响，电车晚点。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_39d01bcc-a592-4efb-8eb7-8819ed509347",
+        "vocab_d977cca0-b035-4e17-bfb9-bc521ff29d26"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "主题：原因表达"
+      ],
+      "corrected_japanese": "英語が全然ダメだから",
+      "original_context_zh": "想解释因为英语不擅长，所以选择用日语说明。"
+    },
+    {
+      "id": "expr_f9c0a35e-b064-4fb9-b719-4344bbd68fb8",
+      "japanese": "～を参照する",
+      "meaning_zh": "参照某份资料",
+      "original_japanese": "テンプレートに参照しながら",
+      "explanation_zh": "**资料＋を参照する：查看某份资料，依据其中的信息进行确认。**\nテンプレートを参照しながら、書類を作成します。边参照模板边制作文件。\n\n「参照する」的对象用「を」，所以是「テンプレートを参照する」。\n\n関連する表达「～を参考にする」侧重将资料、意见等作为思考或行动的参考。具体接续与例句见相邻的“～を参考にする”条目。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "テンプレートを参照しながら、文章を作成します。",
+          "meaning_zh": "参照模板来写文章。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_87b3ae7e-0d09-43e8-b626-a2bcecc4b045",
+        "vocab_e881dd45-cc5f-46df-b367-23072d7e048d"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "主题：参照与参考"
+      ],
+      "corrected_japanese": "テンプレートを参照しながら",
+      "original_context_zh": "制作内容时参考模板，想说边参照模板边做。"
+    },
+    {
+      "id": "expr_2474e334-c4cc-4f28-a97f-ff48142558f4",
+      "japanese": "～を参考にする",
+      "meaning_zh": "把……作为参考",
+      "original_japanese": null,
+      "explanation_zh": "**资料／意见＋を参考にする：将其作为思考或行动的参考。**\n\n先行事例を参考にして、設計を考えます。参考先前案例，考虑设计。\n\n友達の意見を参考にします。参考朋友的意见。\n\n「を」标参考对象；「参考にする」是一整个结构。\n\n「参照する」侧重查看、对照资料；「参考にする」侧重吸收信息、帮助判断。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "先行事例を参考にして、設計を考えます。",
+          "meaning_zh": "参考先前案例，考虑设计。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "友達の意見を参考にします。",
+          "meaning_zh": "参考朋友的意见。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "assistant_supplement",
+      "verification": "source_supported",
+      "tags": [
+        "主题：参照与参考"
+      ]
+    },
+    {
+      "id": "expr_849d0799-6232-447e-ad2f-593eafb5d280",
+      "japanese": "口から出てこない",
+      "meaning_zh": "知道但说不出来",
+      "original_japanese": null,
+      "explanation_zh": "形容认识一个词或句型，但现场不能马上说出来。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "意味は分かるんですが、すぐには口から出てきません。",
+          "meaning_zh": "知道意思，但不能马上说出来。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "主题：表达困难"
+      ]
+    },
+    {
+      "id": "expr_4abb3885-a4ec-4c75-9258-92354b32d057",
+      "japanese": "～ながら",
+      "meaning_zh": "一边……一边……",
+      "original_japanese": null,
+      "explanation_zh": "动词ます形去ます＋ながら，两个动作通常由同一主体完成。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "話を聞きながら、メモを取ります。",
+          "meaning_zh": "一边听，一边记笔记。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "主题：同时进行"
+      ]
+    },
+    {
+      "id": "expr_f5dba4d1-b3e4-44cd-9b00-e74acf6c2f87",
+      "japanese": "日本での暮らしについて",
+      "meaning_zh": "谈论在日本的生活",
+      "original_japanese": "日本で暮らしについて",
+      "explanation_zh": "「日本で暮らす」中，「で」后接动词；「日本での暮らし」中，「暮らし」是名词，用「での」修饰。\n\n| 说法 | 中文 |\n|---|---|\n| 日本で暮らす | 在日本生活 |\n| 日本での暮らし | 在日本的生活 |\n| 日本での暮らしについて話す | 谈论在日本的生活 |\n| 職場でのコミュニケーション | 工作中的沟通 |\n| 会議での提案 | 会议上的提案 |",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "日本での暮らしには、もう慣れましたか。",
+          "meaning_zh": "你已经习惯在日本生活了吗？",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_5ea622cd-3d61-4725-8374-88f535132982",
+        "vocab_677be315-7ab5-44a1-9034-5d2b4a1e5308",
+        "vocab_c9f8ecfd-75c0-46cf-87f9-102f75cb4216",
+        "vocab_0e6570f4-1f15-4048-95c0-13682830f223"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "主题：で的用法",
+        "主题：名词修饰"
+      ],
+      "corrected_japanese": "日本での暮らしについて",
+      "original_context_zh": "想谈论在日本的生活，介绍聊天主题。"
+    },
+    {
+      "id": "expr_87c79d3a-8c66-4fdc-99e8-1e61be1ad44e",
+      "japanese": "時間表現＋で",
+      "meaning_zh": "以某个时间为界、告一段落",
+      "original_japanese": null,
+      "explanation_zh": "**时间点＋で：以那个时间为界，结束或达到某个阶段。**\n明日で大学を卒業します。到明天就大学毕业了。\n\n今日でこの仕事は終わりです。这项工作到今天结束。\n\n**时长＋で：完成某事所花的时间。**\n一時間で宿題を終えました。用一个小时完成了作业。\n\n**时长＋で：到某个时点所累计的时长。**\n来月で日本に来て三年になります。到下个月，来日本就满三年了。\n\n**限定时长＋で：在这段范围内计算数量。**\nこの一週間で三冊読みました。这一周里读了三本。\n\n「昨日勉強した表現」是在叙述动作发生于昨天，直接用「昨日」；「で」在上面的句子中分别有界点、用时或范围的作用。\n\n参考：[小学館：格助词で](https://kotobank.jp/word/で-573220)。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "この仕事は今日で終わりです。",
+          "meaning_zh": "这项工作到今天就结束了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_b697146b-1326-4fa6-825c-36f1ddefa4f6",
+        "vocab_62d561a4-a823-4de0-8d9c-75caaaa8717f"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "主题：で的用法"
+      ]
+    },
+    {
+      "id": "expr_bb0214bf-1031-4e87-83db-8915b77e3467",
+      "japanese": "場所＋で気分転換をする",
+      "meaning_zh": "在某地转换心情",
+      "original_japanese": "カラオケに気分転換をします",
+      "explanation_zh": "「気分転換をする」本身不是移动动词。在卡拉OK放松，用「カラオケで気分転換をする」。地点＋で表示动作发生在哪里。要表达“去卡拉OK”时，另用移动动词「行く」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "試験が終わった後で、カラオケで気分転換をします。",
+          "meaning_zh": "考试结束后，在卡拉OK放松一下。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_940759b7-9a75-4827-99a3-d5cafa82e719"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "主题：で的用法",
+        "主题：気分転換"
+      ],
+      "corrected_japanese": "カラオケで気分転換をします。",
+      "original_context_zh": "想说在卡拉OK放松、换换心情，重点是放松发生的地点。"
+    },
+    {
+      "id": "expr_7813003f-bee2-4012-803c-06a6614fbf74",
+      "japanese": "ゲームで遊ぶ",
+      "meaning_zh": "用游戏来玩、玩游戏",
+      "original_japanese": "ゲームを遊ぶ",
+      "explanation_zh": "**ゲームで遊ぶ：玩游戏。**\n\n「遊ぶ」前用「ゲームで」，「で」表示玩耍所用的手段。也可直接说「ゲームをする」。\n\n休日は友達とゲームで遊びます。休息日和朋友玩游戏。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "休日はゲームで遊びます。",
+          "meaning_zh": "休息日玩游戏。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_dc3f95be-5e9e-4dc5-af12-d1b760b39a6e",
+        "vocab_87b3ae7e-0d09-43e8-b626-a2bcecc4b045",
+        "vocab_55d936dc-6e60-4e24-9f25-0854d72221c6"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "主题：で的用法"
+      ],
+      "corrected_japanese": "ゲームで遊ぶ",
+      "original_context_zh": "说休息日玩游戏。"
+    },
+    {
+      "id": "expr_6d239b57-e119-4451-ae41-157b98f13d3c",
+      "japanese": "質にこだわる",
+      "meaning_zh": "讲究质量",
+      "original_japanese": "質を注意しながら",
+      "explanation_zh": "**～にこだわる：讲究、重视、坚持某种标准。**\n追求代码质量、愿意打磨细节时，用「質にこだわる／クオリティにこだわる」，对象用「に」。\n\n**～に注意する：小心危险，留意需要避开的情况。**\n\n危険に注意する。注意危险。\n\n质量追求的场景用「こだわる」，表达对标准有要求、愿意打磨细节。\n\n～にこだわる：对标准有追求。コードの質にこだわる。讲究代码质量。\n\n**質（しつ）／クオリティ：质量、品质。**\n「クオリティ」来自英语 quality，也可写作「クオリティー」。谈代码或作品的质量时，两者都可以使用。\n\n- 質にこだわる／クオリティにこだわる：讲究质量。\n- 質が高い／クオリティが高い：质量高。\n\nコードのクオリティにこだわっています。我很讲究代码质量。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "趣味でコードを書くときは、質にこだわっています。",
+          "meaning_zh": "作为兴趣写代码时，我很讲究质量。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "読みやすさにもこだわっています。",
+          "meaning_zh": "我也很讲究可读性。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "クオリティを重視します。",
+          "meaning_zh": "重视质量。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "コードのクオリティにこだわっています。",
+          "meaning_zh": "我很讲究代码质量。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_13a0a596-31ef-4e76-99b4-734270e000d7",
+        "vocab_8006991d-026a-4c17-adce-f097ce4785b5",
+        "vocab_40eeb18f-89c0-4bd5-a730-c22a82d8b385",
+        "vocab_d44f03bf-10ee-4082-83b9-569f2966d219",
+        "vocab_8861bf84-edf7-42ff-8e29-6285586c7a93"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "主题：品质与讲究"
+      ],
+      "corrected_japanese": "質にこだわる",
+      "original_context_zh": "谈写代码时对质量的追求，想说讲究质量、愿意打磨细节。"
+    },
+    {
+      "id": "expr_f09ef44c-46c9-4307-a775-b09eedfc0c6e",
+      "japanese": "ぶっちゃけ",
+      "meaning_zh": "说实话、坦白说",
+      "original_japanese": null,
+      "explanation_zh": "用于熟人之间直说真实感受，口语色彩强。正式会议、对客户或较严肃的工作沟通通常改用「率直に言うと」等表达。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "ぶっちゃけ、最初の一か月はかなりきつかったです。",
+          "meaning_zh": "说实话，最初一个月挺辛苦的。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_e8829d00-2d07-40a2-a086-5664cae25dd6",
+        "vocab_6d0b19f7-e70b-4d28-8138-90bf36b77e39"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "主题：坦率表达"
+      ]
+    },
+    {
+      "id": "expr_c5e6e81c-1292-4bd4-94e7-4a5933be9532",
+      "japanese": "率直に言うと",
+      "meaning_zh": "坦率地说",
+      "original_japanese": null,
+      "explanation_zh": "「率直に言うと（そっちょくにいうと）」：坦率地说。\n\n比「ぶっちゃけ」更适合正式或职场沟通。\n\n率直に言うと、この方法は難しいと思います。坦率地说，我认为这个方法有难度。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "率直に言うと、まだ電話は少し苦手です。",
+          "meaning_zh": "坦率地说，我现在还是有点不擅长打电话。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_e8829d00-2d07-40a2-a086-5664cae25dd6",
+        "vocab_6d0b19f7-e70b-4d28-8138-90bf36b77e39",
+        "vocab_7935e3b7-12fb-4a10-87de-8f686ebadfcd",
+        "vocab_39d01bcc-a592-4efb-8eb7-8819ed509347"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "主题：坦率表达"
+      ]
     },
     {
       "id": "expr_35b1c2c5-d467-4369-a4d2-19205ec26271",
@@ -425,7 +542,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "表达方式"
+        "主题：委婉沟通"
       ]
     },
     {
@@ -451,7 +568,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "表达方式"
+        "主题：委婉沟通"
       ]
     },
     {
@@ -480,7 +597,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "表达方式"
+        "主题：委婉沟通"
       ]
     },
     {
@@ -488,7 +605,7 @@
       "japanese": "直接言うのも角が立ちそうで",
       "meaning_zh": "担心直接说会伤和气",
       "original_japanese": null,
-      "explanation_zh": "「角が立つ」表示引起摩擦、伤和气；「角が立ちそう」表示估计会引起摩擦。\n\n也可以用「～そうなので」明确说明原因。",
+      "explanation_zh": "「角が立つ（かどがたつ）」：引起摩擦、伤和气。\n\n「角が立ちそう」：估计会引起摩擦。\n\n「直接言うのも角が立ちそうで」：直接说又怕伤和气。用来说明顾虑，再提出商量或委婉请求。\n\n明确连接原因时也可用「角が立ちそうなので」。",
       "contexts": [
         "日常",
         "职场"
@@ -515,106 +632,123 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "表达方式"
+        "主题：委婉沟通"
       ]
     },
     {
-      "id": "expr_51a20fbd-c716-42a3-8fea-ead59cc97554",
-      "japanese": "～について",
-      "meaning_zh": "关于……",
+      "id": "expr_57f3f694-ea97-43b6-af5d-5b92798c0d0c",
+      "japanese": "～ていただけますか／～ていただくことは可能でしょうか",
+      "meaning_zh": "强要求感的礼貌请求／留选择余地的可行性询问",
       "original_japanese": null,
-      "explanation_zh": "名词＋について，用来提出谈论的主题。",
+      "explanation_zh": "**～ていただけますか：措辞礼貌，但要求对方照做的感觉很强。**\n在要求对方调整行为的场景里，容易传达“需要这样做”的命令感，带有上对下提出要求的感觉。礼貌形式与请求力度是两件事。\n\n少し遅く来ていただけますか。能请您稍晚一点来吗？\n场景：对方每天来得太早，给工作安排带来不便，希望对方改变到达时间。这句重点是要求对方改掉过早到来的行为，具有“不要那么早来”的力度。\n\n向上司请求帮助、希望避免强要求感时，优先采用下列更留有选择余地的形式。\n\n**～ていただくことは可能でしょうか：询问可行性，让对方判断是否能做。**\n内容を確認していただくことは可能でしょうか。是否可以请您确认一下内容？\n语气非常正式、郑重；先询问可能性，给对方选择空间。\n\n**名词请求：名词＋をいただく。**\n- 指摘をいただけますか。能请您给予指正吗？直接提出请求，要求感较强。\n- 指摘をいただくことが可能でしょうか。是否可以请您给予指正？先询问是否可行。\n\n**以感受缓和请求：～てもらえたら助かります／嬉しいです。**\n確認してもらえたら助かります。如果能帮忙确认，就帮大忙了。\n更正式的形式：確認していただけると助かります。\n\n**补充委婉请求：～ていただけないでしょうか。**\n内容を確認していただけないでしょうか。不知能否请您确认一下内容？",
       "contexts": [
         "日常",
         "职场"
       ],
       "examples": [
         {
-          "japanese": "日本での暮らしについて話します。",
-          "meaning_zh": "谈论在日本的生活。",
+          "japanese": "内容を確認していただけますか。",
+          "meaning_zh": "能请您确认一下内容吗？",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "内容を確認していただくことは可能でしょうか。",
+          "meaning_zh": "是否可以请您确认一下内容？",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "指摘をいただけますか。",
+          "meaning_zh": "能请您指正一下吗？",
+          "origin": "source"
+        },
+        {
+          "japanese": "指摘をいただくことが可能でしょうか。",
+          "meaning_zh": "是否可以请您给予指正？",
+          "origin": "source"
+        },
+        {
+          "japanese": "内容を確認していただけないでしょうか。",
+          "meaning_zh": "不知能否请您确认一下内容？",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "少し遅く来ていただけますか。",
+          "meaning_zh": "能请您稍晚一点来吗？",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_87b3ae7e-0d09-43e8-b626-a2bcecc4b045",
+        "vocab_74920c2a-eaa7-491f-b79a-c904645f51a8"
+      ],
+      "origin": "lesson_material",
+      "verification": "user_confirmed",
+      "tags": [
+        "主题：委婉沟通"
+      ]
+    },
+    {
+      "id": "expr_68433be4-cf5d-4e0c-95e6-a3f91fdf7829",
+      "japanese": "～てもらえたら助かります／嬉しいです",
+      "meaning_zh": "如果能帮我做……就帮大忙了／我会很高兴",
+      "original_japanese": null,
+      "explanation_zh": "**动词て形＋もらえたら＋助かります／嬉しいです。**\n把请求表达为“如果对方能帮忙，自己会得到帮助／感到高兴”，语气比直接要求更柔和。\n\n確認してもらえたら助かります。如果能帮忙确认，就帮大忙了。\n\n参加してもらえたら嬉しいです。如果能参加，我会很高兴。\n\n**更正式的对象：～ていただけると助かります。**\n内容を確認していただけると助かります。如果您能确认一下内容，就帮大忙了。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "確認してもらえたら助かります。",
+          "meaning_zh": "如果能帮忙确认一下，就帮大忙了。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "内容を確認していただけると助かります。",
+          "meaning_zh": "如果您能确认一下内容，就帮大忙了。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "主题：委婉沟通"
+      ]
+    },
+    {
+      "id": "expr_d6ad4c29-668b-4a33-a859-552c6c0602e4",
+      "japanese": "～が完成する／～を完成させる",
+      "meaning_zh": "某物完成／把某物完成",
+      "original_japanese": "残った部分を完成する",
+      "explanation_zh": "**成果＋が完成する：某物完成。**\n\nプログラムが完成しました。程序完成了。\n\n**成果＋を完成させる：把某物完成。**\n\n残った部分を完成させます。把剩下的部分完成。\n\n表达自己推进工作、完成成果时，优先使用「を完成させる」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "この後は、プログラムを完成させるつもりです。",
+          "meaning_zh": "接下来打算把程序完成。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "プログラムが完成しました。",
+          "meaning_zh": "程序完成了。",
           "origin": "assistant_supplement"
         }
       ],
       "vocabulary_ids": [
-        "vocab_5ea622cd-3d61-4725-8374-88f535132982"
+        "vocab_8090a3ee-dcd7-4ea2-bde3-0887e06693b2",
+        "vocab_a9861a87-9d49-4118-ac37-f0e3373c1aa4"
       ],
-      "origin": "lesson_material",
+      "origin": "teacher_correction",
       "verification": "source_supported",
       "tags": [
-        "表达方式"
-      ]
-    },
-    {
-      "id": "expr_f17df7a1-44b4-4f59-b52e-721ea125408e",
-      "japanese": "～であれば",
-      "meaning_zh": "如果是……",
-      "original_japanese": null,
-      "explanation_zh": "用于提出条件；相比「なら」语气较正式。",
-      "contexts": [
-        "日常",
-        "职场"
+        "主题：完成与结果"
       ],
-      "examples": [
-        {
-          "japanese": "普通の会話であれば、問題ありません。",
-          "meaning_zh": "如果是普通对话，就没问题。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [],
-      "origin": "lesson_material",
-      "verification": "source_supported",
-      "tags": [
-        "表达方式"
-      ]
-    },
-    {
-      "id": "expr_4abb3885-a4ec-4c75-9258-92354b32d057",
-      "japanese": "～ながら",
-      "meaning_zh": "一边……一边……",
-      "original_japanese": null,
-      "explanation_zh": "动词ます形去ます＋ながら，两个动作通常由同一主体完成。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "話を聞きながら、メモを取ります。",
-          "meaning_zh": "一边听，一边记笔记。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [],
-      "origin": "lesson_material",
-      "verification": "source_supported",
-      "tags": [
-        "表达方式"
-      ]
-    },
-    {
-      "id": "expr_090f8b7a-b7db-4823-a58c-cc05564e640f",
-      "japanese": "～たり、～たりする",
-      "meaning_zh": "列举活动",
-      "original_japanese": null,
-      "explanation_zh": "动词た形＋り，列举代表性活动，不表示一定按顺序做。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "ゲームをしたり、プログラムを書いたりします。",
-          "meaning_zh": "玩游戏、写程序等。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [],
-      "origin": "lesson_material",
-      "verification": "source_supported",
-      "tags": [
-        "表达方式"
-      ]
+      "corrected_japanese": "残った部分を完成させる",
+      "original_context_zh": "讨论剩下的工作，想说把剩余部分完成。"
     },
     {
       "id": "expr_7761d1c8-12b3-4b4c-a806-4f43997ad61b",
@@ -639,33 +773,62 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "表达方式"
+        "主题：尝试与愿望"
       ]
     },
     {
-      "id": "expr_88a340ba-e992-40eb-8b04-bb9f9abdc649",
-      "japanese": "自分に合っている",
-      "meaning_zh": "适合自己",
-      "original_japanese": null,
-      "explanation_zh": "表示某种事物、工作方式等适合自己；「肌に合う」是本课进一步练习的惯用表达。",
+      "id": "expr_dd358b6f-2eb0-4446-8ecf-e89ae51b2497",
+      "japanese": "一年ぐらい会社に行っていません",
+      "meaning_zh": "大约一年没有去公司了",
+      "original_japanese": "一年ぐらい会社に行ったことがない",
+      "explanation_zh": "**时长＋动词て形＋いません：从过去到现在，这段时间没做该动作。**\n一年ぐらい会社に行っていません。大约一年没有去公司了。\n\n这里强调最近一年没有去，并不表示以前从未去过。\n\n**动词た形＋ことがない：没有过某种经历。**\n会社に行ったことがありません。没有去过公司。\n\n经历的范围可明确限定：\n- 日本に来てから、温泉に行ったことがありません。来日本以后，还没有去过温泉。\n- この一年は、会社に行ったことがありません。就这一年而言，没有过到公司去的经历。\n\n想自然表达“已经一年没去公司了”，优先用本条的「一年ぐらい会社に行っていません」。",
       "contexts": [
         "日常",
         "职场"
       ],
       "examples": [
         {
-          "japanese": "この働き方は自分に合っています。",
-          "meaning_zh": "这种工作方式适合我。",
+          "japanese": "一年ぐらい会社に行っていません。",
+          "meaning_zh": "大约一年没有去公司了。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "主题：持续状态与经历"
+      ],
+      "corrected_japanese": "一年ぐらい会社に行っていません",
+      "original_context_zh": "谈目前去公司的情况，想说最近大约一年没有去公司。"
+    },
+    {
+      "id": "expr_bf18a6a4-7a27-49d2-9d95-96a3db841171",
+      "japanese": "～たことがある／～たことがない",
+      "meaning_zh": "有过／没有过某种经历",
+      "original_japanese": null,
+      "explanation_zh": "**动词た形＋ことがある／ない：有过／没有过某种经历。**\n\n温泉に行ったことがあります。去过温泉。\n\n温泉に行ったことがありません。没去过温泉。\n\n**用时间、地点或阶段限定经历范围。**\n\n日本に来てから、温泉に行ったことがありません。来日本以后，还没去过温泉。\n\nこの一年は、海外に行ったことがありません。就这一年而言，没有出过国。\n\n经历范围由句子中的限定决定；“最近一年没去公司”强调持续未发生时，优先用「一年ぐらい会社に行っていません」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "日本に来てから、温泉に行ったことがありません。",
+          "meaning_zh": "来日本以后，还没有去过温泉。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "この一年は、海外に行ったことがありません。",
+          "meaning_zh": "就这一年而言，没有出过国。",
           "origin": "assistant_supplement"
         }
       ],
-      "vocabulary_ids": [
-        "vocab_48bc42f8-f9eb-4ef9-a458-6cb0b3d710ce"
-      ],
-      "origin": "lesson_material",
+      "vocabulary_ids": [],
+      "origin": "assistant_supplement",
       "verification": "source_supported",
       "tags": [
-        "表达方式"
+        "主题：持续状态与经历"
       ]
     },
     {
@@ -689,39 +852,44 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "表达方式"
+        "主题：擅长与能力"
       ]
     },
     {
-      "id": "expr_849d0799-6232-447e-ad2f-593eafb5d280",
-      "japanese": "口から出てこない",
-      "meaning_zh": "知道但说不出来",
-      "original_japanese": null,
-      "explanation_zh": "形容认识一个词或句型，但现场不能马上说出来。",
+      "id": "expr_1352870f-c99e-4761-8771-111bbf3ec2ec",
+      "japanese": "本格的です／本格的ではないです",
+      "meaning_zh": "正宗／不太正宗",
+      "original_japanese": "あんまり本格ではないんですけど",
+      "explanation_zh": "描述料理正宗、地道时，用な形容词「本格的」。\n\n- 本格的な四川料理：正宗的四川料理。\n- 本格的です：很正宗。\n- あまり本格的ではないです：不太正宗。\n\n「あんまり」是「あまり」较口语的说法；推荐形式是「本格 → 本格的」。",
       "contexts": [
         "日常",
         "职场"
       ],
       "examples": [
         {
-          "japanese": "意味は分かるんですが、すぐには口から出てきません。",
-          "meaning_zh": "知道意思，但不能马上说出来。",
+          "japanese": "おいしいですが、あまり本格的ではないです。",
+          "meaning_zh": "好吃，不过不太正宗。",
           "origin": "assistant_supplement"
         }
       ],
-      "vocabulary_ids": [],
-      "origin": "lesson_material",
+      "vocabulary_ids": [
+        "vocab_3e91ae02-07bc-49ea-8c7e-995435067792",
+        "vocab_158952f2-96c6-47d0-805f-833680f71558"
+      ],
+      "origin": "teacher_correction",
       "verification": "source_supported",
       "tags": [
-        "表达方式"
-      ]
+        "主题：本格与本格的"
+      ],
+      "corrected_japanese": "あまり本格的ではないです。",
+      "original_context_zh": "介绍料理时，想说不太正宗。"
     },
     {
       "id": "expr_31a160ef-dfda-4a0c-99ea-3fbb0a01cfe7",
       "japanese": "昨日勉強した表現",
       "meaning_zh": "昨天学过的表达",
       "original_japanese": "昨日で勉強した表現",
-      "explanation_zh": "「昨日」直接修饰后面的动作，这里不加「で」。类似「今日、東京に行きます」。昨天等时间词可以作状语；不要因某词后面没助词，就一律判定它在词典上是副词。",
+      "explanation_zh": "**昨日（きのう）：昨天，直接作为时间状语修饰动作。**\n昨日勉強した表現：昨天学过的表达。\n\n昨日、東京に行きました。昨天去了东京。\n\n「昨日」在这里作副词性时间表达，直接修饰动词，后面不需要「で」。\n\n接续：昨日＋勉強した＋表現。其中「勉強した」修饰名词「表現」。\n\n同类：今日、日本語を勉強します。今天学日语。",
       "contexts": [
         "日常",
         "职场"
@@ -740,66 +908,124 @@
       "origin": "teacher_correction",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
+        "主题：时间状语"
       ],
-      "corrected_japanese": "昨日勉強した表現"
+      "corrected_japanese": "昨日勉強した表現",
+      "original_context_zh": "提到昨天学过的表达，想把“昨天学的”修饰“表达”。"
     },
     {
-      "id": "expr_87c79d3a-8c66-4fdc-99e8-1e61be1ad44e",
-      "japanese": "時間表現＋で",
-      "meaning_zh": "以某个时间为界、告一段落",
-      "original_japanese": null,
-      "explanation_zh": "本课用「明日で大学を卒業します」说明以时间为界、阶段结束的「で」。这和叙述“昨天做了什么”不同，不能说「昨日で勉強した」。时间词＋で也有其他语境，不要把所有用法都等同于期限。",
+      "id": "expr_c0b8a104-39a5-40e2-ad27-aeaedccc7320",
+      "japanese": "～たばかりの頃",
+      "meaning_zh": "刚做某事的那段时期",
+      "original_japanese": "来日したばっかり頃",
+      "explanation_zh": "「ばかり」也可以口语化为「ばっかり」；修饰名词「頃」时要加「の」。\n\n- 来日したばかり：刚来日本。\n- 来日したばかりの頃：刚来日本的时候。\n\n「ばかり」的“刚”带有说话人的主观判断，不限于几分钟前。",
       "contexts": [
         "日常",
         "职场"
       ],
       "examples": [
         {
-          "japanese": "この仕事は今日で終わりです。",
-          "meaning_zh": "这项工作到今天就结束了。",
+          "japanese": "来日したばかりの頃は、少しホームシックでした。",
+          "meaning_zh": "刚来日本的时候，有点想家。",
+          "origin": "source"
+        },
+        {
+          "japanese": "入社したばかりの頃は、分からないことが多かったです。",
+          "meaning_zh": "刚入职时，有很多不懂的事。",
           "origin": "assistant_supplement"
         }
       ],
       "vocabulary_ids": [
-        "vocab_b697146b-1326-4fa6-825c-36f1ddefa4f6",
-        "vocab_62d561a4-a823-4de0-8d9c-75caaaa8717f"
+        "vocab_f5df7569-a8d5-4a94-803c-ec7cd4f3f059",
+        "vocab_8ada655b-e80e-4799-bb93-2dd0fe6da0c2"
       ],
-      "origin": "lesson_material",
+      "origin": "teacher_correction",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
-      ]
+        "主题：时间与过去叙述"
+      ],
+      "corrected_japanese": "来日したばかりの頃",
+      "original_context_zh": "描述刚来日本的那段时期。"
     },
     {
-      "id": "expr_c2374683-d545-4981-97db-45a554edcc32",
-      "japanese": "よく日本料理を食べます",
-      "meaning_zh": "经常吃日本料理",
-      "original_japanese": null,
-      "explanation_zh": "「よく」表示频率，可以说「よく日本料理を食べます」或「日本料理をよく食べます」。课堂说明副词位置可以调整；你追问「よく私は……」是否自然后，老师说明日常通常省略已知的「私は」。语法可成立，不代表每种顺序同样常用；位置也会影响焦点。",
+      "id": "expr_8d4ab363-e35b-47e9-bdc6-64007463399f",
+      "japanese": "その時は全然ダメでした",
+      "meaning_zh": "那时候完全不行",
+      "original_japanese": "その時は全然ダメです",
+      "explanation_zh": "**回顾过去的情况：ダメです → ダメでした。**\n\nその時は全然ダメでした。那时完全不行。\n\n谈刚来日本时的语言能力或当时的表现，用过去式「でした」。",
       "contexts": [
         "日常",
         "职场"
       ],
       "examples": [
         {
-          "japanese": "よく日本料理を食べます。",
-          "meaning_zh": "经常吃日本料理。",
-          "origin": "source"
-        },
-        {
-          "japanese": "日本料理をよく食べます。",
-          "meaning_zh": "经常吃日本料理。",
-          "origin": "source"
+          "japanese": "来日したばかりの頃は、電話で話すのが全然ダメでした。",
+          "meaning_zh": "刚来日本时，完全不行的是用电话沟通。",
+          "origin": "assistant_supplement"
         }
       ],
       "vocabulary_ids": [
-        "vocab_dd969658-fc8e-40f7-a117-ee9cc2dee67f"
+        "vocab_f5df7569-a8d5-4a94-803c-ec7cd4f3f059",
+        "vocab_d977cca0-b035-4e17-bfb9-bc521ff29d26"
       ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "主题：时间与过去叙述"
+      ],
+      "corrected_japanese": "その時は全然ダメでした",
+      "original_context_zh": "回顾刚来日本时的情况，想说当时完全不行。"
+    },
+    {
+      "id": "expr_00d74558-a4a3-4552-9791-391a1441958f",
+      "japanese": "留学していた時",
+      "meaning_zh": "留学期间",
+      "original_japanese": "留学の時",
+      "explanation_zh": "**留学していた時：留学持续的那段时间。**\n\n「留学していた」修饰「時」，明确说的是正在留学期间发生的事情。\n\n留学していた時、日本語を毎日使っていました。留学期间，每天都使用日语。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "留学していた時は、大阪に住んでいました。",
+          "meaning_zh": "留学期间住在大阪。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_65bb1388-ae6a-4f05-b578-c854d415e8b8"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "主题：时间与过去叙述"
+      ],
+      "corrected_japanese": "留学していた時",
+      "original_context_zh": "描述留学期间发生的事情。"
+    },
+    {
+      "id": "expr_f17df7a1-44b4-4f59-b52e-721ea125408e",
+      "japanese": "～であれば",
+      "meaning_zh": "如果是……",
+      "original_japanese": null,
+      "explanation_zh": "用于提出条件；相比「なら」语气较正式。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "普通の会話であれば、問題ありません。",
+          "meaning_zh": "如果是普通对话，就没问题。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [],
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
+        "主题：条件表达"
       ]
     },
     {
@@ -826,110 +1052,17 @@
       "origin": "teacher_correction",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
+        "主题：条件表达"
       ],
-      "corrected_japanese": "使うだけであれば"
-    },
-    {
-      "id": "expr_57f3f694-ea97-43b6-af5d-5b92798c0d0c",
-      "japanese": "～ていただけますか／～ていただくことは可能でしょうか",
-      "meaning_zh": "礼貌提出请求／询问是否可能",
-      "original_japanese": null,
-      "explanation_zh": "课堂比较了请求的力度：「～ていただけますか」直接请对方做某事；「～ていただくことは可能でしょうか」先问可行性，较正式、较绕。老师在所举场景中认为前者要求感更强。不要理解成下属绝不能对上司用「いただけますか」；语气、关系、内容都会影响感受。更委婉的补充说法是「～ていただけないでしょうか」。\n\n你在课堂提问时用的是名词请求「指摘をいただけますか」与「指摘をいただくことが可能でしょうか」。名词请求和「Vていただく」都可以比较直接请求与询问可行性的区别；「ことは／ことが可能でしょうか」要结合句子语境。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "内容を確認していただけますか。",
-          "meaning_zh": "能请您确认一下内容吗？",
-          "origin": "assistant_supplement"
-        },
-        {
-          "japanese": "内容を確認していただくことは可能でしょうか。",
-          "meaning_zh": "是否可以请您确认一下内容？",
-          "origin": "assistant_supplement"
-        },
-        {
-          "japanese": "指摘をいただけますか。",
-          "meaning_zh": "能请您指正一下吗？",
-          "origin": "source"
-        },
-        {
-          "japanese": "指摘をいただくことが可能でしょうか。",
-          "meaning_zh": "是否可以请您给予指正？",
-          "origin": "source"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_87b3ae7e-0d09-43e8-b626-a2bcecc4b045",
-        "vocab_74920c2a-eaa7-491f-b79a-c904645f51a8"
-      ],
-      "origin": "lesson_material",
-      "verification": "source_supported",
-      "tags": [
-        "今日补充"
-      ]
-    },
-    {
-      "id": "expr_68433be4-cf5d-4e0c-95e6-a3f91fdf7829",
-      "japanese": "～てもらえたら助かります／嬉しいです",
-      "meaning_zh": "如果能帮我做……就帮大忙了／我会很高兴",
-      "original_japanese": null,
-      "explanation_zh": "老师在讨论请求语气时提到这两种表达。这里把“对我有帮助”或“我会高兴”作为说话人的感受，缓和要求。对更正式的对象可调整为「～ていただけると助かります」。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "確認してもらえたら助かります。",
-          "meaning_zh": "如果能帮忙确认一下，就帮大忙了。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [],
-      "origin": "lesson_material",
-      "verification": "source_supported",
-      "tags": [
-        "今日补充"
-      ]
-    },
-    {
-      "id": "expr_f9c0a35e-b064-4fb9-b719-4344bbd68fb8",
-      "japanese": "～を参照する",
-      "meaning_zh": "参照某份资料",
-      "original_japanese": "テンプレートに参照しながら",
-      "explanation_zh": "「参照する」的对象用「を」：テンプレートを参照する。不要在此把中文“参照……”直接对应成「に参照する」。「～を参考にする」是另一种可用的结构。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "テンプレートを参照しながら、文章を作成します。",
-          "meaning_zh": "参照模板来写文章。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_87b3ae7e-0d09-43e8-b626-a2bcecc4b045",
-        "vocab_e881dd45-cc5f-46df-b367-23072d7e048d"
-      ],
-      "origin": "teacher_correction",
-      "verification": "source_supported",
-      "tags": [
-        "今日补充"
-      ],
-      "corrected_japanese": "テンプレートを参照しながら"
+      "corrected_japanese": "使うだけであれば",
+      "original_context_zh": "讨论只是使用某个工具的情况，想说“如果只是使用的话”。"
     },
     {
       "id": "expr_409967ab-8c04-4b96-836c-91f7c0705194",
       "japanese": "動詞のば形",
       "meaning_zh": "如果……就……",
       "original_japanese": "伝えば",
-      "explanation_zh": "课堂练习「座る→座れば」「飲む→飲めば」「行く→行けば」「伝える→伝えれば」。五段动词把词尾う段改え段＋ば；一段动词去る＋れば；する→すれば、来る→来れば（くれば）。老师的发音提示应结合动词类别记，不能不分类型机械替换。\n\n用户已确认原说法为「伝えば」，正确形式是「伝えれば」。「伝える」是一段动词，去掉る后加れば，不能只把る去掉后直接加ば。「伝えば」不是现代标准日语中「伝える」的正确ば形。",
+      "explanation_zh": "**五段动词：词尾う段 → え段＋ば。**\n- 座る → 座れば\n- 飲む → 飲めば\n- 行く → 行けば\n\n**一段动词：去掉る＋れば。**\n- 伝える → 伝えれば\n- 食べる → 食べれば\n\n**不规则动词：**する → すれば；来る → 来れば（くれば）。\n\n「伝える」是一段动词，因此去る后接「れば」：伝え＋れば＝伝えれば。「伝えば」少了「れ」，不是「伝える」的正确ば形。",
       "contexts": [
         "日常",
         "职场"
@@ -949,21 +1082,27 @@
       "origin": "teacher_correction",
       "verification": "user_confirmed",
       "tags": [
-        "今日补充"
+        "主题：条件表达"
       ],
-      "corrected_japanese": "伝えれば"
+      "corrected_japanese": "伝えれば",
+      "original_context_zh": "练习「伝える」的ば形，想说“如果传达的话”。"
     },
     {
-      "id": "expr_bb0214bf-1031-4e87-83db-8915b77e3467",
-      "japanese": "場所＋で気分転換をする",
-      "meaning_zh": "在某地转换心情",
-      "original_japanese": "カラオケに気分転換をします",
-      "explanation_zh": "「気分転換をする」本身不是移动动词。在卡拉OK放松，用「カラオケで気分転換をする」。地点＋で表示动作发生在哪里。要表达“去卡拉OK”时，另用移动动词「行く」。",
+      "id": "expr_63c49c7e-b958-4610-9cd0-3398c7751f94",
+      "japanese": "気分転換をする／気分転換になる",
+      "meaning_zh": "转换心情",
+      "original_japanese": null,
+      "explanation_zh": "**気分転換をする：出于自己的意愿，主动去放松、换换心情。**\n試験が終わった後で、気分転換をします。考试结束后，主动放松一下。\n\n**気分転換になる：某件事带来了放松、换心情的效果。**\n重点在于这件事带来的放松效果。\n\n散歩をすると、いい気分転換になります。散步能很好地换换心情。\n\n按这个意思区分：主动去放松 → する；某事带来放松效果 → なる。",
       "contexts": [
         "日常",
         "职场"
       ],
       "examples": [
+        {
+          "japanese": "散歩をすると、いい気分転換になります。",
+          "meaning_zh": "散散步能很好地换换心情。",
+          "origin": "source"
+        },
         {
           "japanese": "試験が終わった後で、カラオケで気分転換をします。",
           "meaning_zh": "考试结束后，在卡拉OK放松一下。",
@@ -973,12 +1112,11 @@
       "vocabulary_ids": [
         "vocab_940759b7-9a75-4827-99a3-d5cafa82e719"
       ],
-      "origin": "teacher_correction",
+      "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
-      ],
-      "corrected_japanese": "カラオケで気分転換をします。"
+        "主题：気分転換"
+      ]
     },
     {
       "id": "expr_76b4ffb2-2233-49da-bf56-3462e7a7437a",
@@ -1008,130 +1146,44 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
+        "主题：気分転換"
       ]
     },
     {
-      "id": "expr_dd358b6f-2eb0-4446-8ecf-e89ae51b2497",
-      "japanese": "一年ぐらい会社に行っていません",
-      "meaning_zh": "大约一年没有去公司了",
-      "original_japanese": "一年ぐらい会社に行ったことがない",
-      "explanation_zh": "说明从过去延续至今的一段时间未发生某动作，用「～ていません」。「～たことがない」强调未有过某种经历。本课你想说最近约一年没去公司，所以老师推荐前者；「たことがない」也可限定经历范围，不必一律理解为整个人生。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "一年ぐらい会社に行っていません。",
-          "meaning_zh": "大约一年没有去公司了。",
-          "origin": "source"
-        }
-      ],
-      "vocabulary_ids": [],
-      "origin": "teacher_correction",
-      "verification": "source_supported",
-      "tags": [
-        "今日补充"
-      ],
-      "corrected_japanese": "一年ぐらい会社に行っていません"
-    },
-    {
-      "id": "expr_f09ef44c-46c9-4307-a775-b09eedfc0c6e",
-      "japanese": "ぶっちゃけ",
-      "meaning_zh": "说实话、坦白说",
+      "id": "expr_090f8b7a-b7db-4823-a58c-cc05564e640f",
+      "japanese": "～たり、～たりする",
+      "meaning_zh": "列举活动",
       "original_japanese": null,
-      "explanation_zh": "用于熟人之间直说真实感受，口语色彩强。正式会议、对客户或较严肃的工作沟通通常改用「率直に言うと」等表达。",
+      "explanation_zh": "**动词た形＋り：列举代表性活动。**\n読む → 読んだ → 読んだり；行く → 行った → 行ったり。\n\n「～たり、～たりする」列举几件事，末尾的「する」承担时态与礼貌形式：\n- 休日はゲームをしたり、散歩したりします。休息日玩游戏、散步等。\n- 昨日は買い物をしたり、料理をしたりしました。昨天做了购物、做饭等事情。\n\n**～たりしますか？：会不会做……之类的事？**\n可以只举一种代表性活动，语气比直接问是否做某事更留有余地。\n- 休日はカフェ巡りをしたりしますか。休息日会逛逛咖啡店之类的吗？\n\n这里列举活动，不表达固定先后顺序。",
       "contexts": [
         "日常",
         "职场"
       ],
       "examples": [
         {
-          "japanese": "ぶっちゃけ、最初の一か月はかなりきつかったです。",
-          "meaning_zh": "说实话，最初一个月挺辛苦的。",
-          "origin": "source"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_e8829d00-2d07-40a2-a086-5664cae25dd6",
-        "vocab_6d0b19f7-e70b-4d28-8138-90bf36b77e39"
-      ],
-      "origin": "lesson_material",
-      "verification": "source_supported",
-      "tags": [
-        "今日补充"
-      ]
-    },
-    {
-      "id": "expr_c5e6e81c-1292-4bd4-94e7-4a5933be9532",
-      "japanese": "率直に言うと",
-      "meaning_zh": "坦率地说",
-      "original_japanese": null,
-      "explanation_zh": "比「ぶっちゃけ」更适合正式或职场场景。读音：そっちょくにいうと。课堂还练习了「きつかった」的读音；将词形记为「きつい→きつかった」。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "率直に言うと、まだ電話は少し苦手です。",
-          "meaning_zh": "坦率地说，我现在还是有点不擅长打电话。",
-          "origin": "source"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_e8829d00-2d07-40a2-a086-5664cae25dd6",
-        "vocab_6d0b19f7-e70b-4d28-8138-90bf36b77e39",
-        "vocab_7935e3b7-12fb-4a10-87de-8f686ebadfcd",
-        "vocab_39d01bcc-a592-4efb-8eb7-8819ed509347"
-      ],
-      "origin": "lesson_material",
-      "verification": "source_supported",
-      "tags": [
-        "今日补充"
-      ]
-    },
-    {
-      "id": "expr_8a468174-63b3-440b-b4e8-e02c81afe3ec",
-      "japanese": "肌に合う／自分の肌に合う",
-      "meaning_zh": "适合皮肤；适合自己的性情和生活习惯",
-      "original_japanese": "生活スタイルが自分に肌に合います",
-      "explanation_zh": "「肌」读はだ。第一义用于护肤品对皮肤是否合适；也可比喻城市、环境、生活方式是否适合自己。「自分」と「肌」之间是名词关系，用「自分の肌」，不用「自分に肌」。状态用「合っています」也自然。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "この街は静かで、意外と自分の肌に合います。",
-          "meaning_zh": "这个城市很安静，意外地很适合我。",
-          "origin": "source"
+          "japanese": "ゲームをしたり、プログラムを書いたりします。",
+          "meaning_zh": "玩游戏、写程序等。",
+          "origin": "assistant_supplement"
         },
         {
-          "japanese": "このクリームは自分の肌に合っていません。",
-          "meaning_zh": "这款面霜不适合我的皮肤。",
+          "japanese": "休日はカフェ巡りをしたりしますか。",
+          "meaning_zh": "休息日会逛逛咖啡店之类的吗？",
           "origin": "assistant_supplement"
         }
       ],
-      "vocabulary_ids": [
-        "vocab_11519c9d-9f60-4ef4-9444-a2ca091490ee",
-        "vocab_48bc42f8-f9eb-4ef9-a458-6cb0b3d710ce",
-        "vocab_719d6130-9183-4a82-b79b-0e4846de7924"
-      ],
-      "origin": "teacher_correction",
+      "vocabulary_ids": [],
+      "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
-      ],
-      "corrected_japanese": "生活スタイルが自分の肌に合っています。"
+        "主题：活动列举"
+      ]
     },
     {
       "id": "expr_1f3dc134-8c9a-4b53-a7ed-e59e28f6e5f5",
       "japanese": "使わなくなりました",
       "meaning_zh": "变得不再使用了",
-      "original_japanese": "もう使っていません（想突出不再使用的变化时）",
-      "explanation_zh": "否定形＋なる：动词ない形去い＋くなる。例：使わない→使わなくなる，動かない→動かなくなる。「使っていません」陈述现在没用；「使わなくなりました」突出从以前用到现在不再用的变化。不能看到中文“了”就一律翻成なる。",
+      "original_japanese": "もう使っていません",
+      "explanation_zh": "**动词ない形去掉い＋くなる：从以前做，变为现在不再做。**\n使わない → 使わなくなる → 使わなくなりました。\n\n使っていません：现在没有使用，陈述状态。\n\n使わなくなりました：以前使用，现在不再使用，突出变化。\n\n中文出现“了”时，可以先考虑：是否发生了某种转变？如果要表达“以前如此，现在变了”，再选择「なる」来体现变化。\n\nこのクリームが自分の肌に合っていないので、使わなくなりました。因为这款面霜不适合自己的皮肤，所以不再用了。",
       "contexts": [
         "日常",
         "职场"
@@ -1149,16 +1201,17 @@
       "origin": "teacher_correction",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
+        "主题：状态变化"
       ],
-      "corrected_japanese": "使わなくなりました"
+      "corrected_japanese": "使わなくなりました",
+      "original_context_zh": "以前用这款面霜，因不适合自己的皮肤，现在已经不再使用。想突出从使用到停用的变化。"
     },
     {
       "id": "expr_51b1b0c3-c8aa-41c8-9b54-7f1df8a81567",
       "japanese": "行きたくなくなりました",
       "meaning_zh": "变得不想去了",
       "original_japanese": null,
-      "explanation_zh": "愿望「～たい」变否定「～たくない」，再变状态变化「～たくなくなる」：行きたい→行きたくない→行きたくなくなりました。不要说「行きたくない風になりました」来表达本课意图。",
+      "explanation_zh": "**～たい → ～たくない → ～たくなくなる：从想做变成不想做。**\n行きたい：想去。\n\n行きたくない：不想去，陈述当前意愿。\n\n行きたくなくなりました：以前想去，现在变得不想去了。\n\n疲れて、外に行きたくなくなりました。累了，变得不想出门了。\n\n重点在意愿变化，使用「～たくなくなる」。",
       "contexts": [
         "日常",
         "职场"
@@ -1174,7 +1227,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
+        "主题：状态变化"
       ]
     },
     {
@@ -1206,37 +1259,8 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
+        "主题：状态变化"
       ]
-    },
-    {
-      "id": "expr_7813003f-bee2-4012-803c-06a6614fbf74",
-      "japanese": "ゲームで遊ぶ",
-      "meaning_zh": "用游戏来玩、玩游戏",
-      "original_japanese": "ゲームを遊ぶ",
-      "explanation_zh": "本课老师推荐把「ゲームを遊ぶ」改为「ゲームで遊ぶ」，「で」表示手段。还可以直接说「ゲームをする」。不要因此把所有自动词前的「を」都判为错误：「道を歩く」等用法另有规则。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "休日はゲームで遊びます。",
-          "meaning_zh": "休息日玩游戏。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_dc3f95be-5e9e-4dc5-af12-d1b760b39a6e",
-        "vocab_87b3ae7e-0d09-43e8-b626-a2bcecc4b045",
-        "vocab_55d936dc-6e60-4e24-9f25-0854d72221c6"
-      ],
-      "origin": "teacher_correction",
-      "verification": "source_supported",
-      "tags": [
-        "今日补充"
-      ],
-      "corrected_japanese": "ゲームで遊ぶ"
     },
     {
       "id": "expr_6a0b1d4a-b764-4d3e-9c60-e3a11da322f3",
@@ -1264,42 +1288,8 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
+        "主题：状态变化"
       ]
-    },
-    {
-      "id": "expr_4ae48991-ecb9-4881-bbf1-9a63ac22b1d5",
-      "japanese": "そういった表現をよく見ます",
-      "meaning_zh": "经常看到这类表达",
-      "original_japanese": "そういう言い方がよく見えます",
-      "explanation_zh": "表达在Teams等地方经常遇到某种写法，用「よく見ます」。本课的「見える」更适合问画面能否看清、是否可见。不要把「見る＝主动／見える＝被动」当成所有语境的机械划分，重点在此处“经常遇见”与“可见性”的区别。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "Teamsでそういった表現をよく見ます。",
-          "meaning_zh": "在Teams里经常看到这类表达。",
-          "origin": "source"
-        },
-        {
-          "japanese": "画面は見えますか。",
-          "meaning_zh": "能看见画面吗？",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_dd969658-fc8e-40f7-a117-ee9cc2dee67f",
-        "vocab_8d4c993d-884e-4a47-8954-fb9a65a14df6",
-        "vocab_787b9a98-d641-4ee8-84a1-57363d9ec1ff"
-      ],
-      "origin": "teacher_correction",
-      "verification": "source_supported",
-      "tags": [
-        "今日补充"
-      ],
-      "corrected_japanese": "そういった表現をよく見ます"
     },
     {
       "id": "expr_de92ac54-aa17-45fd-81e3-7f7db482e08f",
@@ -1325,121 +1315,74 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
+        "主题：状态变化"
       ]
     },
     {
-      "id": "expr_8d4ab363-e35b-47e9-bdc6-64007463399f",
-      "japanese": "その時は全然ダメでした",
-      "meaning_zh": "那时候完全不行",
-      "original_japanese": "その時は全然ダメです",
-      "explanation_zh": "回顾刚来日本时的过去情况，把「ダメです」改为「ダメでした」。现在与过去的评价要和叙述时间一致。",
+      "id": "expr_05a0ba59-d8da-4083-b382-768ff42eb1e6",
+      "japanese": "ホームシックになる",
+      "meaning_zh": "想家",
+      "original_japanese": null,
+      "explanation_zh": "「ホームシックになる」表示开始出现想家的情绪；「ホームシックでした」描述过去想家的状态。\n\n「ホームシックになったことがある」表示有过想家的经历。「た形＋ことがある／ない」的接续和经历范围，见“经历”主题条目。",
       "contexts": [
         "日常",
         "职场"
       ],
       "examples": [
         {
-          "japanese": "来日したばかりの頃は、電話で話すのが全然ダメでした。",
-          "meaning_zh": "刚来日本时，完全不行的是用电话沟通。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_f5df7569-a8d5-4a94-803c-ec7cd4f3f059",
-        "vocab_d977cca0-b035-4e17-bfb9-bc521ff29d26"
-      ],
-      "origin": "teacher_correction",
-      "verification": "source_supported",
-      "tags": [
-        "今日补充"
-      ],
-      "corrected_japanese": "その時は全然ダメでした"
-    },
-    {
-      "id": "expr_00d74558-a4a3-4552-9791-391a1441958f",
-      "japanese": "留学していた時",
-      "meaning_zh": "留学期间",
-      "original_japanese": "留学の時",
-      "explanation_zh": "本课老师推荐把「留学の時」改为「留学していた時」，明确是在留学持续期间发生的事情。「留学の時」不必一律判为不成立；推荐形式更具体。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "留学していた時は、大阪に住んでいました。",
-          "meaning_zh": "留学期间住在大阪。",
-          "origin": "assistant_supplement"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_65bb1388-ae6a-4f05-b578-c854d415e8b8"
-      ],
-      "origin": "teacher_correction",
-      "verification": "source_supported",
-      "tags": [
-        "今日补充"
-      ],
-      "corrected_japanese": "留学していた時"
-    },
-    {
-      "id": "expr_4f996d03-7b3d-4668-86ef-feef627bcac4",
-      "japanese": "～だから／～のため",
-      "meaning_zh": "因为……／由于……",
-      "original_japanese": "英語が全然ダメのため",
-      "explanation_zh": "本课「英語が全然ダメのため」改为日常表达「英語が全然ダメだから」。名词／な形容词接だから。「ため」较书面，在通知、解释、新闻中常见；不能说日常绝对不用。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "英語が苦手だから、日本語で説明します。",
-          "meaning_zh": "因为不擅长英语，我用日语说明。",
-          "origin": "assistant_supplement"
+          "japanese": "日本に来てから、ホームシックになったことはありますか。",
+          "meaning_zh": "来日本以后，有过想家的经历吗？",
+          "origin": "source"
         },
         {
-          "japanese": "台風のため、電車が遅れています。",
-          "meaning_zh": "受台风影响，电车晚点。",
+          "japanese": "ときどきホームシックになりますが、家族と話すと落ち着きます。",
+          "meaning_zh": "有时会想家，不过和家人聊聊就安心了。",
           "origin": "assistant_supplement"
         }
       ],
       "vocabulary_ids": [
-        "vocab_39d01bcc-a592-4efb-8eb7-8819ed509347",
-        "vocab_d977cca0-b035-4e17-bfb9-bc521ff29d26"
-      ],
-      "origin": "teacher_correction",
-      "verification": "source_supported",
-      "tags": [
-        "今日补充"
-      ],
-      "corrected_japanese": "英語が全然ダメだから"
-    },
-    {
-      "id": "expr_0254fd0d-07aa-4370-b6d8-45e73cadf8c5",
-      "japanese": "「は」的语调练习",
-      "meaning_zh": "练习主题部分与后续说明的语调",
-      "original_japanese": null,
-      "explanation_zh": "课堂以「この街は静かで……」练习主题助词は附近的音高走向。你追问是否总下降后，老师补充说明解释时也可能上扬、会因说话人和语境变化。因此不要背“は永远降调”。准确的个人发音问题需要音频回听，不从文字转写推测声调。",
-      "contexts": [
-        "日常",
-        "职场"
-      ],
-      "examples": [
-        {
-          "japanese": "この街は静かで、意外と自分の肌に合います。",
-          "meaning_zh": "这个城市很安静，意外地很适合我。",
-          "origin": "source"
-        }
-      ],
-      "vocabulary_ids": [
-        "vocab_11519c9d-9f60-4ef4-9444-a2ca091490ee"
+        "vocab_8ada655b-e80e-4799-bb93-2dd0fe6da0c2"
       ],
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
+        "主题：状态变化"
+      ]
+    },
+    {
+      "id": "expr_29a4f1ed-243d-44cf-a65b-15e51452feef",
+      "japanese": "～合う",
+      "meaning_zh": "相互做某事",
+      "original_japanese": null,
+      "explanation_zh": "接续：**动词ます形去掉ます＋合う**。表示互相做某个动作。\n\n| 表达 | 中文 |\n|---|---|\n| 話し合う | 交谈、讨论 |\n| 教え合う | 互相教、互相指导 |\n| 送り合う | 互相发送 |\n\n同类表达包括「教え合う」「送り合う」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "分からないところは、お互いに教え合います。",
+          "meaning_zh": "不懂的地方互相教。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "チームで解決方法を話し合います。",
+          "meaning_zh": "团队一起讨论解决办法。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "友達とメッセージを送り合っています。",
+          "meaning_zh": "和朋友互发消息。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_2977dcb2-c26e-4f55-99c7-09dec57f4ef5"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "主题：相互动作"
       ]
     },
     {
@@ -1447,7 +1390,7 @@
       "japanese": "結構～／結構です",
       "meaning_zh": "挺、相当；可以／不用了",
       "original_japanese": null,
-      "explanation_zh": "作副词时表示程度：結構忙しい、結構自分の肌に合っている。回答别人是否需要某物时「結構です」可以表示谢绝；但也可表示认可或“这样即可”，例如「メールで結構です」。必须看上下文，不能把所有結構です都翻成不要。补充核对：[小学馆辞典「結構」](https://kotobank.jp/word/%E7%B5%90%E6%A7%8B-490460)。",
+      "explanation_zh": "**結構（けっこう）：程度副词，挺、相当。**\n\n結構忙しいです。挺忙的。\n\n結構自分の肌に合っています。相当适合自己。\n\n**結構です：根据应答对象判断。**\n\nおかわりはいかがですか。—結構です。要再来一份吗？—不用了。\n\nメールで結構です。发邮件就可以。这里表示认可方式，而不是拒绝。",
       "contexts": [
         "日常",
         "职场"
@@ -1476,48 +1419,223 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
+        "主题：程度与应答"
       ]
     },
     {
-      "id": "expr_d6ad4c29-668b-4a33-a859-552c6c0602e4",
-      "japanese": "～が完成する／～を完成させる",
-      "meaning_zh": "某物完成／把某物完成",
-      "original_japanese": "残った部分を完成する",
-      "explanation_zh": "本课将「残った部分を完成する」改为「完成させる」。表达成果完成用「プログラムが完成する」；表达自己把它完成用「プログラムを完成させる」。课堂说“完成する只有自动词”的说明过于绝对：国立国语研究所也收录他动用例，但注明「完成させる」更常见。本课推荐形式适合优先掌握。补充核对：[国立国语研究所 IPAL「完成」](https://www2.ninjal.ac.jp/dictionaries/IPALBN/pdf_dir/%E3%81%8B%E3%82%93%E3%81%9B%E3%81%84.pdf)。",
+      "id": "expr_4ae48991-ecb9-4881-bbf1-9a63ac22b1d5",
+      "japanese": "そういった表現をよく見ます",
+      "meaning_zh": "经常看到这类表达",
+      "original_japanese": "そういう言い方がよく見えます",
+      "explanation_zh": "**見ます：看到、阅读、接触到某种内容。**\nTeamsでそういった表現をよく見ます。在 Teams 里经常看到这类表达。\n重点是经常遇到这种写法，表达本身能否看见不是这里要讨论的问题。\n\n**見えます：能看见，关注可见性。**\n判断重点是「見えるかどうか」——看不看得见。比如网络中断导致画面消失，恢复连接后确认是否能看到：\n- 画面は見えますか。能看见画面吗？\n- はい、見えます。能看见。\n\n本条的「問題点は見えるかどうか」意思是“关键在能否看见”，并不是“能否发现某个问题点”。\n\n描述经常遇见一种表达，用「よく見ます」；确认画面、文字等是否可见，用「見えます」。",
       "contexts": [
         "日常",
         "职场"
       ],
       "examples": [
         {
-          "japanese": "この後は、プログラムを完成させるつもりです。",
-          "meaning_zh": "接下来打算把程序完成。",
-          "origin": "assistant_supplement"
+          "japanese": "Teamsでそういった表現をよく見ます。",
+          "meaning_zh": "在Teams里经常看到这类表达。",
+          "origin": "source"
         },
         {
-          "japanese": "プログラムが完成しました。",
-          "meaning_zh": "程序完成了。",
+          "japanese": "画面は見えますか。",
+          "meaning_zh": "能看见画面吗？",
           "origin": "assistant_supplement"
         }
       ],
       "vocabulary_ids": [
-        "vocab_8090a3ee-dcd7-4ea2-bde3-0887e06693b2",
-        "vocab_a9861a87-9d49-4118-ac37-f0e3373c1aa4"
+        "vocab_dd969658-fc8e-40f7-a117-ee9cc2dee67f",
+        "vocab_8d4c993d-884e-4a47-8954-fb9a65a14df6",
+        "vocab_787b9a98-d641-4ee8-84a1-57363d9ec1ff"
       ],
       "origin": "teacher_correction",
       "verification": "source_supported",
       "tags": [
-        "今日补充"
+        "主题：見る与見える"
       ],
-      "corrected_japanese": "残った部分を完成させる"
+      "corrected_japanese": "そういった表現をよく見ます",
+      "original_context_zh": "谈 Teams 中常见的写法，想说经常遇见这类表达，而不是确认画面能否看见。"
+    },
+    {
+      "id": "expr_0254fd0d-07aa-4370-b6d8-45e73cadf8c5",
+      "japanese": "「は」的语调练习",
+      "meaning_zh": "练习主题部分与后续说明的语调",
+      "original_japanese": null,
+      "explanation_zh": "**主题助词「は」附近的音高：按句子语境练习。**\n\nこの街は静かで……：提出“这个城市”作为话题，再继续说明。\n\n普通陈述和解释、强调时，主题部分的音高走向可以不同。发音练习把整句一起读，注意「は」前后的连接与后续说明。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "この街は静かで、意外と自分の肌に合います。",
+          "meaning_zh": "这个城市很安静，意外地很适合我。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_11519c9d-9f60-4ef4-9444-a2ca091490ee"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "主题：语调练习"
+      ]
+    },
+    {
+      "id": "expr_51a20fbd-c716-42a3-8fea-ead59cc97554",
+      "japanese": "～について",
+      "meaning_zh": "关于……",
+      "original_japanese": null,
+      "explanation_zh": "名词＋について，用来提出谈论的主题。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "日本での暮らしについて話します。",
+          "meaning_zh": "谈论在日本的生活。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_5ea622cd-3d61-4725-8374-88f535132982"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "主题：谈论主题"
+      ]
+    },
+    {
+      "id": "expr_88a340ba-e992-40eb-8b04-bb9f9abdc649",
+      "japanese": "自分に合っている",
+      "meaning_zh": "适合自己",
+      "original_japanese": null,
+      "explanation_zh": "**事物／工作方式＋が＋自分に合っている：适合自己。**\n说明某种方式适合自己的需要、能力或偏好。\n\nこの働き方は自分に合っています。这种工作方式适合自己。\n\n相关惯用表达「肌に合う」更强调与自己的性情、感受或生活习惯合拍。两条可在“适合自己”主题一起查看。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "この働き方は自分に合っています。",
+          "meaning_zh": "这种工作方式适合我。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_48bc42f8-f9eb-4ef9-a458-6cb0b3d710ce"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "主题：适合自己"
+      ]
+    },
+    {
+      "id": "expr_8a468174-63b3-440b-b4e8-e02c81afe3ec",
+      "japanese": "肌に合う／自分の肌に合う",
+      "meaning_zh": "适合皮肤；适合自己的性情和生活习惯",
+      "original_japanese": "生活スタイルが自分に肌に合います",
+      "explanation_zh": "**肌に合う（はだにあう）：与自己的性情、感受或生活习惯合拍。**\nこの生活スタイルは自分の肌に合っています。这种生活方式适合自己。\n\n「自分」と「肌」之间用名词修饰的「の」：自分の肌。表示当前合适的状态，用「合っています」。\n\n也可用于皮肤：このクリームは肌に合います。这款面霜适合皮肤。\n\n「自分に合っている」是一般的“适合自己”；「肌に合う」突出实际感受与习性是否合拍。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "この街は静かで、意外と自分の肌に合います。",
+          "meaning_zh": "这个城市很安静，意外地很适合我。",
+          "origin": "source"
+        },
+        {
+          "japanese": "このクリームは自分の肌に合っていません。",
+          "meaning_zh": "这款面霜不适合我的皮肤。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_11519c9d-9f60-4ef4-9444-a2ca091490ee",
+        "vocab_48bc42f8-f9eb-4ef9-a458-6cb0b3d710ce",
+        "vocab_719d6130-9183-4a82-b79b-0e4846de7924"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "主题：适合自己"
+      ],
+      "corrected_japanese": "生活スタイルが自分の肌に合っています。",
+      "original_context_zh": "谈生活方式是否适合自己，想说这种生活方式与自己的习惯合拍。"
+    },
+    {
+      "id": "expr_a29c0a74-fd98-4d77-b02a-62a868f48974",
+      "japanese": "一か月に一回／何回か",
+      "meaning_zh": "表达频率",
+      "original_japanese": "一か月くらいビデオして",
+      "explanation_zh": "**时间单位＋に＋次数＋动作：频率。**\n- 一か月に一回：每月一次。\n- 一か月に何回か：每月几次。\n- 一週間に二回：每周两次。\n\n**一か月くらい＋动作：持续时长。**\n想表达“每个月和家人视频通话几次”时，「一か月くらいビデオして」会被理解为视频通话持续了约一个月，即“一个月一直在通话”，而不是每月几次。\n\n频率用「一か月に何回か、ビデオ通話をします」。\n\n对比：一か月、日本語を勉強しました。学了一个月日语。这里的一个月是学习持续的时间。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "一か月に一回くらい、家族とビデオコールをしています。",
+          "meaning_zh": "每个月大概和家人视频通话一次。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_5d97cc48-89aa-421e-89da-692c224b09c9",
+        "vocab_d70bbb4c-abdc-45c2-8690-db73c3af2b96"
+      ],
+      "origin": "teacher_correction",
+      "verification": "source_supported",
+      "tags": [
+        "主题：频率与时长"
+      ],
+      "corrected_japanese": "一か月に何回か、ビデオ通話をします。",
+      "original_context_zh": "想说每个月会和家人视频通话几次，而不是通话持续一个月。"
+    },
+    {
+      "id": "expr_c2374683-d545-4981-97db-45a554edcc32",
+      "japanese": "よく日本料理を食べます",
+      "meaning_zh": "经常吃日本料理",
+      "original_japanese": null,
+      "explanation_zh": "**よく：经常，表示频率的副词。**\n放在动词前，可根据句子结构调整位置：\n- よく日本料理を食べます。经常吃日本料理。\n- 日本料理をよく食べます。经常吃日本料理。\n- 私はよく日本料理を食べます。我经常吃日本料理。\n\n主语已经明确时，日常会话通常省略「私は」，直接说前两种形式。想特意提出“我”作为话题时，再用「私は」。",
+      "contexts": [
+        "日常",
+        "职场"
+      ],
+      "examples": [
+        {
+          "japanese": "よく日本料理を食べます。",
+          "meaning_zh": "经常吃日本料理。",
+          "origin": "source"
+        },
+        {
+          "japanese": "日本料理をよく食べます。",
+          "meaning_zh": "经常吃日本料理。",
+          "origin": "source"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_dd969658-fc8e-40f7-a117-ee9cc2dee67f"
+      ],
+      "origin": "lesson_material",
+      "verification": "source_supported",
+      "tags": [
+        "主题：频率与时长"
+      ]
     },
     {
       "id": "expr_ac26f692-47ce-40bf-93c4-07882270c027",
       "japanese": "復習しやすくする",
       "meaning_zh": "让复习更方便、更容易",
       "original_japanese": null,
-      "explanation_zh": "这是根据开场“让复习更方便”的意图补充的自然表达，不是已确认的老师逐字纠正。「動詞ます形去ます＋やすい」表示容易做某事；「やすい→やすくする」表示让某事更容易。反推错误示例仅用于说明接续，不代表你的原话。",
+      "explanation_zh": "**动词ます形去掉ます＋やすい：容易做某事。**\n復習します → 復習し → 復習しやすい：容易复习。\n\n**～やすい → ～やすくする：让某事更容易做。**\n復習しやすくする：让复习更方便、更容易。\n\n表現と単語をまとめて、復習しやすくします。把表达和单词整理在一起，让复习更方便。\n\n同类：読みやすい（容易读）→ 読みやすくする（让内容更容易读）。",
       "contexts": [
         "日常",
         "职场"
@@ -1533,7 +1651,7 @@
       "origin": "assistant_supplement",
       "verification": "source_supported",
       "tags": [
-        "复习补充"
+        "主题：～やすい与～やすくする"
       ],
       "error_example_japanese": "復習を便利します",
       "corrected_japanese": "復習しやすくする"
@@ -1559,8 +1677,21 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：で的用法",
+        "主题：名词修饰",
+        "主题：谈论主题",
         "日本生活与兴趣"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E6%9A%AE%E3%82%89%E3%81%97"
+        }
+      }
     },
     {
       "id": "vocab_f5df7569-a8d5-4a94-803c-ec7cd4f3f059",
@@ -1581,8 +1712,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：时间与过去叙述",
         "日本生活与兴趣"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E6%9D%A5%E6%97%A5"
+        }
+      }
     },
     {
       "id": "vocab_7bee9380-39fd-4caa-9e55-2f0d04ce1318",
@@ -1604,7 +1746,17 @@
       "verification": "source_supported",
       "tags": [
         "日本生活与兴趣"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          1
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E9%A0%83"
+        }
+      }
     },
     {
       "id": "vocab_84a3d746-2bc0-48e1-8363-a6fc10b33f3f",
@@ -1626,7 +1778,17 @@
       "verification": "source_supported",
       "tags": [
         "日本生活与兴趣"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          3
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E6%AD%93%E8%BF%8E%E4%BC%9A"
+        }
+      }
     },
     {
       "id": "vocab_8ada655b-e80e-4799-bb93-2dd0fe6da0c2",
@@ -1647,6 +1809,8 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：时间与过去叙述",
+        "主题：状态变化",
         "日本生活与兴趣"
       ]
     },
@@ -1669,6 +1833,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：频率与时长",
         "日本生活与兴趣"
       ]
     },
@@ -1691,6 +1856,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：频率与时长",
         "日本生活与兴趣"
       ]
     },
@@ -1713,6 +1879,8 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：～巡り的用法",
+        "主题：表达兴趣与爱好",
         "日本生活与兴趣"
       ]
     },
@@ -1735,6 +1903,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：～巡り的用法",
         "日本生活与兴趣"
       ]
     },
@@ -1757,8 +1926,21 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：～巡り的用法",
+        "主题：気分転換",
+        "主题：で的用法",
         "日本生活与兴趣"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          4
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E6%B0%97%E5%88%86%E8%BB%A2%E6%8F%9B"
+        }
+      }
     },
     {
       "id": "vocab_13a0a596-31ef-4e76-99b4-734270e000d7",
@@ -1779,8 +1961,20 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：表达兴趣与爱好",
+        "主题：品质与讲究",
         "日本生活与兴趣"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          1
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E8%B6%A3%E5%91%B3"
+        }
+      }
     },
     {
       "id": "vocab_dc3f95be-5e9e-4dc5-af12-d1b760b39a6e",
@@ -1801,8 +1995,21 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：～巡り的用法",
+        "主题：表达兴趣与爱好",
+        "主题：で的用法",
         "日本生活与兴趣"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E4%BC%91%E6%97%A5"
+        }
+      }
     },
     {
       "id": "vocab_168aa846-326b-4cd9-b573-47a0dd90ce56",
@@ -1846,7 +2053,17 @@
       "verification": "source_supported",
       "tags": [
         "日本生活与兴趣"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E6%9C%89%E6%96%99"
+        }
+      }
     },
     {
       "id": "vocab_7cb747d3-19bb-4661-b942-1f6af31712f7",
@@ -1867,8 +2084,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：尝试与愿望",
         "日本生活与兴趣"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E6%B8%A9%E6%B3%89"
+        }
+      }
     },
     {
       "id": "vocab_3e91ae02-07bc-49ea-8c7e-995435067792",
@@ -1889,6 +2117,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：本格与本格的",
         "日本生活与兴趣"
       ]
     },
@@ -1911,8 +2140,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：本格与本格的",
         "日本生活与兴趣"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          4
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E5%9B%9B%E5%B7%9D%E6%96%99%E7%90%86"
+        }
+      }
     },
     {
       "id": "vocab_dbdeb748-8b0e-424c-8d03-a957b0a6e0cf",
@@ -1934,7 +2174,17 @@
       "verification": "source_supported",
       "tags": [
         "工作与技术"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E5%90%8C%E5%83%9A"
+        }
+      }
     },
     {
       "id": "vocab_c10c5695-79c5-4daa-91a9-e8acc023f3fa",
@@ -1978,7 +2228,17 @@
       "verification": "source_supported",
       "tags": [
         "工作与技术"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E7%8F%BE%E5%A0%B4"
+        }
+      }
     },
     {
       "id": "vocab_677be315-7ab5-44a1-9034-5d2b4a1e5308",
@@ -1999,8 +2259,20 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：で的用法",
+        "主题：名词修饰",
         "工作与技术"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E8%81%B7%E5%A0%B4"
+        }
+      }
     },
     {
       "id": "vocab_d33a2a46-78ce-4313-b69b-e9b9028995d4",
@@ -2043,8 +2315,20 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：で的用法",
+        "主题：名词修饰",
         "工作与技术"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          1
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E4%BC%9A%E8%AD%B0"
+        }
+      }
     },
     {
       "id": "vocab_0e6570f4-1f15-4048-95c0-13682830f223",
@@ -2065,6 +2349,8 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：で的用法",
+        "主题：名词修饰",
         "工作与技术"
       ]
     },
@@ -2087,8 +2373,18 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "工作与技术"
-      ]
+        "主题：品质与讲究"
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E8%B3%AA"
+        }
+      }
     },
     {
       "id": "vocab_8006991d-026a-4c17-adce-f097ce4785b5",
@@ -2097,19 +2393,26 @@
       "part_of_speech": "名词",
       "meaning_zh": "质量、品质",
       "collocations": [
-        "クオリティにこだわる"
+        "クオリティにこだわる",
+        "クオリティが高い：质量高",
+        "クオリティを上げる：提升质量"
       ],
       "examples": [
         {
           "japanese": "クオリティを重視します。",
           "meaning_zh": "重视质量。",
           "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "コードのクオリティにこだわっています。",
+          "meaning_zh": "我很讲究代码质量。",
+          "origin": "assistant_supplement"
         }
       ],
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
-        "工作与技术"
+        "主题：品质与讲究"
       ]
     },
     {
@@ -2131,8 +2434,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：品质与讲究",
         "工作与技术"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          3
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E3%81%93%E3%81%A0%E3%82%8F%E3%82%8B"
+        }
+      }
     },
     {
       "id": "vocab_d44f03bf-10ee-4082-83b9-569f2966d219",
@@ -2153,8 +2467,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：品质与讲究",
         "工作与技术"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          1
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E6%B3%A8%E6%84%8F%E3%81%99%E3%82%8B"
+        }
+      }
     },
     {
       "id": "vocab_111e7d35-e668-4878-bfff-8c25eb937db1",
@@ -2175,6 +2500,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：关联与推测",
         "工作与技术"
       ]
     },
@@ -2308,7 +2634,17 @@
       "verification": "source_supported",
       "tags": [
         "邮局与寄送"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          3
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E9%83%B5%E4%BE%BF%E5%B1%80"
+        }
+      }
     },
     {
       "id": "vocab_82f24d4c-eb07-4e0b-8668-e3d3579168d5",
@@ -2330,7 +2666,17 @@
       "verification": "source_supported",
       "tags": [
         "邮局与寄送"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          1
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E8%8D%B7%E7%89%A9"
+        }
+      }
     },
     {
       "id": "vocab_7626a260-d569-47c1-bab7-4f862a68782f",
@@ -2374,7 +2720,17 @@
       "verification": "source_supported",
       "tags": [
         "邮局与寄送"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E5%AE%9B%E5%85%88"
+        }
+      }
     },
     {
       "id": "vocab_5a2cc00a-530a-4894-b647-21ab17cb4b7c",
@@ -2549,6 +2905,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：委婉沟通",
         "邻里沟通与委婉表达"
       ]
     },
@@ -2571,8 +2928,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：委婉沟通",
         "邻里沟通与委婉表达"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          3
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E8%B6%B3%E9%9F%B3"
+        }
+      }
     },
     {
       "id": "vocab_114757d5-5c60-41ca-a274-c957df283f68",
@@ -2594,7 +2962,17 @@
       "verification": "source_supported",
       "tags": [
         "邻里沟通与委婉表达"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          2
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E9%9F%BF%E3%81%8F"
+        }
+      }
     },
     {
       "id": "vocab_bf5067f9-f7b0-4af2-8ae8-376426ab7621",
@@ -2637,8 +3015,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：委婉沟通",
         "邻里沟通与委婉表达"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E7%9B%B8%E8%AB%87"
+        }
+      }
     },
     {
       "id": "vocab_8c0de680-9c92-4211-95a8-ec5b4f1b0e75",
@@ -2659,6 +3048,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：委婉沟通",
         "邻里沟通与委婉表达"
       ]
     },
@@ -2681,8 +3071,23 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：参照与参考",
+        "主题：委婉沟通",
+        "主题：时间状语",
+        "主题：条件表达",
+        "主题：で的用法",
         "邻里沟通与委婉表达"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E7%9B%B4%E6%8E%A5"
+        }
+      }
     },
     {
       "id": "vocab_cc60b0b4-2b83-4334-9519-41a1e1adfa5d",
@@ -2703,6 +3108,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：委婉沟通",
         "邻里沟通与委婉表达"
       ]
     },
@@ -2770,7 +3176,17 @@
       "verification": "source_supported",
       "tags": [
         "邻里沟通与委婉表达"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          3
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E5%8A%A9%E3%81%8B%E3%82%8B"
+        }
+      }
     },
     {
       "id": "vocab_7066a41d-244f-40f5-ad55-c1b1af3eb7b1",
@@ -2813,6 +3229,8 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：语调练习",
+        "主题：适合自己",
         "对话中出现的其他实用词"
       ]
     },
@@ -2835,6 +3253,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：相互动作",
         "对话中出现的其他实用词"
       ]
     },
@@ -2924,7 +3343,17 @@
       "verification": "source_supported",
       "tags": [
         "对话中出现的其他实用词"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E6%99%82%E9%96%93%E5%B8%AF"
+        }
+      }
     },
     {
       "id": "vocab_c612f407-17df-406d-9a66-76edf47a20ab",
@@ -2967,8 +3396,22 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：时间状语",
+        "主题：で的用法",
         "时间与语法"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0,
+          2
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E6%98%A8%E6%97%A5"
+        },
+        "note": "来源列出多种读法；这些编号均对应当前假名。"
+      }
     },
     {
       "id": "vocab_62d561a4-a823-4de0-8d9c-75caaaa8717f",
@@ -2989,8 +3432,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：で的用法",
         "时间与语法"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          1
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E6%9C%9F%E9%99%90"
+        }
+      }
     },
     {
       "id": "vocab_760c2b90-0b60-4a74-83e6-2197b685c4cc",
@@ -3012,7 +3466,17 @@
       "verification": "source_supported",
       "tags": [
         "时间与语法"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E5%89%AF%E8%A9%9E"
+        }
+      }
     },
     {
       "id": "vocab_2eac61f4-db5b-44e1-a740-294833980d33",
@@ -3034,7 +3498,17 @@
       "verification": "source_supported",
       "tags": [
         "时间与语法"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E5%90%8D%E8%A9%9E"
+        }
+      }
     },
     {
       "id": "vocab_1b71f7e8-46dc-454c-a771-2a8cef22a4b3",
@@ -3056,7 +3530,17 @@
       "verification": "source_supported",
       "tags": [
         "时间与语法"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E5%8A%A9%E8%A9%9E"
+        }
+      }
     },
     {
       "id": "vocab_7da23ecc-ea7c-494f-8dd9-ac50363ea4ef",
@@ -3078,7 +3562,17 @@
       "verification": "source_supported",
       "tags": [
         "时间与语法"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          2
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E8%87%AA%E5%8B%95%E8%A9%9E"
+        }
+      }
     },
     {
       "id": "vocab_93fcf57d-936f-44e1-86ba-b5dbc72f674b",
@@ -3100,7 +3594,17 @@
       "verification": "source_supported",
       "tags": [
         "时间与语法"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          2
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E4%BB%96%E5%8B%95%E8%A9%9E"
+        }
+      }
     },
     {
       "id": "vocab_dd969658-fc8e-40f7-a117-ee9cc2dee67f",
@@ -3121,6 +3625,8 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：見る与見える",
+        "主题：频率与时长",
         "时间与语法"
       ]
     },
@@ -3143,6 +3649,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：参照与参考",
         "工作与请求表达"
       ]
     },
@@ -3165,6 +3672,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：条件表达",
         "工作与请求表达"
       ]
     },
@@ -3187,8 +3695,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：委婉沟通",
         "工作与请求表达"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E6%8C%87%E6%91%98"
+        }
+      }
     },
     {
       "id": "vocab_775718bc-836d-4e22-b6b9-a26ad814b697",
@@ -3209,8 +3728,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：条件表达",
         "工作与请求表达"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E4%BC%9D%E3%81%88%E3%82%8B"
+        }
+      }
     },
     {
       "id": "vocab_e5334c19-2ecb-4ed3-9665-61f268486797",
@@ -3253,6 +3783,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：条件表达",
         "工作与请求表达"
       ]
     },
@@ -3275,6 +3806,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：坦率表达",
         "感受与生活方式"
       ]
     },
@@ -3297,8 +3829,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：坦率表达",
         "感受与生活方式"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E7%8E%87%E7%9B%B4"
+        }
+      }
     },
     {
       "id": "vocab_7935e3b7-12fb-4a10-87de-8f686ebadfcd",
@@ -3319,8 +3862,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：坦率表达",
         "感受与生活方式"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E3%81%8D%E3%81%A4%E3%81%84"
+        }
+      }
     },
     {
       "id": "vocab_39d01bcc-a592-4efb-8eb7-8819ed509347",
@@ -3341,8 +3895,20 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：原因表达",
+        "主题：坦率表达",
         "感受与生活方式"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E8%8B%A6%E6%89%8B"
+        }
+      }
     },
     {
       "id": "vocab_8b2ca9c0-8167-4b11-ab96-9c4f05697873",
@@ -3364,7 +3930,17 @@
       "verification": "source_supported",
       "tags": [
         "感受与生活方式"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          1
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E8%82%8C"
+        }
+      }
     },
     {
       "id": "vocab_48bc42f8-f9eb-4ef9-a458-6cb0b3d710ce",
@@ -3385,6 +3961,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：适合自己",
         "感受与生活方式"
       ]
     },
@@ -3408,7 +3985,17 @@
       "verification": "source_supported",
       "tags": [
         "感受与生活方式"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E5%8C%96%E7%B2%A7%E5%93%81"
+        }
+      }
     },
     {
       "id": "vocab_cdf65018-ae4a-478b-8533-45e1128523af",
@@ -3451,6 +4038,8 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：状态变化",
+        "主题：适合自己",
         "感受与生活方式"
       ]
     },
@@ -3496,7 +4085,17 @@
       "verification": "source_supported",
       "tags": [
         "感受与生活方式"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          3
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E9%9B%B0%E5%9B%B2%E6%B0%97"
+        }
+      }
     },
     {
       "id": "vocab_63900fab-a40c-4118-9bf4-a3d776609155",
@@ -3518,7 +4117,17 @@
       "verification": "source_supported",
       "tags": [
         "感受与生活方式"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E7%92%B0%E5%A2%83"
+        }
+      }
     },
     {
       "id": "vocab_c7af4675-0ace-4ded-9878-4c2547a8143a",
@@ -3561,8 +4170,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：程度与应答",
         "感受与生活方式"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          1
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E7%B5%90%E6%A7%8B"
+        }
+      }
     },
     {
       "id": "vocab_e0f53a8d-85e6-44ee-adf5-ccbe6ef78900",
@@ -3583,6 +4203,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：程度与应答",
         "感受与生活方式"
       ]
     },
@@ -3605,8 +4226,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：状态变化",
         "电话与日常动作"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E7%B7%8A%E5%BC%B5"
+        }
+      }
     },
     {
       "id": "vocab_72b58374-d59a-40dd-aaf1-6e354fd76ea9",
@@ -3627,8 +4259,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：状态变化",
         "电话与日常动作"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          3
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E7%9C%9F%E3%81%A3%E7%99%BD"
+        }
+      }
     },
     {
       "id": "vocab_8be9f3b2-0267-4fb0-900b-e942f225ce7c",
@@ -3650,7 +4293,17 @@
       "verification": "source_supported",
       "tags": [
         "电话与日常动作"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E4%BA%88%E7%B4%84"
+        }
+      }
     },
     {
       "id": "vocab_fd8f92aa-9b05-466f-9f47-f1267fe0490c",
@@ -3694,7 +4347,17 @@
       "verification": "source_supported",
       "tags": [
         "电话与日常动作"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          3
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E5%A3%8A%E3%82%8C%E3%82%8B"
+        }
+      }
     },
     {
       "id": "vocab_b7681ed3-732e-4263-934a-d743b0a85db2",
@@ -3715,8 +4378,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：状态变化",
         "电话与日常动作"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          2
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E5%8B%95%E3%81%8F"
+        }
+      }
     },
     {
       "id": "vocab_55d936dc-6e60-4e24-9f25-0854d72221c6",
@@ -3737,8 +4411,20 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：で的用法",
+        "主题：状态变化",
         "电话与日常动作"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E9%81%8A%E3%81%B6"
+        }
+      }
     },
     {
       "id": "vocab_8d4c993d-884e-4a47-8954-fb9a65a14df6",
@@ -3759,8 +4445,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：見る与見える",
         "电话与日常动作"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          1
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E8%A6%8B%E3%82%8B"
+        }
+      }
     },
     {
       "id": "vocab_787b9a98-d641-4ee8-84a1-57363d9ec1ff",
@@ -3781,8 +4478,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：見る与見える",
         "电话与日常动作"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          2
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E8%A6%8B%E3%81%88%E3%82%8B"
+        }
+      }
     },
     {
       "id": "vocab_d977cca0-b035-4e17-bfb9-bc521ff29d26",
@@ -3803,6 +4511,8 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：原因表达",
+        "主题：时间与过去叙述",
         "电话与日常动作"
       ]
     },
@@ -3825,14 +4535,25 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：时间与过去叙述",
         "电话与日常动作"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E7%95%99%E5%AD%A6"
+        }
+      }
     },
     {
       "id": "vocab_8090a3ee-dcd7-4ea2-bde3-0887e06693b2",
       "japanese": "完成する",
       "reading": "かんせいする",
-      "part_of_speech": "サ变动词（本课优先练自动用法）",
+      "part_of_speech": "サ变动词",
       "meaning_zh": "完成、完全做成",
       "collocations": [
         "プログラムが完成する"
@@ -3847,8 +4568,19 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：完成与结果",
         "工作与请求表达"
-      ]
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          0
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E5%AE%8C%E6%88%90%E3%81%99%E3%82%8B"
+        }
+      }
     },
     {
       "id": "vocab_a9861a87-9d49-4118-ac37-f0e3373c1aa4",
@@ -3869,6 +4601,7 @@
       "origin": "lesson_material",
       "verification": "source_supported",
       "tags": [
+        "主题：完成与结果",
         "工作与请求表达"
       ]
     }

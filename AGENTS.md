@@ -49,3 +49,7 @@
 ## 引入的工程 Skills
 
 项目内另有 Matt Pocock 的 tdd、diagnosing-bugs、codebase-design，按任务需要使用。复习规则、导入与离线同步可用 tdd；复杂故障用 diagnosing-bugs；接口设计与局部重构用 codebase-design。普通文案不强制测试，不重复询问已确定的测试范围，不自动启动多 agent 或提交 Git。来源与用法见 [工程 Skills](docs/development/ENGINEERING_SKILLS.md)。
+
+学习内容采用客观知识口吻，每个原说法写明场景与意图；尊重课堂教学重点。标题涉及的用法必须补全解释和例句。课堂与生活内容都用统一主题标签关联、相邻展示。修订按 DATA_RULES 的内容质量规则与 japanese-memo-revise 执行。
+
+知识主题维护使用个人 japanese-topic-organize Skill，按知识功能分类，避免“工作与关联”等过宽背景分类。来源课程与场景仍保留。

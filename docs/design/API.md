@@ -75,3 +75,9 @@ queue接口有分配副作用，故用POST。每日上限指“当天新分配�
 ## 内容自动更新
 
 GET /content/status 返回 watching、revision、last_checked_at、last_imported_at、error_count、message，不暴露目录路径。GET /content/events 为同源 SSE：ready 初始状态、content 内容版本变化、status 导入状态；25秒注释心跳只维持连接，不触发目录扫描。页面隐藏时断开、回到前台重连；重连检查版本，不依赖收齐每一条事件。手动 POST /lessons/import 与监听共用串行导入入口。LessonSummary 可选 kind=lesson/life，生活标签归类；不改数据库模型。
+
+条目公开响应可包含表达字段 original_context_zh。GET /items 的 meta.available_tags 返回全库可用标签，避免主题选项随分页丢失。条目按统一主题归组，课程与生活来源可在同一主题筛选；同主题保留源数据的编排顺序。
+
+单词音调：可选 pitch_accent 随课程详情、条目和复习答案 DTO 传递，来源 JSON 中保存，无独立 SQL 列。词卡假名旁仅显示东京式编号（⓪、①、②等），不附类型名称；展开可查看拍数说明、来源与多种读法备注。未核实不显示编号；离线下载保留已核实数据，旧缓存可正常读取。
+
+POST /api/v1/review/cancel 接收 card_ids（1–100 个 UUID），返回 released_new_cards。按用户和卡片过滤，只移除从未作答卡片的领取占位；与领取/评分使用相同事务锁，重复取消幂等，不删除 ReviewState、ReviewEvent 或收藏。

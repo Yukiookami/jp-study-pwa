@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "lesson": {
+    "id": "lesson_e5101760-1392-44aa-9d93-4a8e866d921b",
+    "title": "生活摘录｜整理于 2026-10-11",
+    "lesson_date": null,
+    "created_date": "2026-10-11",
+    "source_files": [],
+    "tags": [
+      "生活摘录"
+    ]
+  },
+  "expressions": [
+    {
+      "id": "expr_7565a490-b38b-4f77-8791-62e7486e38df",
+      "japanese": "掴めません",
+      "meaning_zh": "抓不住／无法掌握、理解",
+      "original_japanese": null,
+      "explanation_zh": "**读音：つかめません。**\n\n原形「掴む（つかむ）」是五段他动词，表示抓住，也可用于理解意思、掌握要点或诀窍。\n\n**形式变化：**\n- 掴む（つかむ）：抓住／掌握。\n- 掴める（つかめる）：能抓住／能掌握，可能形。\n- 掴めない（つかめない）：抓不住／无法掌握。\n- 掴めません（つかめません）：可能形的否定礼貌形式。\n\n**与「掴みません」的区别：**\n「掴めません」表示不能做到；「掴みません（つかみません）」是原动词的否定礼貌形式，表示不抓、不去抓。\n\n**具体物体：**\n手袋が滑って、ロープがうまく掴めません。手套打滑，没法好好抓住绳子。\n\n**抽象内容：**\n説明を聞いても、まだ意味が掴めません。即使听了说明，还是无法理解意思。\n\n「意味が掴めません」侧重无法把握意思；「コツが掴めません」表示还无法掌握诀窍。可能形中对象可以用「が」表示。\n\n参考：[国立国語研究所：つかむ（IPAL 基本动词）](https://www2.ninjal.ac.jp/dictionaries/IPALBV/pdf_dir/%E3%81%A4%E3%81%8B%E3%82%80.pdf)。",
+      "contexts": [
+        "抓握物体",
+        "理解意思、掌握要点或诀窍"
+      ],
+      "examples": [
+        {
+          "japanese": "この表現の意味がまだ掴めません。",
+          "meaning_zh": "还无法把握这个表达的意思。",
+          "origin": "assistant_supplement"
+        },
+        {
+          "japanese": "何度練習しても、コツが掴めません。",
+          "meaning_zh": "练了好几次，还是掌握不了诀窍。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "vocabulary_ids": [
+        "vocab_e926d818-a9f8-4229-b47f-5e57e30f2471"
+      ],
+      "origin": "assistant_supplement",
+      "verification": "source_supported",
+      "tags": [
+        "主题：掴む的用法",
+        "主题：可能形"
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "vocab_e926d818-a9f8-4229-b47f-5e57e30f2471",
+      "japanese": "掴む",
+      "reading": "つかむ",
+      "part_of_speech": "五段他动词",
+      "meaning_zh": "抓住；掌握、理解",
+      "collocations": [
+        "手を掴む：抓住手",
+        "意味を掴む：理解意思",
+        "要点を掴む：抓住要点",
+        "コツを掴む：掌握诀窍"
+      ],
+      "examples": [
+        {
+          "japanese": "話の要点を掴みました。",
+          "meaning_zh": "抓住了谈话的要点。",
+          "origin": "assistant_supplement"
+        }
+      ],
+      "origin": "assistant_supplement",
+      "verification": "source_supported",
+      "tags": [
+        "主题：掴む的用法"
+      ],
+      "pitch_accent": {
+        "dialect": "东京式",
+        "patterns": [
+          2
+        ],
+        "source": {
+          "title": "东京大学 OJAD",
+          "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/search/index/word:%E6%8E%B4%E3%82%80"
+        }
+      }
+    }
+  ],
+  "unresolved": []
+}

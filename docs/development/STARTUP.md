@@ -129,3 +129,7 @@ pnpm backup:check backups/实际日期时间/database.dump
 手机尺寸 Chrome 已做自动验收。真实手机、Tailscale 名称解析、主屏幕安装与 Mac 睡眠唤醒仍需你试用确认。
 
 聊天里的生活表达收录按 [LIFE_CAPTURE](LIFE_CAPTURE.md) 使用，输入“加入生活摘录”即可。
+
+## 学什么语外观更新
+
+新版构建后重启 pnpm start，再刷新页面。HTTPS 已安装版本若出现更新提示，点击更新应用。手机主屏幕仍显示旧名字或旧图标时，移除旧快捷方式并重新添加即可；不要清除网站数据，以免丢失未同步答题。

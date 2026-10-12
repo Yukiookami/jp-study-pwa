@@ -16,13 +16,13 @@ export default defineConfig({
     vue(),
     VitePWA({
       registerType: 'prompt',
-      includeAssets: ['icons/*.png'],
+      includeAssets: ['icons/*.png', 'icons/*.svg'],
       manifest: {
-        name: '日语手帖',
-        short_name: '日语手帖',
-        description: '课堂表达与单词，每天进步一点。',
-        theme_color: '#244c3a',
-        background_color: '#f8f5ed',
+        name: '学什么语',
+        short_name: '学什么语',
+        description: '今天也整两句日语。课堂学的、生活捡的，都收好。',
+        theme_color: '#ffdf79',
+        background_color: '#fff8e9',
         display: 'standalone',
         start_url: '/',
         icons: [
